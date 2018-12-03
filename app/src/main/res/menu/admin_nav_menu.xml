@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Conversation"
+        android:id="@+id/nav_conversation"
+        android:icon="@drawable/ic_forum_black_24dp"/>
+    <item android:title="Post"
+        android:id="@+id/nav_post"
+        android:icon="@drawable/ic_home_black_24dp"/>
+    <item android:title="Price"
+        android:id="@+id/nav_price"
+        android:icon="@drawable/ic_assignment_black_24dp"/>
+    <item android:title="Account"
+        android:id="@+id/nav_account"
+        android:icon="@drawable/ic_insert_photo"/>
+    <item android:title="Logout"
+        android:id="@+id/nav_log_out"
+        android:icon="@drawable/sign_out_option"/>
+</menu>

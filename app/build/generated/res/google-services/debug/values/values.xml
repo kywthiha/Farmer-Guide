@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">359274034582-bo6fpo9uv18jsjbfuajhnst5hkcpcsba.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://farm-application-7d2d2.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">359274034582</string>
+    <string name="google_api_key" translatable="false">AIzaSyCVHPk7swX3GaNAArYUi_jpE_r3humfVLw</string>
+    <string name="google_app_id" translatable="false">1:359274034582:android:e35eb2c354369aa5</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCVHPk7swX3GaNAArYUi_jpE_r3humfVLw</string>
+    <string name="google_storage_bucket" translatable="false">farm-application-7d2d2.appspot.com</string>
+    <string name="project_id" translatable="false">farm-application-7d2d2</string>
+</resources>

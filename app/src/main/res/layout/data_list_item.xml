@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_margin="8dp"
+        android:layout_height="150dp"
+        app:cardCornerRadius="5dp">
+        <RelativeLayout
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/data_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:layout_above="@id/data_title"
+                android:src="@drawable/paddy"/>
+            <TextView
+                android:id="@+id/data_title"
+                android:layout_alignParentBottom="true"
+                android:text="ေဘာင္ပ်ိဳးစိုက္နည္း"
+                android:backgroundTint="#fff"
+                android:paddingTop="5dp"
+                android:singleLine="true"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

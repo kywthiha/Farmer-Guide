@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:id="@+id/my"
+    android:clipToPadding="false">
+    <android.support.v7.widget.LinearLayoutCompat
+        android:orientation="vertical"
+        android:layout_alignParentRight="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/time_show"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textStyle="italic"
+            android:textSize="15sp"
+            android:text="13:47 AM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="60dp"
+            android:id="@+id/their"
+            android:clipToPadding="false">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:src="@drawable/ic_farmer"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/avatar"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                app:civ_border_color="@color/colorPrimary"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/their_message_body"
+                android:layout_marginLeft="4dp"
+                android:layout_toRightOf="@+id/avatar"
+                android:layout_alignTop="@+id/avatar"
+                android:background="@drawable/their_message"
+                android:paddingVertical="12dp"
+                android:paddingHorizontal="16dp"
+                android:textSize="18dp"
+                android:text="How are you doing? This is a long message that should probably wrap."
+                />
+        </RelativeLayout>
+    </android.support.v7.widget.LinearLayoutCompat>
+</android.support.v7.widget.LinearLayoutCompat>

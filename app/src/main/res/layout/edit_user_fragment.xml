@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/imgl"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:id="@+id/profilepicture"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/profileboy" />
+
+        <TextView
+            android:id="@+id/txt_phno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+
+            android:text="09-771616178"
+            android:textColor="#fff" />
+
+
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editlayout"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="false"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="32dp"
+        android:drawableLeft="@drawable/ic_save_black_24dp"
+        android:drawablePadding="8dp"
+        android:text="Save"
+        android:textColor="@color/colorAccent"
+        android:textSize="16dp" />
+
+    <RelativeLayout
+        android:id="@+id/showlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/imgl"
+        android:layout_marginTop="10dp"
+        >
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:id="@+id/namel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/nameicon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/name"/>
+
+            <EditText
+                android:id="@+id/edt_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:drawable/screen_background_light_transparent"
+                android:ems="10"
+                android:hint="Unknown"
+                android:inputType="textPersonName" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/workl"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/namel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/work"/>
+
+            <EditText
+                android:id="@+id/edt_work"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:drawable/screen_background_light_transparent"
+                android:ems="10"
+                android:hint="Unknown"
+                android:inputType="textPersonName" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/genderl"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/workl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/gender"/>
+
+            <EditText
+                android:id="@+id/edt_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:drawable/screen_background_light_transparent"
+                android:ems="10"
+                android:hint="Unknown"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+
+    </RelativeLayout>
+    //second
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/editlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/imgl"
+        android:layout_marginTop="10dp"
+        >
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:id="@+id/phnol2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/phicon2"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/name"/>
+
+            <EditText
+                android:paddingLeft="10dp"
+                android:id="@+id/ename"
+                android:layout_width="200dp"
+                android:layout_height="24dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15dp"
+                android:background="@drawable/round_border"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/workl2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/phnol2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/work"/>
+            <EditText
+                android:paddingLeft="10dp"
+                android:id="@+id/ework"
+                android:layout_width="200dp"
+                android:layout_height="24dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15dp"
+                android:background="@drawable/round_border"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/genderl2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/workl2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/gender"/>
+            <RadioGroup
+                android:paddingLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+                <RadioButton
+                    android:id="@+id/boy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="က်ား"
+                    />
+
+                <RadioButton
+                    android:id="@+id/girl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="မ" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/farmfruit2"
+            android:layout_marginLeft="42dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/genderl2"
+            android:text="စိုက္ပ်ိုးသီးနွံမ်ား"
+            android:textColor="@color/colorPrimary"
+            android:textSize="17dp"/>
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/farmfruit2"
+            android:background="@drawable/round_border">
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="စပါး"
+                android:textColor="@color/colorPrimary"
+                android:textSize="17dp"/>
+            <TextView
+                android:layout_marginLeft="24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="ေျမပဲ"
+                android:textColor="@color/colorPrimary"
+                android:textSize="17dp"/>
+            <TextView
+                android:layout_marginLeft="24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="နွမ္း"
+                android:textColor="@color/colorPrimary"
+                android:textSize="17dp"/>
+            <TextView
+                android:layout_marginLeft="24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="အာလူး"
+                android:textColor="@color/colorPrimary"
+                android:textSize="17dp"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
