@@ -22,6 +22,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".writepost" />
+        <activity android:name=".activity.QuestionAnswerActivity"/>
         <activity android:name=".AdminActivity" />
         <activity android:name=".MessageViewActivity" />
         <activity android:name=".SplashScreenActivity" />

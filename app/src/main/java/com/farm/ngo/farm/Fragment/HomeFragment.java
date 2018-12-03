@@ -1,6 +1,7 @@
 package com.farm.ngo.farm.Fragment;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Typeface;
 import android.location.Location;
 import android.location.LocationListener;
@@ -19,7 +20,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.farm.ngo.farm.Class.Function;
+import com.farm.ngo.farm.Model.User;
 import com.farm.ngo.farm.R;
+import com.farm.ngo.farm.activity.QuestionAnswerActivity;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -99,11 +102,13 @@ public class HomeFragment extends Fragment implements LocationListener {
         questionAndAnswerCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                FragmentTransaction qtransaction = getFragmentManager().beginTransaction();
-                QuestionAnswerFragment qFragment = new QuestionAnswerFragment(mContext);
-                qtransaction.replace(R.id.view_pager, qFragment);
-                qtransaction.addToBackStack(null);
-                qtransaction.commit();
+                String id="+959778673750";
+                String name="Kyaw Thi Ha";
+                String usertownship="mying";
+                User u= new User(id,name,"","",usertownship);
+                Intent in = new Intent(getActivity(),QuestionAnswerActivity.class);
+                in.putExtra("user",u);
+                getActivity().startActivity(in);
             }
         });
 

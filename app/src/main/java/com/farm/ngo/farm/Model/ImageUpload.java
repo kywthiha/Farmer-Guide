@@ -48,6 +48,7 @@ public class ImageUpload extends AsyncTask<Image,Void,Void> {
     }
     public void showProgressDialog() {
             mProgressDialog.setCancelable(false);
+            mProgressDialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
             mProgressDialog.setMessage("Uploading...");
              mProgressDialog.show();
     }

@@ -50,6 +50,7 @@ public class ImageUtil {
         if (mProgressDialog == null) {
             mProgressDialog = new ProgressDialog(context);
             mProgressDialog.setCancelable(false);
+            mProgressDialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
             mProgressDialog.setMessage("Uploading...");
         }
 

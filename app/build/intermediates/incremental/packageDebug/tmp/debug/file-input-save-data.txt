@@ -1,6 +1,6 @@
 #Internal package file, do not edit.
-#Tue Dec 04 00:28:15 MMT 2018
-2.base=/home/kyaw/Desktop/Farm/app/build/intermediates/transforms/dexMerger/debug/0
+#Tue Dec 04 02:37:27 MMT 2018
+2.base=/home/kyaw/Desktop/Farm/app/build/intermediates/transforms/dexMerger/debug/1
 0.path=other_crop.json
 2.baseType=DIRECTORY
 3.base=/home/kyaw/Desktop/Farm/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out
@@ -8,7 +8,7 @@
 1.path=classes.dex
 4.base=/home/kyaw/Desktop/Farm/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out
 count=5
-2.path=classes2.dex
+2.path=classes.dex
 4.set=ASSET
 3.path=farm
 3.baseType=DIRECTORY

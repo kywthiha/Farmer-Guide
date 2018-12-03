@@ -941,6 +941,7 @@ drawable notify_panel_notification_icon_bg
 drawable other
 drawable other_vagetables
 drawable paddy
+drawable phone_call_admin
 drawable profileboy
 drawable qa
 drawable rice
@@ -1198,6 +1199,7 @@ id percent
 id pg_old_chat
 id phicon2
 id phnol2
+id phoneCall
 id pin
 id postRecyclerview
 id postimg
@@ -1392,6 +1394,7 @@ layout admin_fragment
 layout admin_item
 layout admin_question_answer
 layout chat_items
+layout chat_message_view
 layout content_layout
 layout data_list_item
 layout delete_crop_dialog
@@ -1457,6 +1460,7 @@ layout their_message
 layout upload_new_crop
 menu admin_nav_menu
 menu btn_nav_menu
+menu phone_nav
 mipmap ic_launcher
 mipmap ic_launcher_foreground
 mipmap ic_launcher_round
@@ -1528,6 +1532,7 @@ string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string phone_call
 string place_not_found
 string pref_previously_started
 string project_id

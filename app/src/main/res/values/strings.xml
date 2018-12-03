@@ -20,6 +20,7 @@
     <string name="showmore">အျပည့္စုံဖတ္ရန္</string>
     <string name="instant_validation">(instant validation)</string>
     <string name="place_not_found">Sorry, no weather data found.</string>
+    <string name="phone_call">Phone Call Argicultural Office</string>
 
     <string-array name="tab_array">
         <item>စိုက္ပ်ိဳးနည္းစနစ္</item>
