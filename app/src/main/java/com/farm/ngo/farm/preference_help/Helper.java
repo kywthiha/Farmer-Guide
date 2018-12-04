@@ -33,18 +33,18 @@ public class Helper {
     }
     public static void saveUserProfile(Context mContext,User user){
         SharedPreferences.Editor editor = mContext.getSharedPreferences("profile", mContext.MODE_PRIVATE).edit();
-        editor.putString("type",user.getType());
+        editor.putString("work",user.getWork());
         editor.putString("gender",user.getGender());
         editor.putString("address",user.getAddress());
         editor.commit();
     }
     public static User getUserProfile(Context mContext){
         SharedPreferences prefs = mContext.getSharedPreferences("profile", mContext.MODE_PRIVATE);
-        String type=prefs.getString("type","");
+        String work=prefs.getString("work","");
         String gender=prefs.getString("gender","");
         String address=prefs.getString("address","");
         User user=new User();
-        user.setType(type);
+        user.setWork(work);
         user.setAddress(address);
         user.setGender(gender);
         return user;

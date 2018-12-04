@@ -28,7 +28,7 @@
     <EditText
         android:id="@+id/fieldPhoneNumber"
         android:background="@drawable/borderedit"
-        android:drawableLeft="@drawable/ic_phone_black_24dp"
+        android:drawableLeft="@drawable/phone_call_admin"
         android:textColor="@color/white_color"
         android:maxLength="11"
         android:inputType="phone"

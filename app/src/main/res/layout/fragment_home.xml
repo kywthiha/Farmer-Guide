@@ -47,7 +47,7 @@
                 android:layout_height="wrap_content"
                 android:textColor="@color/colorPrimary"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:textSize="70sp"
+                android:textSize="50sp"
                 />
 
             <TextView

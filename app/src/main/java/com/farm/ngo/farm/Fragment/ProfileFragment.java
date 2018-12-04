@@ -82,7 +82,7 @@ public class ProfileFragment extends Fragment {
         user=Helper.getUserProfile(this.getActivity());
         showname.setText(name);
         if(user.getWork()!=null) {
-            showwork.setText(user.getType());
+            showwork.setText(user.getWork());
         }
         if(user.getGender()!=null)
         showgender.setText(user.getGender());
