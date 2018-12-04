@@ -32,7 +32,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:text="Type"
+                    android:text="@string/type"
                     android:textColor="@color/material_green_700" />
 
                 <TextView
@@ -41,7 +41,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:text="Count"
+                    android:text="@string/count"
                     android:textColor="@color/material_green_700" />
 
                 <TextView
@@ -50,7 +50,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:text="Price"
+                    android:text="@string/price"
                     android:textColor="@color/material_green_700" />
 
             </LinearLayout>
@@ -62,10 +62,9 @@
                 android:layout_above="@+id/addCrop"
                 android:layout_marginStart="8dp"
                 android:layout_marginLeft="8dp"
-                android:layout_marginTop="0dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
-                android:layout_marginBottom="8dp"/>
+                />
 
         </LinearLayout>
 

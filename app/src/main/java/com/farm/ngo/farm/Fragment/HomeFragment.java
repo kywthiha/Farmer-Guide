@@ -7,6 +7,7 @@ import android.location.Location;
 import android.location.LocationListener;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import com.farm.ngo.farm.Holder.*;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.widget.CardView;
@@ -102,12 +103,10 @@ public class HomeFragment extends Fragment implements LocationListener {
         questionAndAnswerCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String id="+959778673750";
-                String name="Kyaw Thi Ha";
-                String usertownship="mying";
-                User u= new User(id,name,"","",usertownship);
+                User u= UsingSQLiteHelper.getUser(getActivity());
                 Intent in = new Intent(getActivity(),QuestionAnswerActivity.class);
                 in.putExtra("user",u);
+                in.putExtra("phone_number","09771616178");
                 getActivity().startActivity(in);
             }
         });

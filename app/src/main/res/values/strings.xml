@@ -1,6 +1,5 @@
 <resources>
-    <string name="app_name">Farm</string>
-
+    <string name="app_name">Farmer Guide</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="weathertitle">ယေန႔ မိုးေလ၀သအေျခအေန</string>
@@ -21,6 +20,18 @@
     <string name="instant_validation">(instant validation)</string>
     <string name="place_not_found">Sorry, no weather data found.</string>
     <string name="phone_call">Phone Call Argicultural Office</string>
+    <string name="welcome">ေတာင္သူလက္စြဲ မွႀကိဳစိုပါ၏</string>
+    <string name="message_enter_phone">သင္၏ ဖုန္းနံပါတ္ ကို႐ိုက္ထည့္ပါ</string>
+    <string name="message_warn">စတက္အသံုးျပဳရန္ သင္၏ ဖုန္းနံပါတ္အား ၀၉ ပါေအာင္ ႐ိုက္ေပးပါ \n ၿပီးေနာက္ အစိမ္းေရာင္ ခလုပ္အား ႏိုပ္ေပးပါ</string>
+    <string name="verify_code_send_wating">အတည္ျပဳကုတ္ ေပးပို႔ေနပါသျဖင့္ ခဏေစာင့္ေပးပါ . . . </string>
+    <string name="user_id_checking">အသံုးျပဳသူအခ်က္အလက္မ်ားကို စစ္ေဆးေနပါသည္</string>
+    <string name="verify_code_error">အတည္ျပဳကုတ္မွားေနပါသည္ </string>
+    <string name="too_many_request">ယေန႔တြက္ဝင္ေရာက္ျခင္း ၿပီးဆံုးပါၿပီ\nမနက္ျဖန္မွ ျပန္လည္ဝင္ေရာက္ပါ </string>
+    <string name="errr_info">သင္၏ အေကာင့္ ဝင္ေရာက္ျခင္း အမွားအယြင္း႐ွိပါသည္</string>
+    <string name="resend_verify_code">အတည္ျပဳကုပ္ ျပန္လည္ေပးပို႔ေနပါသည္ ...</string>
+    <string name="type">အမ်ိဳးအစား</string>
+    <string name="count">အေရအတြက္</string>
+    <string name="price">ေစ်းႏႈန္း</string>
 
     <string-array name="tab_array">
         <item>စိုက္ပ်ိဳးနည္းစနစ္</item>

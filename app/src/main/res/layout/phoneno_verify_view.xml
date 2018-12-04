@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.v7.widget.LinearLayoutCompat
+    android:background="@drawable/loginbackground1"
     android:orientation="vertical"
     android:paddingLeft="50dp"
     android:paddingTop="15dp"
@@ -10,28 +11,33 @@
         android:id="@+id/code_send"
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:visibility="visible">
         <TextView
-            android:text="Verify code send wating ..."
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="@color/white_color"
+            android:text="@string/verify_code_send_wating"
             android:layout_marginTop="50dp"
             android:layout_alignParentTop="true"
             android:textAlignment="center"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
-        <ProgressBar
+        <ImageView
+            android:id="@+id/verify_code"
+            android:src="@drawable/verify_code_loading"
             android:layout_centerInParent="true"
             android:layout_gravity="center"
-            android:progressTint="#000"
-            android:layout_width="wrap_content"
+            android:layout_width="150dp"
             android:layout_height="wrap_content" />
     </RelativeLayout>
     <android.support.v7.widget.LinearLayoutCompat
         android:id="@+id/code_verify"
+        android:visibility="gone"
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <TextView
+            android:textColor="@color/white_color"
             android:layout_marginTop="15dp"
             android:textSize="20sp"
             android:textAlignment="center"
@@ -40,15 +46,17 @@
             android:layout_height="wrap_content" />
         <TextView
             android:padding="5dp"
+            android:textColor="@color/white_color"
             android:textAlignment="center"
             android:text="+959778673750"
             android:id="@+id/fieldPhoneNumber"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
         <EditText
+            android:textColor="@color/white_color"
             android:layout_marginTop="20dp"
             android:id="@+id/fieldVerificationCode"
-            android:background="@drawable/round_border"
+            android:background="@drawable/borderedit"
             android:textAlignment="center"
             android:maxLength="6"
             android:inputType="phone"
@@ -57,6 +65,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
         <Button
+            android:drawableRight="@drawable/ic_navigate_next_black_24dp"
             android:id="@+id/buttonVerifyPhone"
             android:background="@color/colorPrimary"
             android:textColor="#fff"
@@ -65,9 +74,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
         <Button
+            android:textColor="@color/white_color"
             android:textAppearance="@style/TextAppearance.AppCompat.Button"
             style="?borderlessButtonStyle"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="40dp"
             android:textSize="10sp"
             android:layout_gravity="center"
             android:textAlignment="center"

@@ -11,19 +11,36 @@ public class User implements Serializable {
     private String work,gender;
     private List<String> palntedCrops;
     private String township;
+    private String address;
+    private String type;
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
 
     public String getTownship() {
         return township;
     }
 
-    public User(String id, String name, String profile_url, String email, String work, String gender, String township) {
+    public User(String id, String name, String address, String type, String work, String gender, String township) {
         this.id = id;
         this.name = name;
-        this.profile_url = profile_url;
-        this.email = email;
+        this.address= address;
         this.work = work;
         this.gender = gender;
-        this.palntedCrops = palntedCrops;
+        this.type = type;
         this.township = township;
     }
 

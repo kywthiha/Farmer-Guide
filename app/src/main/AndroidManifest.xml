@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.farm.ngo.farm">
 
+    <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.CAMERA" />
@@ -9,28 +10,39 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
+        android:hardwareAccelerated="false"
+        android:largeHeap="true"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".auth.ui.UserLoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".MainActivity"/>
+
         <activity android:name=".writepost" />
-        <activity android:name=".activity.QuestionAnswerActivity"/>
+        <activity android:name=".activity.QuestionAnswerActivity" />
         <activity android:name=".AdminActivity" />
         <activity android:name=".MessageViewActivity" />
         <activity android:name=".SplashScreenActivity" />
         <activity android:name=".activity.ChatActivity" />
-        <activity android:name=".DataViewActivity" />
-        <activity android:name=".UserEdit"></activity>
-        <activity android:name=".activity.postshowdetail"
-            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".DataViewActivity" />
+        <activity android:name=".UserEdit" />
+        <activity
+            android:name=".activity.postshowdetail"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity android:name=".PostShowAdmin"
+
+           ></activity>
+        <activity android:name=".phonecall"/>
     </application>
 
 </manifest>

@@ -19,6 +19,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -104,36 +105,34 @@ public class PostAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         TextView title,info,date;
         ImageView delete;
         int lineCnt;
-        CardView card;
+        LinearLayout card;
         public myviewholder(@NonNull View itemView) {
             super(itemView);
 
             title = (TextView) itemView.findViewById(R.id.title);
             info = (TextView) itemView.findViewById(R.id.info);
             date = (TextView) itemView.findViewById(R.id.date);
-            delete=(ImageView)itemView.findViewById(R.id.delete);
-            card=(CardView)itemView.findViewById(R.id.card);
-            if (deletable){
-                delete.setVisibility(View.VISIBLE);
-            }
+            card=(LinearLayout) itemView.findViewById(R.id.card);
+
         }
         public void bindToMessage(final Post user){
 
             title.setText(user.getTitle());
             info.setText(user.getInfo());
-
-
-
             date.setText(user.getDate());
-
-
-            delete.setOnClickListener(new View.OnClickListener() {
+            card.setOnClickListener(new View.OnClickListener() {
                 @Override
-                public void onClick(View v) {
-                    DatabaseReference mDatabase=FirebaseDatabase.getInstance().getReference().child("post");
-                    mDatabase.child(user.getId()).setValue(null);
-                    Toast.makeText(v.getContext(),"Deleted",Toast.LENGTH_SHORT).show();}
+                public void onClick(View view) {
+                    // Toast.makeText(v.getContext(),user.getTitle(),Toast.LENGTH_LONG).show();
+                    Intent i=new Intent(view.getContext(),com.farm.ngo.farm.activity.postshowdetail.class);
+                    i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                    i.putExtra("post", (Serializable) user);
+                    view.getContext().startActivity(i);
+                }
             });
+
+
+
         }
 
     }

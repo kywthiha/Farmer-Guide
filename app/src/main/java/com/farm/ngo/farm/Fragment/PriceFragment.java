@@ -26,6 +26,7 @@ import com.farm.ngo.farm.Model.Crop;
 import com.farm.ngo.farm.R;
 import com.farm.ngo.farm.Service.AddCropDialog;
 import com.farm.ngo.farm.Utility.UiUtil;
+import com.farm.ngo.farm.db.CropDBHelper;
 import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -53,7 +54,7 @@ public class PriceFragment extends Fragment {
     List<String> items=new ArrayList<>();
     List<String> counts=new ArrayList<>();
     ArrayAdapter<String> adapter, countAdapter;
-    UsingSQLiteHelper helper;
+    CropDBHelper helper;
 
     private LinearLayoutCompat addCrop;
     private LinearLayout addLayout, cancelLayout;
@@ -159,7 +160,7 @@ public class PriceFragment extends Fragment {
         cropCount=(Spinner) view.findViewById(R.id.spinner_crop_count);
 
 
-        helper=new UsingSQLiteHelper(mContext);
+        helper=new CropDBHelper(mContext);
         if(!helper.isThereCrops()) {
             Log.i("crop","crp");
             helper.addCrops();
@@ -172,14 +173,14 @@ public class PriceFragment extends Fragment {
         dropdown.setSelection(0);
 
         //count
-        counts.add("1 tin");
-        counts.add("1 cup");
-        counts.add("1 pyi");
+        counts.add("၁ တင္း");
+        counts.add("၁ ပိႆာ");
+        counts.add("၂၄ ပိႆာ");
 
-        countAdapter=new ArrayAdapter<>(mContext,android.R.layout.simple_spinner_dropdown_item, counts);
+        countAdapter=new ArrayAdapter<>(mContext,R.layout.spinner_item, counts);
         cropCount.setAdapter(countAdapter);
 
-        adapter= new ArrayAdapter<>(mContext, android.R.layout.simple_spinner_dropdown_item, items);
+        adapter= new ArrayAdapter<>(mContext, R.layout.spinner_item, items);
 
         dropdown.setAdapter(adapter);
         dropdown.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {

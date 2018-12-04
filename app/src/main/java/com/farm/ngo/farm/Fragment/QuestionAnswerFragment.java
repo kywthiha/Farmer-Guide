@@ -97,7 +97,7 @@ public class QuestionAnswerFragment extends Fragment {
 
         //Reading User From SQLite database
         UsingSQLiteHelper helper = new UsingSQLiteHelper(mContext);
-        user = helper.getUser();
+        user = helper.getUser(getActivity());
         Log.i("user id",user.getId());
         swipeRefreshLayout=(SwipeRefreshLayout)view.findViewById(R.id.swiperefresh);
         show = (LinearLayoutCompat) view.findViewById(R.id.chooe_image_oe_camera);

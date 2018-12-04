@@ -3,7 +3,9 @@ package com.farm.ngo.farm.Adapter;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.Resources;
+import android.graphics.Color;
 import android.graphics.drawable.Drawable;
+import android.support.v7.widget.CardView;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,6 +14,9 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.resource.bitmap.RoundedCorners;
+import com.bumptech.glide.request.RequestOptions;
 import com.farm.ngo.farm.DataViewActivity;
 import com.farm.ngo.farm.Model.Data;
 import com.farm.ngo.farm.R;
@@ -49,14 +54,17 @@ public class CustomGridviewAdapter extends BaseAdapter {
 
     @Override
     public View getView(final int position, View convertView, ViewGroup parent) {
-        View view = LayoutInflater.from(mContext).inflate(R.layout.data_list_item, null);
+        View view = LayoutInflater.from(mContext).inflate(R.layout.data_list_item,parent,false);
 
         ImageView tech_image = (ImageView) view.findViewById(R.id.data_image);
         TextView data_title = (TextView) view.findViewById(R.id.data_title);
-
+        CardView cardView=(CardView)view.findViewById(R.id.cardview) ;
+        cardView.setBackgroundColor(Color.WHITE);
         Resources resources = mContext.getResources();
         data_title.setText(dataList.get(position).getTitle());
-        tech_image.setImageDrawable(getImage(dataList.get(position).getImage_url()));
+        Glide.with(mContext).load(getImage(dataList.get(position).getImage_url()))
+                .apply(new RequestOptions().transform(new RoundedCorners(20)))
+                .into(tech_image);
         view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -74,9 +82,6 @@ public class CustomGridviewAdapter extends BaseAdapter {
         if(resourceId==0){
             resourceId=resources.getIdentifier("f","drawable",mContext.getPackageName());
         }
-        Log.i("image id",name);
-        Log.i("image id",resourceId+"");
-        Log.i("image id",resources.toString());
         return resources.getDrawable(resourceId);
     }
 }

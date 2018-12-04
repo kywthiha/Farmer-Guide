@@ -593,6 +593,7 @@ color switch_thumb_normal_material_light
 color text_color
 color tooltip_background_dark
 color tooltip_background_light
+color white_color
 color yso_color
 dimen abc_action_bar_content_inset_material
 dimen abc_action_bar_content_inset_with_nav
@@ -843,6 +844,7 @@ drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable add_image
 drawable ap
+drawable arrow_back
 drawable avd_hide_password
 drawable avd_show_password
 drawable b
@@ -850,6 +852,7 @@ drawable background_image
 drawable bg_new_stock
 drawable bmp
 drawable book
+drawable borderedit
 drawable btn_nav_background
 drawable c
 drawable chat_loading_before
@@ -883,17 +886,20 @@ drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
 drawable direct
+drawable doa
 drawable e
 drawable edit_crop
 drawable et
 drawable f
 drawable farmer_logo
+drawable forcardviewradius
 drawable g
 drawable gender
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable ground_crop
 drawable h
+drawable home
 drawable ic_arrow_back_black_24dp
 drawable ic_assignment_black_24dp
 drawable ic_camera_alt
@@ -906,6 +912,7 @@ drawable ic_insert_photo
 drawable ic_launcher_background
 drawable ic_menu
 drawable ic_more_horiz_black_24dp
+drawable ic_navigate_next_black_24dp
 drawable ic_person_black_24dp
 drawable ic_phone_black_24dp
 drawable ic_save_black_24dp
@@ -920,6 +927,8 @@ drawable ix
 drawable j
 drawable kyaelpat
 drawable loading
+drawable loginbackground
+drawable loginbackground1
 drawable moesetwine
 drawable my_message
 drawable name
@@ -943,6 +952,8 @@ drawable other_vagetables
 drawable paddy
 drawable phone_call_admin
 drawable profileboy
+drawable profileedittext
+drawable profilegirl
 drawable qa
 drawable rice
 drawable ricee
@@ -958,6 +969,7 @@ drawable tooltip_frame_light
 drawable uscpkku_logo
 drawable v
 drawable vagetables
+drawable verify_code_loading
 drawable vi
 drawable vii
 drawable viii
@@ -1008,6 +1020,8 @@ id add_admin_cancel
 id add_btn
 id add_crop_add
 id add_crop_cancel
+id addressl
+id addressl2
 id adjust_height
 id adjust_width
 id admin_pager
@@ -1024,11 +1038,13 @@ id bottom
 id bottom_sheet
 id bottomnavigation
 id boy
+id btn
 id btnContinue
+id btnNext
+id btnSignOut
 id btn_add_admin
 id btn_crop_delete
 id btn_crop_edit
-id btn_edit
 id btn_save
 id btn_send
 id buttonPanel
@@ -1036,6 +1052,7 @@ id buttonResend
 id buttonVerifyPhone
 id cancel_action
 id card
+id cardview
 id center
 id center_horizontal
 id center_vertical
@@ -1047,6 +1064,7 @@ id chooe_image_oe_camera
 id chronometer
 id clip_horizontal
 id clip_vertical
+id cmy
 id code_send
 id code_verify
 id collapseActionView
@@ -1054,9 +1072,12 @@ id container
 id contentPanel
 id coordinator
 id cp
+id cpku
+id cpuk
 id current_temperature_field
 id custom
 id customPanel
+id cyso
 id dark
 id data_body
 id data_image
@@ -1076,6 +1097,7 @@ id dimensions
 id direct
 id disableHome
 id drawer_layout
+id eaddress
 id editText
 id edit_query
 id editlayout
@@ -1090,6 +1112,7 @@ id edt_edit_crop_save
 id edt_gender
 id edt_name
 id edt_work
+id eimg
 id ename
 id end
 id end_padder
@@ -1099,7 +1122,6 @@ id ework
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
-id farmfruit
 id farmfruit2
 id fieldPhoneNumber
 id fieldVerificationCode
@@ -1156,6 +1178,7 @@ id list_item
 id log_out
 id logo
 id main_home
+id main_layout
 id masked
 id media_actions
 id message
@@ -1199,6 +1222,7 @@ id percent
 id pg_old_chat
 id phicon2
 id phnol2
+id phone
 id phoneCall
 id pin
 id postRecyclerview
@@ -1242,7 +1266,11 @@ id shortcut
 id showCustom
 id showHome
 id showTitle
+id showaddress
+id showgender
 id showlayout
+id showname
+id showwork
 id smallLabel
 id snackbar_action
 id snackbar_text
@@ -1312,11 +1340,8 @@ id txt_crop_count
 id txt_crop_name
 id txt_crop_price
 id txt_edt_crop_name
-id txt_gender
 id txt_lbl_you
-id txt_name
 id txt_phno
-id txt_wor
 id ucspkku_title
 id uniform
 id up
@@ -1330,6 +1355,7 @@ id user_township
 id username
 id userphonenumber
 id usertownship
+id verify_code
 id view_offset_helper
 id view_pager
 id visible
@@ -1384,7 +1410,9 @@ layout activity_login
 layout activity_main
 layout activity_message_view
 layout activity_new_post
+layout activity_phonecall
 layout activity_post
+layout activity_post_show_admin
 layout activity_show_detail
 layout activity_showdetail
 layout activity_splash_screen
@@ -1425,6 +1453,7 @@ layout fragment_profile
 layout fragment_question_answer
 layout image_preview
 layout includeimage
+layout main_activity
 layout my_image
 layout my_message
 layout nav_header_layout
@@ -1446,12 +1475,17 @@ layout notification_template_media_custom
 layout notification_template_part_chronometer
 layout notification_template_part_time
 layout phone_no_fragment
+layout phone_no_view
 layout phoneno_verify_view
+layout post_item_admin
+layout post_item_admin_image
 layout post_showdetail
+layout post_showdetail_admin
 layout register_view
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
+layout singin_success
 layout spinner_item
 layout stock_item
 layout support_simple_spinner_dropdown_item
@@ -1516,7 +1550,9 @@ string common_google_play_services_wear_update_text
 string common_open_on_phone
 string common_signin_button_text
 string common_signin_button_text_long
+string count
 string default_web_client_id
+string errr_info
 string firebase_database_url
 string gcm_defaultSenderId
 string google_api_key
@@ -1525,6 +1561,8 @@ string google_crash_reporting_api_key
 string google_storage_bucket
 string hello_blank_fragment
 string instant_validation
+string message_enter_phone
+string message_warn
 string open_weather_maps_app_id
 string otherfruit
 string password_toggle_content_description
@@ -1535,13 +1573,20 @@ string path_password_strike_through
 string phone_call
 string place_not_found
 string pref_previously_started
+string price
 string project_id
 string read_less
 string read_more
+string resend_verify_code
 string search_menu_title
 string showmore
 string status_bar_notification_info_overflow
 string title_activity_showdesign
+string too_many_request
+string type
+string user_id_checking
+string verify_code_error
+string verify_code_send_wating
 string weather_clear_night
 string weather_cloudy
 string weather_drizzle
@@ -1551,6 +1596,7 @@ string weather_snowy
 string weather_sunny
 string weather_thunder
 string weathertitle
+string welcome
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog

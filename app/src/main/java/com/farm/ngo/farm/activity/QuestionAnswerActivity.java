@@ -5,6 +5,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
+import android.graphics.Color;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.provider.MediaStore;
@@ -46,6 +48,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ServerValue;
 import com.farm.ngo.farm.Adapter.MessageAdapter;
+
 import java.io.File;
 import java.io.IOException;
 import java.util.LinkedList;
@@ -56,22 +59,24 @@ public class QuestionAnswerActivity extends AppCompatActivity {
     private RecyclerView recy;
     LinearLayoutManager ly;
     EditText editText;
-    private static final int showItem=20;
-    int itempos=0;
+    private static final int showItem = 20;
+    int itempos = 0;
     SwipeRefreshLayout swipeRefreshLayout;
-    private static String lastitem="";
+    private static String lastitem = "";
     private MessageAdapter mAdapter;
-    ImageButton choose_iamge_or_camera, openCamera,addImage;
+    ImageButton choose_iamge_or_camera, openCamera, addImage;
     LinearLayoutCompat show;
-    boolean moreItem=true;
+    boolean moreItem = true;
     //user
     User user;
     private static final String TAG = "Storage#MainActivity";
     private static final String KEY_FILE_URI = "key_file_uri";
     private static final int RC_TAKE_PICTURE = 101;
     private static final int CAMERA_REQUEST = 893;
-    private static final int CAMERA_PER_REQUEST=342;
-    private static final int STORAGE_PER_REQUEST=3478;
+    private static final int CAMERA_PER_REQUEST = 342;
+    private static final int STORAGE_PER_REQUEST = 3478;
+    private static final int PHONE_PER_REQUEST = 252;
+    String phone_number = null;
     private LinkedList<Message> messages = new LinkedList<>();
     private LinkedList<String> messagesId = new LinkedList<>();
     //End
@@ -80,20 +85,42 @@ public class QuestionAnswerActivity extends AppCompatActivity {
     private Context mContext;
     private Firebase mFirebase;
 
+    private void phonecallAction(String phone) {
+        Intent callIntent = new Intent(Intent.ACTION_CALL);
+        callIntent.setData(Uri.parse("tel:" + phone));
+
+        if (ActivityCompat.checkSelfPermission(QuestionAnswerActivity.this,
+                Manifest.permission.CALL_PHONE) == PackageManager.PERMISSION_GRANTED) {
+            startActivity(callIntent);
+        } else {
+            if (ActivityCompat.shouldShowRequestPermissionRationale(this,
+                    Manifest.permission.CALL_PHONE)) {
+                Toast.makeText(getApplicationContext(), "Call Phone permension is needed to call", Toast.LENGTH_SHORT).show();
+
+            }
+
+            ActivityCompat.requestPermissions(this,
+                    new String[]{Manifest.permission.CALL_PHONE},
+                    PHONE_PER_REQUEST);
+
+        }
+
+    }
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        if(item.getItemId()==android.R.id.home)
+        if (item.getItemId() == android.R.id.home)
             finish();
-        else
-        if(item.getItemId()==R.id.phoneCall){
-            Toast.makeText(this,"phone call",Toast.LENGTH_LONG).show();
+        else if (item.getItemId() == R.id.phoneCall) {
+           Intent i=new Intent(this,com.farm.ngo.farm.phonecall.class);
+           startActivity(i);
         }
         return super.onOptionsItemSelected(item);
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.phone_nav,menu);
+        getMenuInflater().inflate(R.menu.phone_nav, menu);
         return true;
     }
 
@@ -101,7 +128,7 @@ public class QuestionAnswerActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         // Inflate the layout for this fragment
-        mContext=getApplicationContext();
+        mContext = getApplicationContext();
         setContentView(R.layout.admin_question_answer);
         FirebaseApp.initializeApp(getApplicationContext());
         Firebase.setAndroidContext(getApplicationContext());
@@ -110,21 +137,25 @@ public class QuestionAnswerActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        toolbar.setTitleTextColor(Color.WHITE);
+        toolbar.setSubtitleTextColor(Color.WHITE);
 
         //get user data from chat34
-        user=(User)getIntent().getSerializableExtra("user") ;
+        user = (User) getIntent().getSerializableExtra("user");
+        String phone_no = getIntent().getStringExtra("phone_number");
+        this.phone_number = phone_no;
         getSupportActionBar().setTitle(user.getName());
+
 
         //set message to seen
 //        ChatStatic.getChatRef(getApplicationContext()).child(user.getId()).child("seen").setValue(true);
 
 
-
         //Reading User From SQLite database
-        swipeRefreshLayout=(SwipeRefreshLayout)findViewById(R.id.swiperefresh);
+        swipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.swiperefresh);
         show = (LinearLayoutCompat) findViewById(R.id.chooe_image_oe_camera);
         choose_iamge_or_camera = (ImageButton) findViewById(R.id.add_btn);
-        openCamera = (ImageButton)findViewById(R.id.openCamera);
+        openCamera = (ImageButton) findViewById(R.id.openCamera);
         addImage = (ImageButton) findViewById(R.id.addImage);
         choose_iamge_or_camera.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -152,7 +183,7 @@ public class QuestionAnswerActivity extends AppCompatActivity {
                 btnAddImage(v);
             }
         });
-        recy = (RecyclerView)findViewById(R.id.messages_view);
+        recy = (RecyclerView) findViewById(R.id.messages_view);
         editText = (EditText) findViewById(R.id.editText);
         ly = new LinearLayoutManager(mContext);
         mAdapter = new MessageAdapter(this, messages);
@@ -174,7 +205,7 @@ public class QuestionAnswerActivity extends AppCompatActivity {
         swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
             public void onRefresh() {
-                itempos=0;
+                itempos = 0;
                 loadMoreData();
 
             }
@@ -190,7 +221,7 @@ public class QuestionAnswerActivity extends AppCompatActivity {
                 try {
                     final File actualImage = FileUtil.from(getApplicationContext(), data.getData());
 
-                    ImageUtil imgu = new ImageUtil(actualImage,this, user,false);
+                    ImageUtil imgu = new ImageUtil(actualImage, this, user, false);
                     imgu.uploadImage();
 //                    AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
 //                    builder.setMessage("Are you sure want to send this photo");
@@ -218,8 +249,8 @@ public class QuestionAnswerActivity extends AppCompatActivity {
             }
         } else if (requestCode == CAMERA_REQUEST) {
             if (resultCode == RESULT_OK) {
-                final Image image=new Image((Bitmap)data.getExtras().get("data"),user);
-                new ImageUpload(this,false).execute(image);
+                final Image image = new Image((Bitmap) data.getExtras().get("data"), user);
+                new ImageUpload(this, false).execute(image);
 //                AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
 //                builder.setMessage("Are you sure want to send this photo");
 //                builder.setPositiveButton("SEND", new DialogInterface.OnClickListener() {
@@ -262,16 +293,42 @@ public class QuestionAnswerActivity extends AppCompatActivity {
             case CAMERA_PER_REQUEST: {
                 // If request is cancelled, the result arrays are empty.
                 if (grantResults.length > 0
-                        && grantResults[0] == PackageManager.PERMISSION_GRANTED &&  grantResults[1] == PackageManager.PERMISSION_GRANTED && grantResults[2] == PackageManager.PERMISSION_GRANTED ) {
+                        && grantResults[0] == PackageManager.PERMISSION_GRANTED && grantResults[1] == PackageManager.PERMISSION_GRANTED && grantResults[2] == PackageManager.PERMISSION_GRANTED) {
                     // Permission is granted
                     Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
                     startActivityForResult(intent, CAMERA_REQUEST);
+
                 } else {
                     // permission denied, boo! Disable the
                     // functionality that depends on this permission.
                 }
                 return;
             }
+            case PHONE_PER_REQUEST: {
+                if (grantResults.length > 0
+                        && grantResults[0] == PackageManager.PERMISSION_GRANTED && grantResults[1] == PackageManager.PERMISSION_GRANTED) {
+                    // Permission is granted
+                    Intent callIntent = new Intent(Intent.ACTION_CALL);
+                    callIntent.setData(Uri.parse("tel:" + phone_number));
+                    if (ActivityCompat.checkSelfPermission(this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
+                        // TODO: Consider calling
+                        //    ActivityCompat#requestPermissions
+                        // here to request the missing permissions, and then overriding
+                        //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+                        //                                          int[] grantResults)
+                        // to handle the case where the user grants the permission. See the documentation
+                        // for ActivityCompat#requestPermissions for more details.
+                        return;
+                    }
+                    startActivity(callIntent);
+
+                } else {
+                    // permission denied, boo! Disable the
+                    // functionality that depends on this permission.
+                }
+                return;
+            }
+
 
             // other 'case' lines to check for other
             // permissions this app might request.

@@ -5,15 +5,20 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <android.support.v7.widget.CardView
+        app:cardCornerRadius="10dp"
+        android:id="@+id/cardview"
         android:layout_weight="1"
+        android:layout_margin="5dp"
         android:layout_width="match_parent"
-        android:layout_margin="8dp"
         android:layout_height="150dp"
-        app:cardCornerRadius="5dp">
+
+        >
         <RelativeLayout
             android:layout_margin="8dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+
+            >
             <ImageView
                 android:id="@+id/data_image"
                 android:layout_width="match_parent"
@@ -31,7 +36,8 @@
                 android:textAlignment="center"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textStyle="bold"/>
+                android:textStyle="bold"
+                android:textColor="#808080"/>
         </RelativeLayout>
     </android.support.v7.widget.CardView>
 </RelativeLayout>

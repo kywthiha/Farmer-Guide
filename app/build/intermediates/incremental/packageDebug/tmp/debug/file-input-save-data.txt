@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Tue Dec 04 02:37:27 MMT 2018
+#Wed Dec 05 01:45:41 MMT 2018
 2.base=/home/kyaw/Desktop/Farm/app/build/intermediates/transforms/dexMerger/debug/1
 0.path=other_crop.json
 2.baseType=DIRECTORY

@@ -43,7 +43,7 @@ public class NewsFragment extends Fragment {
     public NewsFragment(Context context, boolean visible) {
         // Required empty public constructor
         this.mContext = context;
-        this.visible = visible;
+        this.visible = false;
     }
 
 

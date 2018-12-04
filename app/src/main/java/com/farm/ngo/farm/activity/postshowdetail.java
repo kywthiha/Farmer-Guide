@@ -17,6 +17,7 @@ public class postshowdetail extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         setContentView(R.layout.post_showdetail);
         Intent i=getIntent();
         Post u=(Post)i.getSerializableExtra("post");

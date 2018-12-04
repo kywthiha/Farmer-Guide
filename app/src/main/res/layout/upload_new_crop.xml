@@ -14,6 +14,7 @@
 
 
     <LinearLayout
+        android:background="@color/material_green_500"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
@@ -27,11 +28,13 @@
             android:orientation="horizontal">
 
             <TextView
+
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="Crop Name" />
+                android:text="Crop Name"
+                android:textColor="@android:color/white" />
 
             <Spinner
                 android:id="@+id/spinner_crops"
@@ -55,7 +58,8 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="Count" />
+                android:text="Count"
+                android:textColor="@android:color/white" />
 
             <Spinner
                 android:id="@+id/spinner_crop_count"
@@ -78,7 +82,8 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="Crop Price" />
+                android:text="Crop Price"
+                android:textColor="@android:color/white" />
 
             <EditText
                 android:id="@+id/edt_crop_price"
@@ -89,7 +94,8 @@
                 android:ems="10"
                 android:gravity="center"
                 android:hint="enter price"
-                android:inputType="number" />
+                android:inputType="number"
+                android:textColor="@android:color/white" />
         </LinearLayout>
     </LinearLayout>
 

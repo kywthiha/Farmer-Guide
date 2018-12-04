@@ -14,6 +14,7 @@ import android.view.MenuItem;
 import android.view.View;
 
 import com.farm.ngo.farm.Fragment.AdminFragment;
+import com.farm.ngo.farm.Fragment.AdminNewsFragment;
 import com.farm.ngo.farm.Fragment.ConversationFragment;
 import com.farm.ngo.farm.Fragment.NewsFragment;
 import com.farm.ngo.farm.Fragment.PriceFragment;
@@ -22,6 +23,7 @@ public class AdminActivity extends AppCompatActivity {
 
     DrawerLayout drawerLayout;
     private FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+    public static NavigationView navView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,7 +45,7 @@ public class AdminActivity extends AppCompatActivity {
         getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_dehaze_black_24dp);
         drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
 
-        final NavigationView navView = (NavigationView) findViewById(R.id.nav_view);
+        navView = (NavigationView) findViewById(R.id.nav_view);
 
         navView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -64,7 +66,7 @@ public class AdminActivity extends AppCompatActivity {
                     case R.id.nav_post:
                         setTitle("Post");
                         FragmentTransaction ntransaction = getSupportFragmentManager().beginTransaction();
-                        NewsFragment nFragment = new NewsFragment(getApplicationContext(), true);
+                        AdminNewsFragment nFragment = new AdminNewsFragment();
                         ntransaction.replace(R.id.admin_pager, nFragment);
                         ntransaction.commit();
                         break;

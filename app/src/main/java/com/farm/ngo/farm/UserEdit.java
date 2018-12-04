@@ -39,7 +39,7 @@ public class UserEdit extends AppCompatActivity {
 
         //get user
         final UsingSQLiteHelper helper = new UsingSQLiteHelper(getApplicationContext());
-        user = helper.getUser();
+        user = helper.getUser(this);
         database= FirebaseDatabase.getInstance().getReference().child("users").child(user.getId());
 
 

@@ -2,15 +2,19 @@ package com.farm.ngo.farm.Holder;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.support.annotation.Nullable;
 import android.util.Log;
-
+import com.google.firebase.auth.FirebaseAuth;
+import com.farm.ngo.farm.MainActivity;
 import com.farm.ngo.farm.Model.Data;
 import com.farm.ngo.farm.Model.User;
+import com.farm.ngo.farm.preference_help.Helper;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -21,6 +25,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class UsingSQLiteHelper extends SQLiteOpenHelper {
+    public static final String username="fjsoijf9oej9ur90wur3489038";
+    public static final String userid="0u903u90ruvklknxlkcnvlk";
+    public static final String township="fjskfj0u9u90u90u90werjwjkla";
+    public static FirebaseAuth firebaseAuth;
 
     private static String DB_PATH = "";
 
@@ -161,18 +169,18 @@ public class UsingSQLiteHelper extends SQLiteOpenHelper {
 //        db.insert(TABLE_NAME, null, values);
 //    }
 
-    public User getUser() {
-       // SQLiteDatabase db = getWritableDatabase();
+    public static User getUser(Context mContext) {
         User user = null;
-//        /*Cursor cursor = db.rawQuery("select * from " + TABLE_NAME, null);
-//        cursor.moveToFirst();*/
+        firebaseAuth=FirebaseAuth.getInstance();
+        SharedPreferences preferences = mContext.getSharedPreferences(userid, mContext.MODE_PRIVATE);
+        if(!preferences.getString("token","").equals("") && firebaseAuth.getCurrentUser()!=null){
+            Helper helper=new Helper(mContext);
+            String id=helper.decryptAndGetPassword(userid);
+            String name=helper.decryptAndGetPassword(username);
+            String usertownship=helper.decryptAndGetPassword(township);
+            user= new User(id,name,"","",usertownship);
+        }
 
-        user = new User("+959778673750","mg mg", "",
-              "dsf", "Farmer","male","myaing");
-      /*  while (cursor.moveToNext()){
-            user = new User(cursor.getString(0), cursor.getString(1), cursor.getString(2),
-                    cursor.getString(3), cursor.getString(4), cursor.getString(5),cursor.getString(6));
-        }*/
         return user;
     }
 
