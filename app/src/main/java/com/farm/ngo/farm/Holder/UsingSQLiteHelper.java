@@ -28,6 +28,9 @@ public class UsingSQLiteHelper extends SQLiteOpenHelper {
     public static final String username="fjsoijf9oej9ur90wur3489038";
     public static final String userid="0u903u90ruvklknxlkcnvlk";
     public static final String township="fjskfj0u9u90u90u90werjwjkla";
+    public static final String work="work345";
+    public static final String gender="kegigender";
+    public static final String address="kfjskjf";
     public static FirebaseAuth firebaseAuth;
 
     private static String DB_PATH = "";
@@ -178,10 +181,23 @@ public class UsingSQLiteHelper extends SQLiteOpenHelper {
             String id=helper.decryptAndGetPassword(userid);
             String name=helper.decryptAndGetPassword(username);
             String usertownship=helper.decryptAndGetPassword(township);
-            user= new User(id,name,"","",usertownship);
+            String userwork=helper.decryptAndGetPassword(work);
+            String usergender=helper.decryptAndGetPassword(gender);
+            String useraddress=helper.decryptAndGetPassword(address);
+            user= new User(id,name,useraddress,"",userwork,usergender,usertownship);
         }
 
         return user;
+    }
+    public static void saveUserProfile(Context mContext,User user){
+
+        Helper helper=new Helper(mContext);
+        helper.encryptAndStorePassword(username,user.getName());
+        helper. encryptAndStorePassword(userid,user.getId());
+        helper. encryptAndStorePassword(township,user.getTownship());
+        helper.encryptAndStorePassword(work,user.getWork());
+        helper.encryptAndStorePassword(address,user.getAddress());
+        helper.encryptAndStorePassword(gender,user.getGender());
     }
 
     public List<String> getCrops(){

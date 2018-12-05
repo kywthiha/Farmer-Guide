@@ -23,11 +23,15 @@ import com.farm.ngo.farm.Holder.UsingSQLiteHelper;
 import com.farm.ngo.farm.LoginActivity;
 import com.farm.ngo.farm.Model.User;
 import com.farm.ngo.farm.R;
+import com.farm.ngo.farm.auth.ui.RegisterView;
 import com.farm.ngo.farm.preference_help.Helper;
 import com.google.firebase.auth.FirebaseAuth;
 import com.farm.ngo.farm.UserEdit;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 
 /**
@@ -47,6 +51,7 @@ public class ProfileFragment extends Fragment {
     TextView phoneView;
     TextView btn;
     ImageView profilepicture,eimg;
+    User trmpuser;
 
     public ProfileFragment(Context context) {
         // Required empty public constructor
@@ -75,20 +80,25 @@ public class ProfileFragment extends Fragment {
         profilepicture=(ImageView)view.findViewById(R.id.profilepicture);
         eimg=(ImageView)view.findViewById(R.id.eimg);
         phoneView=(TextView)view.findViewById(R.id.phone);
-     final   User u=UsingSQLiteHelper.getUser(getActivity());
-        final DatabaseReference databaseuser=FirebaseDatabase.getInstance().getReference().child("users").child(u.getId());
-        final String name = u.getName();
-        phoneView.setText(u.getId());
-        user=Helper.getUserProfile(this.getActivity());
-        showname.setText(name);
-        if(user.getWork()!=null) {
-            showwork.setText(user.getWork());
-        }
-        if(user.getGender()!=null)
-        showgender.setText(user.getGender());
+      trmpuser=UsingSQLiteHelper.getUser(getActivity());
 
-        if(user.getAddress()!=null )
-        showaddress.setText(user.getAddress());
+      final String name = trmpuser.getName();
+      phoneView.setText(trmpuser.getId());
+      showname.setText(name);
+      if(trmpuser.getWork()!=null) {
+                        showwork.setText(trmpuser.getWork());
+                    }
+                    if(trmpuser.getGender()!=null)
+                        showgender.setText(trmpuser.getGender());
+
+                    if(trmpuser.getTownship()!=null )
+                        showaddress.setText(trmpuser.getTownship());
+
+
+
+
+
+
 
 
 
@@ -131,14 +141,8 @@ public class ProfileFragment extends Fragment {
                     }
                     btn.setText("Edit");
                     eimg.setImageResource(R.drawable.edit_crop);
-                    User userpro=null;
-                    userpro=new User(u.getId(),showname.getText().toString(),showaddress.getText().toString(),"",showwork.getText().toString(),showgender.getText().toString(),u.getTownship());
-                    databaseuser.setValue(userpro);
-                    RefStatic.chatRef.child(u.getTownship()).child(u.getId()).child("username").setValue(showname.getText().toString());
-                    Helper helper=new Helper(getActivity());
-                    Helper.saveUserProfile(getActivity(),userpro);
-                    helper.encryptAndStorePassword("fjsoijf9oej9ur90wur3489038",showname.getText().toString());
-
+//                    User userpro=new User(trmpuser.getId(),showname.getText().toString(),showaddress.getText().toString(),"",showwork.getText().toString(),showgender.getText().toString(),trmpuser.getTownship());
+//                    databaseuser.child(trmpuser.getId()).setValue(userpro);
                 }
 
             }

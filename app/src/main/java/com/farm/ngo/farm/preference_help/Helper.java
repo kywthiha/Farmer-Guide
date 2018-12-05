@@ -31,14 +31,7 @@ public class Helper {
     public Helper(Context mContext){
         this.mContext=mContext;
     }
-    public static void saveUserProfile(Context mContext,User user){
-        SharedPreferences.Editor editor = mContext.getSharedPreferences("profile", mContext.MODE_PRIVATE).edit();
-        editor.putString("work",user.getWork());
-        editor.putString("gender",user.getGender());
-        editor.putString("address",user.getAddress());
-        editor.commit();
-    }
-    public static User getUserProfile(Context mContext){
+    public static User getUserProfitle(Context mContext){
         SharedPreferences prefs = mContext.getSharedPreferences("profile", mContext.MODE_PRIVATE);
         String work=prefs.getString("work","");
         String gender=prefs.getString("gender","");

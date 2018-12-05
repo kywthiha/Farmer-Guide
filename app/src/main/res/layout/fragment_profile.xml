@@ -15,6 +15,7 @@
         android:orientation="vertical"
         android:paddingTop="15dp">
         <RelativeLayout
+            android:visibility="gone"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
@@ -91,6 +92,7 @@
                 android:textColor="@color/colorPrimary"/>
         </LinearLayout>
         <LinearLayout
+            android:visibility="gone"
 
             android:id="@+id/workl"
             android:layout_marginLeft="10dp"
@@ -116,6 +118,7 @@
                 android:textColor="@color/colorPrimary"/>
         </LinearLayout>
         <LinearLayout
+            android:visibility="gone"
             android:id="@+id/genderl"
             android:layout_marginBottom="10dp"
             android:layout_marginLeft="10dp"
