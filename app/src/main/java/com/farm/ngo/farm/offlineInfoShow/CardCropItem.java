@@ -1,4 +1,4 @@
-package com.farm.ngo.farm.Holder;
+package com.farm.ngo.farm.offlineInfoShow;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.View;

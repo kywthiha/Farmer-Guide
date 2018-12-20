@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
-    android:background="@drawable/loginbackground"
     android:paddingTop="40dp"
     android:paddingLeft="50dp"
     android:paddingRight="50dp"
@@ -8,8 +7,9 @@
     android:layout_height="match_parent">
 
         <TextView
-            android:layout_marginTop="20dp"
             android:layout_above="@+id/username"
+            android:textSize="18sp"
+            android:scaleX="1.15"
             android:text="Registeration"
             android:textAlignment="center"
             android:id="@+id/userphonenumber"
@@ -18,7 +18,7 @@
 
         <EditText
             android:layout_above="@+id/usertownship"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="90dp"
             android:hint="Enter a name"
             android:id="@+id/username"
             android:layout_width="match_parent"
@@ -26,8 +26,7 @@
 
         <Spinner
             android:layout_centerInParent="true"
-            android:layout_above="@+id/btnContinue"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="40dp"
             android:padding="5dp"
             android:entries="@array/township_list"
             android:layout_width="match_parent"
@@ -35,12 +34,12 @@
             android:layout_height="wrap_content" />
 
         <Button
-            android:layout_centerInParent="true"
+            android:layout_below="@+id/usertownship"
             android:background="@color/colorPrimary"
             android:textColor="#fff"
             android:drawableRight="@drawable/ic_navigate_next_black_24dp"
             android:id="@+id/btnContinue"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="50dp"
             android:text="Continue"
             android:onClick="StarChat"
             android:layout_width="match_parent"

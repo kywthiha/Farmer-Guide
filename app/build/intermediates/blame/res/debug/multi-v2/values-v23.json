@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/kyaw/Desktop/Farm/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v23/values-v23.xml",
+            "outputFile": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v23/values-v23.xml",
             "map": [
                 {
                     "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.1.0.aar/f8bcc1df311fca3bbde82f05acb21b7a/res/values-v23/values-v23.xml",

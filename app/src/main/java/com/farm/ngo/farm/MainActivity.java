@@ -1,5 +1,6 @@
 package com.farm.ngo.farm;
 
+import android.graphics.Color;
 import android.support.annotation.NonNull;
 import android.support.design.internal.BottomNavigationMenu;
 import android.support.design.widget.BottomNavigationView;
@@ -9,6 +10,7 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -43,7 +45,6 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         btnNavView = (BottomNavigationView) findViewById(R.id.bottomnavigation);
         btnNavView.setOnNavigationItemSelectedListener(this);
         HomeFragment homeFragment = new HomeFragment(getApplicationContext(), R.id.view_pager);

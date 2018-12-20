@@ -38,6 +38,7 @@ import com.farm.ngo.farm.R;
 import com.farm.ngo.farm.Service.ChatHelper;
 import com.farm.ngo.farm.Utility.FileUtil;
 import com.farm.ngo.farm.Utility.ImageUtil;
+import com.farm.ngo.farm.auth.ui.UserLoginActivity;
 import com.firebase.client.Firebase;
 import com.google.firebase.FirebaseApp;
 import com.google.firebase.database.ChildEventListener;
@@ -130,6 +131,18 @@ public class QuestionAnswerActivity extends AppCompatActivity {
         // Inflate the layout for this fragment
         mContext = getApplicationContext();
         setContentView(R.layout.admin_question_answer);
+        try {
+            user = (User) getIntent().getSerializableExtra("user");
+
+        }catch (Exception er){
+            user=null;
+        }
+        if(user==null){
+            Toast.makeText(this,"hello",Toast.LENGTH_LONG).show();
+            Intent in=new Intent(getApplicationContext(),UserLoginActivity.class);
+            startActivity(in);
+
+        }
         FirebaseApp.initializeApp(getApplicationContext());
         Firebase.setAndroidContext(getApplicationContext());
 
@@ -141,9 +154,8 @@ public class QuestionAnswerActivity extends AppCompatActivity {
         toolbar.setSubtitleTextColor(Color.WHITE);
 
         //get user data from chat34
-        user = (User) getIntent().getSerializableExtra("user");
-        String phone_no = getIntent().getStringExtra("phone_number");
-        this.phone_number = phone_no;
+
+        this.phone_number = user.getId();
         getSupportActionBar().setTitle(user.getName());
 
 

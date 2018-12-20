@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/kyaw/Desktop/Farm/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v24/values-v24.xml",
+            "outputFile": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v24/values-v24.xml",
             "map": [
                 {
                     "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.0.aar/905f1b4b7f88d9bea9efe8b89248dd32/res/values-v24/values-v24.xml",

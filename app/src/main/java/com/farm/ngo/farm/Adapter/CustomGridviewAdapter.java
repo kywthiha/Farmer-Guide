@@ -62,9 +62,7 @@ public class CustomGridviewAdapter extends BaseAdapter {
         cardView.setBackgroundColor(Color.WHITE);
         Resources resources = mContext.getResources();
         data_title.setText(dataList.get(position).getTitle());
-        Glide.with(mContext).load(getImage(dataList.get(position).getImage_url()))
-                .apply(new RequestOptions().transform(new RoundedCorners(20)))
-                .into(tech_image);
+        tech_image.setImageResource(getImage(dataList.get(position).getImage_url()));
         view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -76,12 +74,12 @@ public class CustomGridviewAdapter extends BaseAdapter {
         });
         return view;
     }
-    public Drawable getImage(String name){
+    public int getImage(String name){
         Resources resources=mContext.getResources();
         int resourceId=resources.getIdentifier(name,"drawable",mContext.getPackageName());
         if(resourceId==0){
             resourceId=resources.getIdentifier("f","drawable",mContext.getPackageName());
         }
-        return resources.getDrawable(resourceId);
+        return resourceId;
     }
 }

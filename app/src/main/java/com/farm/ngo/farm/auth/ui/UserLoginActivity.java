@@ -10,6 +10,7 @@ import com.farm.ngo.farm.Holder.*;
 import com.farm.ngo.farm.MainActivity;
 import com.farm.ngo.farm.Model.User;
 import com.farm.ngo.farm.R;
+import com.farm.ngo.farm.activity.QuestionAnswerActivity;
 import com.farm.ngo.farm.preference_help.Helper;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -59,10 +60,12 @@ public class UserLoginActivity extends FragmentActivity implements PhoneNoView.B
                     progressDialog.dismiss();
                     User user=dataSnapshot.getValue(User.class);
                     savePreferences(user);
-                    Intent in=new Intent(UserLoginActivity.this,MainActivity.class);
+                    Intent in=new Intent(getApplicationContext(),QuestionAnswerActivity.class);
                     in.putExtra("user",user);
                     startActivity(in);
                     finish();
+
+
                 }else {
                     userExists=false;
                         progressDialog.dismiss();
@@ -88,7 +91,7 @@ public class UserLoginActivity extends FragmentActivity implements PhoneNoView.B
         super.onStart();
         User user= UsingSQLiteHelper.getUser(this);
         if(user!=null){
-            Intent in=new Intent(getApplicationContext(),MainActivity.class);
+            Intent in=new Intent(getApplicationContext(),QuestionAnswerActivity.class);
             in.putExtra("user",user);
             startActivity(in);
             this.finish();

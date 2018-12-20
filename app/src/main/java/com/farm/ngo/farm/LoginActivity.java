@@ -60,62 +60,13 @@ public class LoginActivity extends AppCompatActivity implements PhoneNoView.Butt
             startActivity(intent);
             finish();
         }
-        //To set up database
+
         helper = new UsingSQLiteHelper(getApplicationContext());
-//        try {
-//          helper.createDataBase();
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
+
         fragmentManager = getSupportFragmentManager();
         PhoneNoView phoneNoView = new PhoneNoView();
         fragmentManager.beginTransaction().add(R.id.pager_fragment, phoneNoView).commit();
 
-        //ending setu up database
-
-
-//        firebaseAuth = FirebaseAuth.getInstance();
-//        firebaseAuth.signOut();
-//        helper = new UsingSQLiteHelper(getApplicationContext());
-//
-//        try {
-//            helper.createDataBase();
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
-//        userID = (EditText) findViewById(R.id.user_id);
-//        userName = (EditText) findViewById(R.id.user_name);
-//        userTownship = (EditText) findViewById(R.id.user_township);
-//        userLogin = (Button) findViewById(R.id.user_login);
-//        firebaseDatabase.addValueEventListener(new ValueEventListener() {
-//            @Override
-//            public void onDataChange(DataSnapshot dataSnapshot) {
-//                user_ID = dataSnapshot.child("admin").getValue(String.class);
-//            }
-//
-//            @Override
-//            public void onCancelled(DatabaseError databaseError) {
-//
-//            }
-//        });
-//
-//
-//                final User user = new User(userID.getText().toString(), userName.getText().toString(), " ", " ", "Pakokku");
-//                if(userID.getText().toString().equals(user_ID)){
-//                    editor.putInt("afterlogin", 2);
-//                    editor.commit();
-//                    Intent intent = new Intent(getApplicationContext(), AdminActivity.class);
-//                    startActivity(intent);
-//                    finish();
-//                }
-//                else {
-//                    helper.sendUserData(user);
-//                    editor.putInt("afterlogin", 1);
-//                    editor.commit();
-//                    Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-//                    startActivity(intent);
-//                    finish();
-//                }
 
     }
 

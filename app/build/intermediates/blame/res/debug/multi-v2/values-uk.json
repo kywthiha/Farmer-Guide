@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/kyaw/Desktop/Farm/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-uk/values-uk.xml",
+            "outputFile": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-uk/values-uk.xml",
             "map": [
                 {
                     "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/1fb5c925e00b7cc950e5e01d5e2d1812/res/values-uk/values.xml",

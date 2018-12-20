@@ -24,6 +24,7 @@ import com.farm.ngo.farm.Class.Function;
 import com.farm.ngo.farm.Model.User;
 import com.farm.ngo.farm.R;
 import com.farm.ngo.farm.activity.QuestionAnswerActivity;
+import com.farm.ngo.farm.auth.ui.UserLoginActivity;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -103,10 +104,7 @@ public class HomeFragment extends Fragment implements LocationListener {
         questionAndAnswerCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                User u= UsingSQLiteHelper.getUser(getActivity());
-                Intent in = new Intent(getActivity(),QuestionAnswerActivity.class);
-                in.putExtra("user",u);
-                in.putExtra("phone_number","09771616178");
+                Intent in = new Intent(getActivity(),UserLoginActivity.class);
                 getActivity().startActivity(in);
             }
         });
