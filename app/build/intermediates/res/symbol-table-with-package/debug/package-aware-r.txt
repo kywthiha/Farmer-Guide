@@ -887,11 +887,13 @@ drawable design_password_eye
 drawable design_snackbar_background
 drawable direct
 drawable doa
+drawable down
 drawable e
 drawable edit_crop
 drawable et
 drawable f
 drawable farmer_logo
+drawable farmstore
 drawable forcardviewradius
 drawable g
 drawable gender
@@ -950,6 +952,7 @@ drawable notify_panel_notification_icon_bg
 drawable other
 drawable other_vagetables
 drawable paddy
+drawable payment
 drawable phone_call_admin
 drawable profileboy
 drawable profileedittext
@@ -982,7 +985,10 @@ drawable virus_v
 drawable virus_vi
 drawable virus_vii
 drawable virus_viii
+drawable warehouse
+drawable wb
 drawable work
+drawable wwb
 drawable x
 drawable xi
 id ALT
@@ -1084,6 +1090,7 @@ id data_image
 id data_list_grid_view
 id data_title
 id date
+id dayname
 id decor_content_parent
 id default_activity_button
 id delete
@@ -1123,6 +1130,7 @@ id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
 id farmfruit2
+id farmstore
 id fieldPhoneNumber
 id fieldVerificationCode
 id fill
@@ -1142,6 +1150,7 @@ id gone
 id groups
 id home
 id homeAsUp
+id hum
 id humidity_field
 id icon
 id icon_group
@@ -1207,6 +1216,7 @@ id notification_main_column
 id notification_main_column_container
 id onCancel
 id onUpload
+id onedayweather
 id openCamera
 id other_crop_card
 id packed
@@ -1227,9 +1237,11 @@ id phoneCall
 id pin
 id postRecyclerview
 id postimg
+id pres
 id profilepicture
 id progress_circular
 id progress_horizontal
+id pwalyone
 id question_answer_card
 id radio
 id recycler_chauk
@@ -1241,6 +1253,7 @@ id relative_menu
 id right
 id right_icon
 id right_side
+id ryrc
 id save_image_matrix
 id save_non_transition_alpha
 id save_scale_type
@@ -1294,6 +1307,7 @@ id submit_area
 id swiperefresh
 id tabMode
 id tag_transition_group
+id temp
 id test_view
 id text
 id text2
@@ -1321,6 +1335,7 @@ id title
 id titleCreatePost
 id titleDividerNoCustom
 id title_template
+id today
 id toolbar
 id top
 id topPanel
@@ -1413,10 +1428,12 @@ layout activity_new_post
 layout activity_phonecall
 layout activity_post
 layout activity_post_show_admin
+layout activity_pwalyone
 layout activity_show_detail
 layout activity_showdetail
 layout activity_splash_screen
 layout activity_user_edit
+layout activity_weatherfiveday
 layout activity_writepost
 layout admin_fragment
 layout admin_item
@@ -1492,6 +1509,7 @@ layout support_simple_spinner_dropdown_item
 layout their_image_message
 layout their_message
 layout upload_new_crop
+layout weather
 menu admin_nav_menu
 menu btn_nav_menu
 menu phone_nav

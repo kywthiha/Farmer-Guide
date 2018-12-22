@@ -43,6 +43,14 @@
 
            ></activity>
         <activity android:name=".phonecall"/>
+        <activity android:name=".pwalyone"
+            android:parentActivityName=".MainActivity"
+            android:label="ပြဲရုံမ်ား"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity android:name=".weatherfiveday"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.AppCompat.Light"
+            android:label="ရာသီဥတု"></activity>
     </application>
 
 </manifest>

@@ -1,10 +1,9 @@
 package com.farm.ngo.farm.Fragment;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Typeface;
-import android.location.Location;
-import android.location.LocationListener;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import com.farm.ngo.farm.Holder.*;
@@ -24,32 +23,35 @@ import com.farm.ngo.farm.Class.Function;
 import com.farm.ngo.farm.Model.User;
 import com.farm.ngo.farm.R;
 import com.farm.ngo.farm.activity.QuestionAnswerActivity;
-import com.farm.ngo.farm.auth.ui.UserLoginActivity;
+import com.farm.ngo.farm.pwalyone;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.Locale;
 
-public class HomeFragment extends Fragment implements LocationListener {
+@SuppressLint("ValidFragment")
+public class HomeFragment extends Fragment {
 
     //Declaration
     TextView detailsField, currentTemperatureField, weatherIcon, updatedField;
     ProgressBar loader;
     Typeface weatherFont;
-    String city = "Pakokku, MM";
+    CardView weahter;
+    String city = "lat=21.3343&lon=95.0944";
     /* Please Put your API KEY here */
-    String OPEN_WEATHER_MAP_API = "cbfdb21fa1793c10b14b6b6d00fbef03";
+    String OPEN_WEATHER_MAP_API = "cccd055e7a485c62e5ed11986aaf08c1";
     /* Please Put your API KEY here */
 
     Context mContext;
     Double x = 21.333093;
     Double y = 94.986282;
 
-    CardView paddyCard, otherCropCard, questionAndAnswerCard, newsCard;
+    CardView paddyCard, otherCropCard, questionAndAnswerCard, newsCard, pwalyoneCardView;
 
     public HomeFragment(Context mContext, int pagerId) {
         this.mContext = mContext;
@@ -67,7 +69,10 @@ public class HomeFragment extends Fragment implements LocationListener {
         currentTemperatureField = (TextView) rootView.findViewById(R.id.current_temperature_field);
         weatherIcon = (TextView) rootView.findViewById(R.id.weather_icon);
         weatherFont = Typeface.createFromAsset(mContext.getAssets(), "weathericons-regular-webfont.ttf");
+       weahter=(CardView)rootView.findViewById(R.id.onedayweather);
         weatherIcon.setTypeface(weatherFont);
+
+
         taskLoadUp(city);
 
 
@@ -76,7 +81,15 @@ public class HomeFragment extends Fragment implements LocationListener {
         otherCropCard = (CardView) rootView.findViewById(R.id.other_crop_card);
         questionAndAnswerCard = (CardView) rootView.findViewById(R.id.question_answer_card);
         newsCard = (CardView) rootView.findViewById(R.id.news_card);
-
+        pwalyoneCardView = (CardView) rootView.findViewById(R.id.pwalyone);
+        pwalyoneCardView.setOnClickListener(new View.OnClickListener() {
+                                        @Override
+                                        public void onClick(View v) {
+                                            Intent i=new Intent(getActivity(),pwalyone.class);
+                                            getActivity().startActivity(i);
+                                        }
+                                    }
+        );
         paddyCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -104,7 +117,10 @@ public class HomeFragment extends Fragment implements LocationListener {
         questionAndAnswerCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent in = new Intent(getActivity(),UserLoginActivity.class);
+                User u= UsingSQLiteHelper.getUser(getActivity());
+                Intent in = new Intent(getActivity(),QuestionAnswerActivity.class);
+                in.putExtra("user",u);
+                in.putExtra("phone_number","09771616178");
                 getActivity().startActivity(in);
             }
         });
@@ -150,26 +166,7 @@ public class HomeFragment extends Fragment implements LocationListener {
         });
     }
 
-    @Override
-    public void onLocationChanged(Location location) {
-        x = location.getLatitude();
-        y = location.getLongitude();
-    }
 
-    @Override
-    public void onStatusChanged(String s, int i, Bundle bundle) {
-
-    }
-
-    @Override
-    public void onProviderEnabled(String s) {
-
-    }
-
-    @Override
-    public void onProviderDisabled(String s) {
-
-    }
 
 
 //    class DownloadWeather extends AsyncTask<String, Void, String> {
@@ -226,7 +223,7 @@ public class HomeFragment extends Fragment implements LocationListener {
         }
 
         protected String doInBackground(String... args) {
-            String xml = Function.excuteGet("http://api.openweathermap.org/data/2.5/weather?q=" + args[0] +
+            String xml = Function.excuteGet("http://api.openweathermap.org/data/2.5/weather?" + args[0] +
                     "&units=metric&appid=" + OPEN_WEATHER_MAP_API);
             return xml;
         }
@@ -251,7 +248,20 @@ public class HomeFragment extends Fragment implements LocationListener {
                     weatherIcon.setText(Html.fromHtml(Function.setWeatherIcon(details.getInt("id"),
                             json.getJSONObject("sys").getLong("sunrise") * 1000,
                             json.getJSONObject("sys").getLong("sunset") * 1000)));
+                    final ArrayList<String> goweather=new ArrayList<String>();
+                    goweather.add(String.format("%.0f", main.getDouble("temp")) + "°C");
+                    goweather.add("စိုထိုင္းဆ =" + main.getString("humidity") + "%");
+                    goweather.add("ေလထုဖိအား =" + main.getString("pressure") + " hPa");
 
+                    weahter.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            Intent i=new Intent(getActivity(),com.farm.ngo.farm.weatherfiveday.class);
+                            i.putStringArrayListExtra("currentweather",goweather);
+                            startActivity(i);
+
+                        }
+                    });
 
                 }
             } catch (JSONException e) {

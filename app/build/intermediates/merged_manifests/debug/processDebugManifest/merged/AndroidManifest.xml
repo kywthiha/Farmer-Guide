@@ -58,6 +58,16 @@
         <activity android:name="com.farm.ngo.farm.PostShowAdmin" />
         <activity android:name="com.farm.ngo.farm.phonecall" />
         <activity
+            android:name="com.farm.ngo.farm.pwalyone"
+            android:label="ပြဲရုံမ်ား"
+            android:parentActivityName="com.farm.ngo.farm.MainActivity"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name="com.farm.ngo.farm.weatherfiveday"
+            android:label="ရာသီဥတု"
+            android:parentActivityName="com.farm.ngo.farm.MainActivity"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
             android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
             android:excludeFromRecents="true"
             android:exported="true"
