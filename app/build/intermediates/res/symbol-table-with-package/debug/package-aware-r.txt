@@ -545,6 +545,7 @@ color grey_300
 color grey_500
 color highlighted_text_material_dark
 color highlighted_text_material_light
+color ic_launcher_background
 color material_blue_grey_800
 color material_blue_grey_900
 color material_blue_grey_950
@@ -568,6 +569,7 @@ color notification_action_color_filter
 color notification_icon_bg_color
 color notification_material_background_media_default_color
 color pauk_color
+color post_show_detail
 color primary_dark_material_dark
 color primary_dark_material_light
 color primary_material_dark
@@ -964,6 +966,7 @@ drawable round_border
 drawable rounded_edit
 drawable send_button
 drawable sign_out_option
+drawable spinner
 drawable sri
 drawable store
 drawable their_message
@@ -1059,6 +1062,7 @@ id buttonVerifyPhone
 id cancel_action
 id card
 id cardview
+id category
 id center
 id center_horizontal
 id center_vertical
@@ -1080,6 +1084,8 @@ id coordinator
 id cp
 id cpku
 id cpuk
+id crop_image
+id crop_title
 id current_temperature_field
 id custom
 id customPanel
@@ -1184,6 +1190,7 @@ id linear_edit
 id linear_loading
 id listMode
 id list_item
+id loading_img
 id log_out
 id logo
 id main_home
@@ -1209,6 +1216,7 @@ id nav_view
 id navigation_header_container
 id never
 id news_card
+id news_tool_bar
 id none
 id normal
 id notification_background
@@ -1220,6 +1228,7 @@ id onedayweather
 id openCamera
 id other_crop_card
 id packed
+id padd
 id paddyPager
 id paddyTab
 id paddy_card
@@ -1230,6 +1239,7 @@ id parentPanel
 id parent_matrix
 id percent
 id pg_old_chat
+id ph
 id phicon2
 id phnol2
 id phone
@@ -1237,10 +1247,12 @@ id phoneCall
 id pin
 id postRecyclerview
 id postimg
+id pr
 id pres
 id profilepicture
 id progress_circular
 id progress_horizontal
+id ptitle
 id pwalyone
 id question_answer_card
 id radio
@@ -1324,6 +1336,7 @@ id textView6
 id textView7
 id textView8
 id textView9
+id text_displlay
 id text_input_password_toggle
 id textinput_counter
 id textinput_error
@@ -1429,6 +1442,7 @@ layout activity_phonecall
 layout activity_post
 layout activity_post_show_admin
 layout activity_pwalyone
+layout activity_shop
 layout activity_show_detail
 layout activity_showdetail
 layout activity_splash_screen
@@ -1441,6 +1455,7 @@ layout admin_question_answer
 layout chat_items
 layout chat_message_view
 layout content_layout
+layout crop_item
 layout data_list_item
 layout delete_crop_dialog
 layout design_bottom_navigation_item
@@ -1470,6 +1485,7 @@ layout fragment_profile
 layout fragment_question_answer
 layout image_preview
 layout includeimage
+layout loading_data
 layout main_activity
 layout my_image
 layout my_message
@@ -1491,6 +1507,7 @@ layout notification_template_media
 layout notification_template_media_custom
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout paddressview
 layout phone_no_fragment
 layout phone_no_view
 layout phoneno_verify_view
@@ -1502,6 +1519,7 @@ layout register_view
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
+layout shop_category
 layout singin_success
 layout spinner_item
 layout stock_item
@@ -1785,6 +1803,7 @@ style Base_Widget_Design_TabLayout
 style CardView
 style CardView_Dark
 style CardView_Light
+style MyActionBar
 style Platform_AppCompat
 style Platform_AppCompat_Light
 style Platform_ThemeOverlay_AppCompat

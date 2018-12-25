@@ -44,14 +44,13 @@ public class ImageUtil {
     private String downloadURI;
     private Context context;
     private User user;
-    private ProgressDialog mProgressDialog;
+    private LoadingDialog mProgressDialog;
 
     public void showProgressDialog() {
         if (mProgressDialog == null) {
-            mProgressDialog = new ProgressDialog(context);
+            mProgressDialog = new LoadingDialog(context);
             mProgressDialog.setCancelable(false);
-            mProgressDialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
-            mProgressDialog.setMessage("Uploading...");
+
         }
 
         mProgressDialog.show();

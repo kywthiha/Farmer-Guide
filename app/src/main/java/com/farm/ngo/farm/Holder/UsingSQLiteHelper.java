@@ -10,6 +10,9 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.support.annotation.Nullable;
 import android.util.Log;
+
+import com.farm.ngo.farm.CropGridView.CropItem;
+import com.farm.ngo.farm.Model.Pwalyone;
 import com.google.firebase.auth.FirebaseAuth;
 import com.farm.ngo.farm.MainActivity;
 import com.farm.ngo.farm.Model.Data;
@@ -22,6 +25,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 public class UsingSQLiteHelper extends SQLiteOpenHelper {
@@ -41,6 +45,7 @@ public class UsingSQLiteHelper extends SQLiteOpenHelper {
 
     private final Context mContext;
     private SQLiteDatabase mDataBase;
+
 
     public UsingSQLiteHelper(@Nullable Context context) {
         super(context, DB_NAME, null, DB_VERSION);
@@ -134,43 +139,66 @@ public class UsingSQLiteHelper extends SQLiteOpenHelper {
 
         return new String[]{cursor.getString(0), cursor.getString(1)};
     }
-
-    //To read All data by Table Name from Database
-    public ArrayList<Data> getDataList(String tableName) throws IOException {
+    public List<CropItem> getCropItemList(String tableName) throws IOException {
         createDataBase();
         openDataBase();
         SQLiteDatabase db = this.getReadableDatabase();
 
-        ArrayList<Data> dataList = new ArrayList<>();
+        List<CropItem> dataList = new LinkedList<>();
 
         Cursor cursor = db.rawQuery("SELECT * FROM " + tableName, null);
 
         if(cursor.moveToFirst()) {
             do {
-                dataList.add(new Data(cursor.getString(0), cursor.getString(1), cursor.getString(2)));
-                Log.w("getDataList: ", cursor.getString(0));
+                dataList.add(new CropItem(cursor.getString(2), cursor.getString(0),tableName));
             }while(cursor.moveToNext());
         }
         cursor.close();
         close();
         return dataList;
     }
+    public ArrayList<Pwalyone> getPwalyoneList(String tableName) throws IOException {
+        createDataBase();
+        openDataBase();
+        SQLiteDatabase db = this.getReadableDatabase();
+
+        ArrayList<Pwalyone> pwalyoneList = new ArrayList<>();
+
+        Cursor cursor = db.rawQuery("SELECT * FROM " + tableName, null);
+
+        if(cursor.moveToFirst()) {
+            do {
+                pwalyoneList.add(new Pwalyone(cursor.getString(0), cursor.getString(1),cursor.getString(2),cursor.getString(3)));
+            }while(cursor.moveToNext());
+        }
+        cursor.close();
+        close();
+        return pwalyoneList;
+    }
+
+    //To read All data by Table Name from Database
+    public Data getDataDetail(String tableName,String id) throws IOException {
+        createDataBase();
+        openDataBase();
+        SQLiteDatabase db = this.getReadableDatabase();
+        Log.i("data info","data create");
+
+        Data data=new Data();
+
+        Cursor cursor = db.rawQuery("SELECT * FROM " + tableName +" WHERE photo = ?", new String[]{id});
+
+        if(cursor.moveToFirst()) {
+
+               data=new Data(cursor.getString(0), cursor.getString(1), cursor.getString(2));
+               Log.i("data info",data.getTitle());
 
 
-//    public void sendUserData(User user) {
-//        SQLiteDatabase db = getWritableDatabase();
-//        ContentValues values = new ContentValues();
-//
-//        values.put("id", user.getId());
-//        values.put("name", user.getName());
-//        values.put("profile_url", user.getProfile_url());
-//        values.put("email", user.getEmail());
-//        values.put("work","");
-//        values.put("gender","");
-//        values.put("township", user.getTownship());
-//
-//        db.insert(TABLE_NAME, null, values);
-//    }
+        }
+        cursor.close();
+        close();
+        return data;
+    }
+
 
     public static User getUser(Context mContext) {
         User user = null;

@@ -24,24 +24,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".writepost" />
-        <activity android:name=".auth.ui.UserLoginActivity" />
         <activity android:name=".activity.QuestionAnswerActivity" />
-        <activity android:name=".AdminActivity" />
-        <activity android:name=".MessageViewActivity" />
-        <activity android:name=".SplashScreenActivity" />
+        <activity android:name=".auth.ui.UserLoginActivity"/>
         <activity android:name=".activity.ChatActivity" />
         <activity
             android:name=".DataViewActivity" />
-        <activity android:name=".UserEdit" />
         <activity
             android:name=".activity.postshowdetail"
-            android:parentActivityName=".MainActivity"
-            android:theme="@style/Theme.AppCompat.Light" />
-        <activity android:name=".PostShowAdmin"
-
-           ></activity>
+             />
         <activity android:name=".phonecall"/>
         <activity android:name=".pwalyone"
             android:parentActivityName=".MainActivity"
@@ -51,6 +41,10 @@
             android:parentActivityName=".MainActivity"
             android:theme="@style/Theme.AppCompat.Light"
             android:label="ရာသီဥတု"></activity>
+        <activity android:name=".activity.ShopActivity"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.AppCompat.Light"
+            android:label="စိုက္ပ်ိဳးေရးပစၥည္းဆိုင္မ်ား"/>
     </application>
 
 </manifest>

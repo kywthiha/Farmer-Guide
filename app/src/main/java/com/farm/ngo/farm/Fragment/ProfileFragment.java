@@ -15,28 +15,12 @@ import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-
-import com.farm.ngo.farm.FarmStatic.RefStatic;
-import com.farm.ngo.farm.MainActivity;
 import com.farm.ngo.farm.auth.ui.*;
 import com.farm.ngo.farm.Holder.UsingSQLiteHelper;
-import com.farm.ngo.farm.LoginActivity;
 import com.farm.ngo.farm.Model.User;
 import com.farm.ngo.farm.R;
-import com.farm.ngo.farm.auth.ui.RegisterView;
-import com.farm.ngo.farm.preference_help.Helper;
 import com.google.firebase.auth.FirebaseAuth;
-import com.farm.ngo.farm.UserEdit;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
 
-
-/**
- * A simple {@link Fragment} subclass.
- */
 public class ProfileFragment extends Fragment {
     public static final String username="fjsoijf9oej9ur90wur3489038";
     public static final String userid="0u903u90ruvklknxlkcnvlk";

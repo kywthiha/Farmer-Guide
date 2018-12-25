@@ -26,6 +26,7 @@ import com.farm.ngo.farm.Fragment.PriceFragment;
 import com.farm.ngo.farm.Fragment.ProfileFragment;
 import com.farm.ngo.farm.Fragment.QuestionAnswerFragment;
 import com.farm.ngo.farm.Model.News;
+import com.farm.ngo.farm.Utility.NavigationCustomDone;
 import com.firebase.client.DataSnapshot;
 import com.firebase.client.Firebase;
 import com.firebase.client.FirebaseError;
@@ -35,7 +36,7 @@ import com.google.firebase.FirebaseApp;
 import java.io.IOException;
 import java.io.InputStream;
 
-public class MainActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {
+public class MainActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener ,NavigationCustomDone {
 
     private FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
 
@@ -51,20 +52,6 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         transaction.replace(R.id.view_pager, homeFragment);
         transaction.commit();
     }
-//    private String loadJSONFromAsset() {
-//        String json = null;
-//        try {
-//            InputStream is = getAssets().open("other_crop.json");
-//            int size = is.available();
-//            byte[] buffer = new byte[size];
-//            is.read(buffer);
-//            is.close();
-//            json = new String(buffer, "UTF-8");
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
-//        return json;
-//    }
 
     public void clearBackStack() {
         FragmentManager fm = getSupportFragmentManager();
@@ -83,12 +70,53 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+        showMenuButtom();
+        switch (item.getItemId()){
+            case android.R.id.home :
 
-        return super.onOptionsItemSelected(item);
+                clearBackStack();
+                FragmentTransaction Transaction = getSupportFragmentManager().beginTransaction();
+                HomeFragment homeFragmentmain = new HomeFragment(getApplicationContext(), R.id.view_pager);
+                Transaction.replace(R.id.view_pager, homeFragmentmain);
+               Transaction.disallowAddToBackStack();
+                Transaction.commit();
+                return true;
+
+
+            case R.id.main_home :
+
+                clearBackStack();
+                FragmentTransaction homeTransaction = getSupportFragmentManager().beginTransaction();
+                HomeFragment homeFragment = new HomeFragment(getApplicationContext(), R.id.view_pager);
+                homeTransaction.replace(R.id.view_pager, homeFragment);
+                homeTransaction.disallowAddToBackStack();
+                homeTransaction.commit();
+                return true;
+            case R.id.nav_price :
+                clearBackStack();
+                FragmentTransaction priceTransaction = getSupportFragmentManager().beginTransaction();
+                CropUserFragment cropUserFragment = new CropUserFragment(getApplicationContext());
+                priceTransaction.replace(R.id.view_pager, cropUserFragment);
+                priceTransaction.disallowAddToBackStack();
+                priceTransaction.commit();
+                return true;
+            case R.id.nav_profile :
+                clearBackStack();
+                FragmentTransaction profileTransaction = getSupportFragmentManager().beginTransaction();
+                ProfileFragment profileFragment = new ProfileFragment(getApplicationContext());
+                profileTransaction.replace(R.id.view_pager, profileFragment);
+                profileTransaction.disallowAddToBackStack();
+                profileTransaction.commit();
+                return true;
+
+            default: break;
+        }
+        return false;
     }
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        showMenuButtom();
         switch (item.getItemId()){
             case R.id.main_home :
                 clearBackStack();
@@ -118,5 +146,27 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
             default: break;
         }
         return false;
+    }
+
+    @Override
+    public void onBackPressed() {
+
+        super.onBackPressed();
+        showMenuButtom();
+    }
+    private void showMenuButtom(){
+        if(btnNavView.getVisibility()==View.GONE)
+            btnNavView.setVisibility(View.VISIBLE);
+
+    }
+    private void hideMenuButtom(){
+        if(btnNavView.getVisibility()==View.VISIBLE)
+            btnNavView.setVisibility(View.GONE);
+
+    }
+
+    @Override
+    public void OnButtonClickListener() {
+       hideMenuButtom();
     }
 }

@@ -8,6 +8,7 @@ import android.os.AsyncTask;
 import android.widget.Toast;
 
 import com.farm.ngo.farm.Service.ChatHelper;
+import com.farm.ngo.farm.Service.LoadingDialog;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -25,9 +26,9 @@ public class ImageUpload extends AsyncTask<Image,Void,Void> {
     public ImageUpload(Context context,boolean isAdmin){
         this.context=context;
         this.isAdmin=isAdmin;
-        mProgressDialog = new ProgressDialog(context);
+        mProgressDialog = new LoadingDialog(context);
     }
-    private ProgressDialog mProgressDialog;
+    private LoadingDialog mProgressDialog;
     @Override
     protected Void doInBackground(Image... images) {
         Image image=images[0];
@@ -48,8 +49,6 @@ public class ImageUpload extends AsyncTask<Image,Void,Void> {
     }
     public void showProgressDialog() {
             mProgressDialog.setCancelable(false);
-            mProgressDialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
-            mProgressDialog.setMessage("Uploading...");
              mProgressDialog.show();
     }
 

@@ -8,13 +8,10 @@
     android:paddingBottom="8dp"
     tools:context=".Fragment.DataFragment">
 
-   <GridView
+   <android.support.v7.widget.RecyclerView
        android:id="@+id/data_list_grid_view"
        android:layout_width="match_parent"
        android:layout_height="match_parent"
-       android:layout_marginLeft="8dp"
-       android:layout_marginRight="8dp"
-       android:scrollbars="none"
-       android:numColumns="2"/>
+     />
 
 </FrameLayout>

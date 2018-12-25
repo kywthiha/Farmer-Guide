@@ -42,20 +42,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.farm.ngo.farm.writepost" />
-        <activity android:name="com.farm.ngo.farm.auth.ui.UserLoginActivity" />
         <activity android:name="com.farm.ngo.farm.activity.QuestionAnswerActivity" />
-        <activity android:name="com.farm.ngo.farm.AdminActivity" />
-        <activity android:name="com.farm.ngo.farm.MessageViewActivity" />
-        <activity android:name="com.farm.ngo.farm.SplashScreenActivity" />
+        <activity android:name="com.farm.ngo.farm.auth.ui.UserLoginActivity" />
         <activity android:name="com.farm.ngo.farm.activity.ChatActivity" />
         <activity android:name="com.farm.ngo.farm.DataViewActivity" />
-        <activity android:name="com.farm.ngo.farm.UserEdit" />
-        <activity
-            android:name="com.farm.ngo.farm.activity.postshowdetail"
-            android:parentActivityName="com.farm.ngo.farm.MainActivity"
-            android:theme="@style/Theme.AppCompat.Light" />
-        <activity android:name="com.farm.ngo.farm.PostShowAdmin" />
+        <activity android:name="com.farm.ngo.farm.activity.postshowdetail" />
         <activity android:name="com.farm.ngo.farm.phonecall" />
         <activity
             android:name="com.farm.ngo.farm.pwalyone"
@@ -65,6 +56,11 @@
         <activity
             android:name="com.farm.ngo.farm.weatherfiveday"
             android:label="ရာသီဥတု"
+            android:parentActivityName="com.farm.ngo.farm.MainActivity"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name="com.farm.ngo.farm.activity.ShopActivity"
+            android:label="စိုက္ပ်ိဳးေရးပစၥည္းဆိုင္မ်ား"
             android:parentActivityName="com.farm.ngo.farm.MainActivity"
             android:theme="@style/Theme.AppCompat.Light" />
         <activity
@@ -153,6 +149,11 @@
             android:name="com.squareup.picasso.PicassoProvider"
             android:authorities="com.farm.ngo.farm.com.squareup.picasso"
             android:exported="false" />
+        <provider
+            android:name="android.arch.lifecycle.ProcessLifecycleOwnerInitializer"
+            android:authorities="com.farm.ngo.farm.lifecycle-trojan"
+            android:exported="false"
+            android:multiprocess="true" />
     </application>
 
 </manifest>

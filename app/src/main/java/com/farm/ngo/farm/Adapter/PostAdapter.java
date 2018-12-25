@@ -22,11 +22,13 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
-
-;
-
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.DataSource;
+import com.bumptech.glide.load.engine.GlideException;
+import com.bumptech.glide.load.resource.bitmap.RoundedCorners;
+import com.bumptech.glide.request.RequestListener;
 import com.bumptech.glide.request.RequestOptions;
+import com.bumptech.glide.request.target.Target;
 import com.farm.ngo.farm.Model.Post;
 import com.farm.ngo.farm.R;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -160,9 +162,10 @@ public class PostAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
 
             date.setText(user.getDate());
-            RequestOptions placeholderRequest = new RequestOptions();
-            placeholderRequest.placeholder(R.drawable.loading);
-            Glide.with(itemView).setDefaultRequestOptions(placeholderRequest).load(user.getUrl()).into(img);
+            Glide.with(itemView)
+                    .load(user.getUrl())
+                    .thumbnail(Glide.with(itemView).load(R.drawable.verify_code_loading))
+                    .into(img);
             delete.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {

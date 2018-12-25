@@ -9,10 +9,8 @@ import android.util.Log;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.resource.bitmap.CenterCrop;
 import com.bumptech.glide.load.resource.bitmap.RoundedCorners;
@@ -22,23 +20,15 @@ import com.farm.ngo.farm.Adapter.ChatItemClickListener;
 import com.farm.ngo.farm.Adapter.SwipeController;
 import com.farm.ngo.farm.Model.Chat;
 import com.farm.ngo.farm.R;
-import com.farm.ngo.farm.Service.ChatHelper;
-import com.farm.ngo.farm.Service.MessageHelper;
-import com.farm.ngo.farm.Utility.DeleteChatDialog;
-import com.google.firebase.database.FirebaseDatabase;
-
 import org.ocpsoft.prettytime.PrettyTime;
-
 import java.util.Date;
 
 public class ChatViewHolder extends RecyclerView.ViewHolder implements ChatBinder {
     //declare views
-    public TextView name,lastmsg,date,you;
-    public ImageView profile;
-    public CardView chatItem;
-    private Button delete_button;
-    //*************
-    
+    private TextView name,lastmsg,date,you;
+    private ImageView profile;
+    private CardView chatItem;
+
     private Context context;
     
     //bind
@@ -58,7 +48,7 @@ public class ChatViewHolder extends RecyclerView.ViewHolder implements ChatBinde
         you=(TextView)itemView.findViewById(R.id.txt_lbl_you);
         context=itemView.getContext();
 
-        //********
+
 
     }
 

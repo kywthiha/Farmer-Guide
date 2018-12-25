@@ -4,13 +4,13 @@
     <item
         android:id="@+id/main_home"
         android:icon="@drawable/ic_home_black_24dp"
-        android:title="ပင္စာမ်က္ႏွာ"/>
+        android:title="ပင္မစာမ်က္နွာ"/>
     <item
         android:id="@+id/nav_price"
         android:icon="@drawable/ic_store_black_24dp"
         android:title="ကုန္စည္ဒိုင္"/>
     <item
         android:id="@+id/nav_profile"
-        android:icon="@drawable/ic_person_black_24dp"
-        android:title="သင့္အခ်က္အလက္"/>
+        android:icon="@drawable/book"
+        android:title="စာအုပ္စင္"/>
 </menu>

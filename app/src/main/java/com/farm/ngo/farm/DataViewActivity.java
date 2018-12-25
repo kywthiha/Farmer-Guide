@@ -12,7 +12,11 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.farm.ngo.farm.CropGridView.CropItem;
+import com.farm.ngo.farm.Holder.UsingSQLiteHelper;
 import com.farm.ngo.farm.Model.Data;
+
+import java.io.IOException;
 
 public class DataViewActivity extends AppCompatActivity {
 
@@ -38,7 +42,12 @@ public class DataViewActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
 
-        data = (Data) getIntent().getSerializableExtra("object");
+        CropItem cropItem = (CropItem) getIntent().getSerializableExtra("object");
+        try {
+            data=new UsingSQLiteHelper(this).getDataDetail(cropItem.getTablename(),cropItem.getIamgeUrl());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
         dataTitle = (TextView) findViewById(R.id.data_title);
 

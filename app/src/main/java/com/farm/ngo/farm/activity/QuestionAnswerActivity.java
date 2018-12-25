@@ -84,29 +84,7 @@ public class QuestionAnswerActivity extends AppCompatActivity {
 
     private final String API_KEY = "AIzaSyAlc7IIpWJIvdTQbqUOQBSsyAbZ8pzeFUA ";
     private Context mContext;
-    private Firebase mFirebase;
 
-    private void phonecallAction(String phone) {
-        Intent callIntent = new Intent(Intent.ACTION_CALL);
-        callIntent.setData(Uri.parse("tel:" + phone));
-
-        if (ActivityCompat.checkSelfPermission(QuestionAnswerActivity.this,
-                Manifest.permission.CALL_PHONE) == PackageManager.PERMISSION_GRANTED) {
-            startActivity(callIntent);
-        } else {
-            if (ActivityCompat.shouldShowRequestPermissionRationale(this,
-                    Manifest.permission.CALL_PHONE)) {
-                Toast.makeText(getApplicationContext(), "Call Phone permension is needed to call", Toast.LENGTH_SHORT).show();
-
-            }
-
-            ActivityCompat.requestPermissions(this,
-                    new String[]{Manifest.permission.CALL_PHONE},
-                    PHONE_PER_REQUEST);
-
-        }
-
-    }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -137,12 +115,7 @@ public class QuestionAnswerActivity extends AppCompatActivity {
         }catch (Exception er){
             user=null;
         }
-        if(user==null){
-            Toast.makeText(this,"hello",Toast.LENGTH_LONG).show();
-            Intent in=new Intent(getApplicationContext(),UserLoginActivity.class);
-            startActivity(in);
 
-        }
         FirebaseApp.initializeApp(getApplicationContext());
         Firebase.setAndroidContext(getApplicationContext());
 
@@ -235,23 +208,6 @@ public class QuestionAnswerActivity extends AppCompatActivity {
 
                     ImageUtil imgu = new ImageUtil(actualImage, this, user, false);
                     imgu.uploadImage();
-//                    AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
-//                    builder.setMessage("Are you sure want to send this photo");
-//                    builder.setPositiveButton("SEND", new DialogInterface.OnClickListener() {
-//                        public void onClick(DialogInterface dialog, int id) {
-//                            // User clicked OK button
-//
-//                        }
-//
-//                    });
-//                    builder.setNegativeButton("CANCEL", new DialogInterface.OnClickListener() {
-//                        public void onClick(DialogInterface dialog, int id) {
-//                            // User cancelled the dialog
-//                        }
-//                    });
-//            e.printStackTrace();
-//                              AlertDialog dialog = builder.create();
-//                    dialog.show();
 
                 } catch (IOException e) {
                 }
@@ -263,23 +219,7 @@ public class QuestionAnswerActivity extends AppCompatActivity {
             if (resultCode == RESULT_OK) {
                 final Image image = new Image((Bitmap) data.getExtras().get("data"), user);
                 new ImageUpload(this, false).execute(image);
-//                AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
-//                builder.setMessage("Are you sure want to send this photo");
-//                builder.setPositiveButton("SEND", new DialogInterface.OnClickListener() {
-//                    public void onClick(DialogInterface dialog, int id) {
-//                        // User clicked OK load
-//
-//                    }
-//
-//                });
-//                builder.setNegativeButton("CANCEL", new DialogInterface.OnClickListener() {
-//                    public void onClick(DialogInterface dialog, int id) {
-//                        // User cancelled the dialog
-//                    }
-//                });
-//                AlertDialog dialog = builder.create();
-//                dialog.show();
-//
+
 
             } else {
                 Toast.makeText(getApplicationContext(), "", Toast.LENGTH_SHORT).show();
@@ -323,13 +263,7 @@ public class QuestionAnswerActivity extends AppCompatActivity {
                     Intent callIntent = new Intent(Intent.ACTION_CALL);
                     callIntent.setData(Uri.parse("tel:" + phone_number));
                     if (ActivityCompat.checkSelfPermission(this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
-                        // TODO: Consider calling
-                        //    ActivityCompat#requestPermissions
-                        // here to request the missing permissions, and then overriding
-                        //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
-                        //                                          int[] grantResults)
-                        // to handle the case where the user grants the permission. See the documentation
-                        // for ActivityCompat#requestPermissions for more details.
+
                         return;
                     }
                     startActivity(callIntent);

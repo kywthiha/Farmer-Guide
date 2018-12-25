@@ -60,5 +60,8 @@ dependencies {
     annotationProcessor 'com.github.bumptech.glide:compiler:4.8.0'
     implementation 'com.borjabravo:readmoretextview:2.+'
     implementation 'com.google.firebase:firebase-auth:16.0.1'
+    def archLifecycleVersion='1.1.1'
+    implementation "android.arch.lifecycle:extensions:$archLifecycleVersion"
+    annotationProcessor "android.arch.lifecycle:compiler:$archLifecycleVersion"
 }
 apply plugin: 'com.google.gms.google-services'

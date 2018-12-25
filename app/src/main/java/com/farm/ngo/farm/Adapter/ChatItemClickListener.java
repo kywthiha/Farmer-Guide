@@ -3,11 +3,9 @@ package com.farm.ngo.farm.Adapter;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 
-import com.farm.ngo.farm.MessageViewActivity;
 import com.farm.ngo.farm.Model.Chat;
 import com.farm.ngo.farm.Model.User;
 import com.farm.ngo.farm.activity.ChatActivity;

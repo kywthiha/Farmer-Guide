@@ -22,12 +22,13 @@ import android.widget.Toast;
 import com.farm.ngo.farm.Class.Function;
 import com.farm.ngo.farm.Model.User;
 import com.farm.ngo.farm.R;
+import com.farm.ngo.farm.Utility.NavigationCustomDone;
 import com.farm.ngo.farm.activity.QuestionAnswerActivity;
+import com.farm.ngo.farm.activity.ShopActivity;
+import com.farm.ngo.farm.auth.ui.UserLoginActivity;
 import com.farm.ngo.farm.pwalyone;
-
 import org.json.JSONException;
 import org.json.JSONObject;
-
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -36,6 +37,19 @@ import java.util.Locale;
 
 @SuppressLint("ValidFragment")
 public class HomeFragment extends Fragment {
+    public NavigationCustomDone mCallback;
+
+    @Override
+    public void onAttach(Context context) {
+        super.onAttach(context);
+        try {
+            mCallback = (NavigationCustomDone) context;
+        } catch (ClassCastException e) {
+            throw new ClassCastException(context.toString()
+                    + " must implement OnImageClickListener");
+        }
+    }
+
 
     //Declaration
     TextView detailsField, currentTemperatureField, weatherIcon, updatedField;
@@ -51,7 +65,7 @@ public class HomeFragment extends Fragment {
     Double x = 21.333093;
     Double y = 94.986282;
 
-    CardView paddyCard, otherCropCard, questionAndAnswerCard, newsCard, pwalyoneCardView;
+    CardView paddyCard, otherCropCard, questionAndAnswerCard, newsCard, pwalyoneCardView,farmStore;
 
     public HomeFragment(Context mContext, int pagerId) {
         this.mContext = mContext;
@@ -78,10 +92,18 @@ public class HomeFragment extends Fragment {
 
         //For Actio of layout
         paddyCard = (CardView) rootView.findViewById(R.id.paddy_card);
+        farmStore = (CardView) rootView.findViewById(R.id.farmstore);
         otherCropCard = (CardView) rootView.findViewById(R.id.other_crop_card);
         questionAndAnswerCard = (CardView) rootView.findViewById(R.id.question_answer_card);
         newsCard = (CardView) rootView.findViewById(R.id.news_card);
         pwalyoneCardView = (CardView) rootView.findViewById(R.id.pwalyone);
+        farmStore.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i=new Intent(getActivity(),ShopActivity.class);
+                getActivity().startActivity(i);
+            }
+        });
         pwalyoneCardView.setOnClickListener(new View.OnClickListener() {
                                         @Override
                                         public void onClick(View v) {
@@ -117,10 +139,8 @@ public class HomeFragment extends Fragment {
         questionAndAnswerCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                User u= UsingSQLiteHelper.getUser(getActivity());
-                Intent in = new Intent(getActivity(),QuestionAnswerActivity.class);
-                in.putExtra("user",u);
-                in.putExtra("phone_number","09771616178");
+               // User u= UsingSQLiteHelper.getUser(getActivity());
+                Intent in = new Intent(getActivity(),UserLoginActivity.class);
                 getActivity().startActivity(in);
             }
         });
@@ -133,6 +153,7 @@ public class HomeFragment extends Fragment {
                 nTransaction.replace(R.id.view_pager, newsFragment);
                 nTransaction.addToBackStack(null);
                 nTransaction.commit();
+                mCallback.OnButtonClickListener();
             }
         });
 
@@ -167,52 +188,6 @@ public class HomeFragment extends Fragment {
     }
 
 
-
-
-//    class DownloadWeather extends AsyncTask<String, Void, String> {
-//        @Override
-//        protected void onPreExecute() {
-//            super.onPreExecute();
-//
-//        }
-//
-//        protected String doInBackground(String... args) {
-//            String xml = Function.excuteGet("http://api.openweathermap.org/data/2.5/forecast?lat=" + x + "&lon=" + y +
-//                    "&appid=" + OPEN_WEATHER_MAP_API);
-//            return xml;
-//        }
-//
-//        @Override
-//        protected void onPostExecute(String xml) {
-//
-//            try {
-//                JSONObject json = new JSONObject(xml);
-//                Log.i("JSON", json.length() + "*****");
-//                for (int i = 0; i < json.length(); i++) {
-//                    Log.i("LIST", json.getJSONArray("list").getJSONObject(i).toString());
-//                    JSONObject object = json.getJSONArray("list").getJSONObject(i);
-//                    JSONObject details = object.getJSONArray("weather").getJSONObject(0);
-//                    JSONObject main = object.getJSONObject("main");
-//                    DateFormat df = DateFormat.getDateInstance();
-//                    String detailsField, currentTemperatureField, humidityField, pressureField, updatedField, weatherIcon;
-//                    detailsField = details.getString("description").toUpperCase(Locale.US);
-//                    currentTemperatureField = String.format("%.2f", (main.getDouble("temp") -  273.15)) + "°";
-//                    humidityField = "Humidity: " + main.getString("humidity") + "%";
-//                    pressureField = "Pressure: " + main.getString("pressure") + " hPa";
-//                    updatedField = df.format(new Date(object.getLong("dt") * 1000));
-//                    weatherIcon = "http://openweathermap.org/img/w/" + details.getString("icon") + ".png";
-//
-//                }
-//                weatherRecyclerView.setAdapter(adapter);
-//
-//            } catch (JSONException e1) {
-//                e1.printStackTrace();
-//            }
-//        }
-//    }
-
-
-    //For WeatherData Loading
 
     class DownloadWeather extends AsyncTask<String, Void, String> {
         @Override

@@ -12,6 +12,9 @@ public class Data implements Serializable {
         this.image_url = image_url;
     }
 
+    public Data() {
+    }
+
     public String getTitle() {
         return title;
     }

@@ -18,10 +18,7 @@ import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.Spinner;
-
 import com.farm.ngo.farm.Adapter.CropAdapter;
-import com.farm.ngo.farm.AdminActivity;
-import com.farm.ngo.farm.Holder.UsingSQLiteHelper;
 import com.farm.ngo.farm.Model.Crop;
 import com.farm.ngo.farm.R;
 import com.farm.ngo.farm.Service.AddCropDialog;

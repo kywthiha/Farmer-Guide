@@ -18,9 +18,9 @@
     <color name="grey_500">#9E9E9E</color>
     <color name="stock">#d7ffd9</color>
     <color name="stock_new_btn">#009624</color>
-
     <color name="delete_back">#d96a5e</color>
     <color name="yso_color">#d96a5e</color>
+    <color name="post_show_detail">#883b860d</color>
     <color name="pauk_color">#68c853</color>
     <color name="chauk_color">#ffee97</color>
     <color name="myaing_color">#0088a3</color>
