@@ -26,7 +26,7 @@ public class ImageUpload extends AsyncTask<Image,Void,Void> {
     public ImageUpload(Context context,boolean isAdmin){
         this.context=context;
         this.isAdmin=isAdmin;
-        mProgressDialog = new LoadingDialog(context);
+        mProgressDialog = new LoadingDialog(context,"Image Uploading ...");
     }
     private LoadingDialog mProgressDialog;
     @Override

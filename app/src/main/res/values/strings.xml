@@ -42,5 +42,6 @@
         <item>pakokku</item>
         <item>yesagyo</item>
     </string-array>
+    <string name="law">https://www.mlis.gov.mm/mLsView.do?lawordSn=182</string>
 
 </resources>

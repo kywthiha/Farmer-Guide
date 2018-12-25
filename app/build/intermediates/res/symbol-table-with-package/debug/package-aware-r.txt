@@ -342,6 +342,10 @@ attr ratingBarStyleIndicator
 attr ratingBarStyleSmall
 attr reverseLayout
 attr rippleColor
+attr sb_handlerColor
+attr sb_horizontal
+attr sb_indicatorColor
+attr sb_indicatorTextColor
 attr scopeUris
 attr scrimAnimationDuration
 attr scrimVisibleHeightTrigger
@@ -879,6 +883,10 @@ drawable common_google_signin_btn_text_light_normal
 drawable common_google_signin_btn_text_light_normal_background
 drawable cpa
 drawable d
+drawable default_scroll_handle_bottom
+drawable default_scroll_handle_left
+drawable default_scroll_handle_right
+drawable default_scroll_handle_top
 drawable delete
 drawable delete_crop
 drawable design_bottom_navigation_item_background
@@ -925,6 +933,7 @@ drawable ii
 drawable iii
 drawable image_placeholder
 drawable input_outline
+drawable intologo
 drawable item_delete
 drawable iv
 drawable ix
@@ -1029,8 +1038,6 @@ id add_admin_cancel
 id add_btn
 id add_crop_add
 id add_crop_cancel
-id addressl
-id addressl2
 id adjust_height
 id adjust_width
 id admin_pager
@@ -1110,7 +1117,6 @@ id dimensions
 id direct
 id disableHome
 id drawer_layout
-id eaddress
 id editText
 id edit_query
 id editlayout
@@ -1125,7 +1131,6 @@ id edt_edit_crop_save
 id edt_gender
 id edt_name
 id edt_work
-id eimg
 id ename
 id end
 id end_padder
@@ -1191,7 +1196,6 @@ id linear_loading
 id listMode
 id list_item
 id loading_img
-id log_out
 id logo
 id main_home
 id main_layout
@@ -1242,7 +1246,6 @@ id pg_old_chat
 id ph
 id phicon2
 id phnol2
-id phone
 id phoneCall
 id pin
 id postRecyclerview
@@ -1291,11 +1294,7 @@ id shortcut
 id showCustom
 id showHome
 id showTitle
-id showaddress
-id showgender
 id showlayout
-id showname
-id showwork
 id smallLabel
 id snackbar_action
 id snackbar_text
@@ -1388,6 +1387,7 @@ id view_offset_helper
 id view_pager
 id visible
 id weather_icon
+id webview
 id wide
 id withText
 id workl
@@ -1448,6 +1448,7 @@ layout activity_showdetail
 layout activity_splash_screen
 layout activity_user_edit
 layout activity_weatherfiveday
+layout activity_welcome
 layout activity_writepost
 layout admin_fragment
 layout admin_item
@@ -1597,6 +1598,7 @@ string google_crash_reporting_api_key
 string google_storage_bucket
 string hello_blank_fragment
 string instant_validation
+string law
 string message_enter_phone
 string message_warn
 string open_weather_maps_app_id
@@ -2068,6 +2070,7 @@ styleable ReadMoreTextView colorClickableText showTrimExpandedText trimCollapsed
 styleable RecycleListView paddingBottomNoButtons paddingTopNoTitle
 styleable RecyclerView android_orientation android_descendantFocusability fastScrollEnabled fastScrollHorizontalThumbDrawable fastScrollHorizontalTrackDrawable fastScrollVerticalThumbDrawable fastScrollVerticalTrackDrawable layoutManager reverseLayout spanCount stackFromEnd
 styleable ScrimInsetsFrameLayout insetForeground
+styleable ScrollBar sb_handlerColor sb_horizontal sb_indicatorColor sb_indicatorTextColor
 styleable ScrollingViewBehavior_Layout behavior_overlapTop
 styleable SearchView android_focusable android_maxWidth android_inputType android_imeOptions closeIcon commitIcon defaultQueryHint goIcon iconifiedByDefault layout queryBackground queryHint searchHintIcon searchIcon submitBackground suggestionRowLayout voiceIcon
 styleable SignInButton buttonSize colorScheme scopeUris

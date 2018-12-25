@@ -22,12 +22,12 @@ public final class R {
         public static final int fontProviderQuery = 0x7f0400b5;
         public static final int fontStyle = 0x7f0400b6;
         public static final int fontWeight = 0x7f0400b7;
-        public static final int showTrimExpandedText = 0x7f040151;
-        public static final int trimCollapsedText = 0x7f0401a4;
-        public static final int trimExpandedText = 0x7f0401a5;
-        public static final int trimLength = 0x7f0401a6;
-        public static final int trimLines = 0x7f0401a7;
-        public static final int trimMode = 0x7f0401a8;
+        public static final int showTrimExpandedText = 0x7f040155;
+        public static final int trimCollapsedText = 0x7f0401a8;
+        public static final int trimExpandedText = 0x7f0401a9;
+        public static final int trimLength = 0x7f0401aa;
+        public static final int trimLines = 0x7f0401ab;
+        public static final int trimMode = 0x7f0401ac;
     }
     public static final class bool {
         private bool() {}
@@ -72,18 +72,18 @@ public final class R {
     public static final class drawable {
         private drawable() {}
 
-        public static final int notification_action_background = 0x7f0800b9;
-        public static final int notification_bg = 0x7f0800ba;
-        public static final int notification_bg_low = 0x7f0800bb;
-        public static final int notification_bg_low_normal = 0x7f0800bc;
-        public static final int notification_bg_low_pressed = 0x7f0800bd;
-        public static final int notification_bg_normal = 0x7f0800be;
-        public static final int notification_bg_normal_pressed = 0x7f0800bf;
-        public static final int notification_icon_background = 0x7f0800c0;
-        public static final int notification_template_icon_bg = 0x7f0800c1;
-        public static final int notification_template_icon_low_bg = 0x7f0800c2;
-        public static final int notification_tile_bg = 0x7f0800c3;
-        public static final int notify_panel_notification_icon_bg = 0x7f0800c4;
+        public static final int notification_action_background = 0x7f0800be;
+        public static final int notification_bg = 0x7f0800bf;
+        public static final int notification_bg_low = 0x7f0800c0;
+        public static final int notification_bg_low_normal = 0x7f0800c1;
+        public static final int notification_bg_low_pressed = 0x7f0800c2;
+        public static final int notification_bg_normal = 0x7f0800c3;
+        public static final int notification_bg_normal_pressed = 0x7f0800c4;
+        public static final int notification_icon_background = 0x7f0800c5;
+        public static final int notification_template_icon_bg = 0x7f0800c6;
+        public static final int notification_template_icon_low_bg = 0x7f0800c7;
+        public static final int notification_tile_bg = 0x7f0800c8;
+        public static final int notify_panel_notification_icon_bg = 0x7f0800c9;
     }
     public static final class id {
         private id() {}
@@ -93,29 +93,29 @@ public final class R {
         public static final int action_image = 0x7f090011;
         public static final int action_text = 0x7f090017;
         public static final int actions = 0x7f090018;
-        public static final int async = 0x7f09002b;
-        public static final int blocking = 0x7f090030;
-        public static final int chronometer = 0x7f09004d;
-        public static final int forever = 0x7f090097;
-        public static final int icon = 0x7f0900a4;
-        public static final int icon_group = 0x7f0900a5;
-        public static final int info = 0x7f0900b5;
-        public static final int italic = 0x7f0900b8;
-        public static final int line1 = 0x7f0900be;
-        public static final int line3 = 0x7f0900bf;
-        public static final int normal = 0x7f0900e0;
-        public static final int notification_background = 0x7f0900e1;
-        public static final int notification_main_column = 0x7f0900e2;
-        public static final int notification_main_column_container = 0x7f0900e3;
-        public static final int right_icon = 0x7f09010d;
-        public static final int right_side = 0x7f09010e;
-        public static final int tag_transition_group = 0x7f090144;
-        public static final int text = 0x7f090147;
-        public static final int text2 = 0x7f090148;
-        public static final int time = 0x7f09015c;
-        public static final int title = 0x7f09015e;
-        public static final int trimModeLength = 0x7f09016c;
-        public static final int trimModeLine = 0x7f09016d;
+        public static final int async = 0x7f090029;
+        public static final int blocking = 0x7f09002e;
+        public static final int chronometer = 0x7f09004b;
+        public static final int forever = 0x7f090093;
+        public static final int icon = 0x7f0900a0;
+        public static final int icon_group = 0x7f0900a1;
+        public static final int info = 0x7f0900b1;
+        public static final int italic = 0x7f0900b4;
+        public static final int line1 = 0x7f0900ba;
+        public static final int line3 = 0x7f0900bb;
+        public static final int normal = 0x7f0900db;
+        public static final int notification_background = 0x7f0900dc;
+        public static final int notification_main_column = 0x7f0900dd;
+        public static final int notification_main_column_container = 0x7f0900de;
+        public static final int right_icon = 0x7f090107;
+        public static final int right_side = 0x7f090108;
+        public static final int tag_transition_group = 0x7f09013a;
+        public static final int text = 0x7f09013d;
+        public static final int text2 = 0x7f09013e;
+        public static final int time = 0x7f090152;
+        public static final int title = 0x7f090154;
+        public static final int trimModeLength = 0x7f090162;
+        public static final int trimModeLine = 0x7f090163;
     }
     public static final class integer {
         private integer() {}
@@ -125,19 +125,19 @@ public final class R {
     public static final class layout {
         private layout() {}
 
-        public static final int notification_action = 0x7f0b0057;
-        public static final int notification_action_tombstone = 0x7f0b0058;
-        public static final int notification_template_custom_big = 0x7f0b005f;
-        public static final int notification_template_icon_group = 0x7f0b0060;
-        public static final int notification_template_part_chronometer = 0x7f0b0064;
-        public static final int notification_template_part_time = 0x7f0b0065;
+        public static final int notification_action = 0x7f0b0058;
+        public static final int notification_action_tombstone = 0x7f0b0059;
+        public static final int notification_template_custom_big = 0x7f0b0060;
+        public static final int notification_template_icon_group = 0x7f0b0061;
+        public static final int notification_template_part_chronometer = 0x7f0b0065;
+        public static final int notification_template_part_time = 0x7f0b0066;
     }
     public static final class string {
         private string() {}
 
-        public static final int read_less = 0x7f0f004c;
-        public static final int read_more = 0x7f0f004d;
-        public static final int status_bar_notification_info_overflow = 0x7f0f0051;
+        public static final int read_less = 0x7f0f004d;
+        public static final int read_more = 0x7f0f004e;
+        public static final int status_bar_notification_info_overflow = 0x7f0f0052;
     }
     public static final class style {
         private style() {}
@@ -167,7 +167,7 @@ public final class R {
         public static final int FontFamilyFont_font = 3;
         public static final int FontFamilyFont_fontStyle = 4;
         public static final int FontFamilyFont_fontWeight = 5;
-        public static final int[] ReadMoreTextView = { 0x7f040069, 0x7f040151, 0x7f0401a4, 0x7f0401a5, 0x7f0401a6, 0x7f0401a7, 0x7f0401a8 };
+        public static final int[] ReadMoreTextView = { 0x7f040069, 0x7f040155, 0x7f0401a8, 0x7f0401a9, 0x7f0401aa, 0x7f0401ab, 0x7f0401ac };
         public static final int ReadMoreTextView_colorClickableText = 0;
         public static final int ReadMoreTextView_showTrimExpandedText = 1;
         public static final int ReadMoreTextView_trimCollapsedText = 2;

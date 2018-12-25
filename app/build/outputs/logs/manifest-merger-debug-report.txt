@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:2:1-50:12
-INJECTED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:2:1-50:12
-INJECTED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:2:1-50:12
-INJECTED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:2:1-50:12
+ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:2:1-52:12
+INJECTED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:2:1-52:12
+INJECTED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:2:1-52:12
+INJECTED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:2:1-52:12
 MERGED from [com.android.support:multidex:1.0.2] /home/kyaw/.gradle/caches/transforms-1/files-1.1/multidex-1.0.2.aar/5ae1459b21cc69d9d6d68ab70bd53c4f/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/kyaw/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/ff4560d18bc67dde97ec51fc7ac95642/AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.support:design:27.1.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/design-27.1.0.aar/ba0f83af94580c0c69ba3a4999510c1e/AndroidManifest.xml:17:1-22:12
@@ -30,6 +30,8 @@ MERGED from [com.google.android.gms:play-services-stats:15.0.1] /home/kyaw/.grad
 MERGED from [com.google.firebase:firebase-measurement-connector:16.0.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-16.0.0.aar/12aa47976e769fe05bba4d452c109b2d/AndroidManifest.xml:17:1-25:12
 MERGED from [com.google.android.gms:play-services-ads-identifier:15.0.1] /home/kyaw/.gradle/caches/transforms-1/files-1.1/play-services-ads-identifier-15.0.1.aar/0a09353ba46f787884c51dc00d8f8fba/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services-basement:15.0.1] /home/kyaw/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/8e29abe56387f1787055d1fc347920fb/AndroidManifest.xml:17:1-28:12
+MERGED from [com.github.barteksc:android-pdf-viewer:3.1.0-beta.1] /home/kyaw/.gradle/caches/transforms-1/files-1.1/android-pdf-viewer-3.1.0-beta.1.aar/ec9c7c08df783c91dd05f3781636cead/AndroidManifest.xml:2:1-11:12
+MERGED from [com.github.barteksc:pdfium-android:1.9.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/pdfium-android-1.9.0.aar/794372e22f74c5552d6a859b249fb8d4/AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.support:support-v4:27.1.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.0.aar/32d894bb54eee209458a91220c1acaaa/AndroidManifest.xml:17:1-22:12
 MERGED from [com.github.bumptech.glide:glide:4.8.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/glide-4.8.0.aar/6d328cd70cd152571140c2feee903291/AndroidManifest.xml:2:1-12:12
 MERGED from [com.android.support:cardview-v7:27.1.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.1.0.aar/f8bcc1df311fca3bbde82f05acb21b7a/AndroidManifest.xml:17:1-22:12
@@ -56,20 +58,20 @@ MERGED from [com.android.support:support-compat:27.1.1] /home/kyaw/.gradle/cache
 MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/kyaw/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/1c6beb6b7fe35f53b0c797898e7a0b4b/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /home/kyaw/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/d81d3dc4729006035828c357547c6a17/AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.android.gms:play-services-measurement-base:16.0.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/play-services-measurement-base-16.0.0.aar/f684c744bb72d51d50fa77ffc03624f4/AndroidManifest.xml:17:1-24:12
-INJECTED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:2:1-50:12
-INJECTED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:2:1-50:12
-INJECTED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:2:1-50:12
+INJECTED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:2:1-52:12
+INJECTED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:2:1-52:12
+INJECTED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:2:1-52:12
 	package
 		ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:3:5-32
 		INJECTED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml
 		INJECTED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml
-		ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:2:1-50:12
+		ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:2:1-52:12
 		INJECTED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml
-		ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:2:1-50:12
+		ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:2:1-52:12
 		INJECTED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:2:11-69
@@ -107,20 +109,24 @@ MERGED from [com.google.firebase:firebase-storage-common:16.0.1] /home/kyaw/.gra
 MERGED from [com.google.firebase:firebase-storage-common:16.0.1] /home/kyaw/.gradle/caches/transforms-1/files-1.1/firebase-storage-common-16.0.1.aar/5ab63142803817ba336a67e90559b7b1/AndroidManifest.xml:7:5-79
 	android:name
 		ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:7:22-76
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:8:5-75
+	android:name
+		ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:8:22-73
 uses-permission#android.permission.CAMERA
-ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:8:5-65
+ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:9:5-65
 	android:name
-		ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:8:22-62
+		ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:9:22-62
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:9:5-81
+ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:10:5-81
 	android:name
-		ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:9:22-78
+		ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:10:22-78
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:10:5-80
+ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:11:5-80
 	android:name
-		ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:10:22-77
+		ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:11:22-77
 application
-ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:12:5-48:19
+ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:13:5-50:19
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/kyaw/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/ff4560d18bc67dde97ec51fc7ac95642/AndroidManifest.xml:9:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/kyaw/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/ff4560d18bc67dde97ec51fc7ac95642/AndroidManifest.xml:9:5-20
 MERGED from [com.google.firebase:firebase-auth:16.0.1] /home/kyaw/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.1.aar/01b0633d1a1821e950605778bad1092b/AndroidManifest.xml:22:5-36:19
@@ -166,87 +172,91 @@ MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] /home/kyaw/.gradle/cach
 MERGED from [com.google.android.gms:play-services-measurement-base:16.0.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/play-services-measurement-base-16.0.0.aar/f684c744bb72d51d50fa77ffc03624f4/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services-measurement-base:16.0.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/play-services-measurement-base-16.0.0.aar/f684c744bb72d51d50fa77ffc03624f4/AndroidManifest.xml:22:5-20
 	android:supportsRtl
-		ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:18:9-35
+		ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:19:9-35
 	android:label
 		ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:17:9-41
 	android:hardwareAccelerated
-		ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:13:9-44
+		ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:15:9-44
 	android:largeHeap
-		ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:14:9-33
+		ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:18:9-33
 	android:icon
 		ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:16:9-43
 	android:allowBackup
-		ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:15:9-35
+		ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:14:9-35
 	android:theme
-		ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:19:9-40
+		ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:20:9-40
 activity#com.farm.ngo.farm.MainActivity
-ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:20:9-26:20
+ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:21:9-23:20
 	android:name
-		ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:20:19-47
-intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:21:13-25:29
-action#android.intent.action.MAIN
-ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:22:17-69
-	android:name
-		ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:22:25-66
-category#android.intent.category.LAUNCHER
-ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:24:17-77
-	android:name
-		ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:24:27-74
+		ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:21:19-47
 activity#com.farm.ngo.farm.activity.QuestionAnswerActivity
-ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:27:9-69
+ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:24:9-69
 	android:name
-		ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:27:19-66
+		ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:24:19-66
 activity#com.farm.ngo.farm.auth.ui.UserLoginActivity
-ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:28:9-62
+ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:25:9-63
 	android:name
-		ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:28:19-60
+		ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:25:19-60
 activity#com.farm.ngo.farm.activity.ChatActivity
-ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:29:9-59
+ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:26:9-59
 	android:name
-		ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:29:19-56
+		ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:26:19-56
 activity#com.farm.ngo.farm.DataViewActivity
-ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:30:9-31:48
+ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:27:9-54
 	android:name
-		ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:31:13-45
+		ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:27:19-51
 activity#com.farm.ngo.farm.activity.postshowdetail
-ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:32:9-34:16
+ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:28:9-61
 	android:name
-		ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:33:13-52
+		ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:28:19-58
 activity#com.farm.ngo.farm.phonecall
-ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:35:9-46
+ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:29:9-47
 	android:name
-		ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:35:19-44
+		ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:29:19-44
 activity#com.farm.ngo.farm.pwalyone
-ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:36:9-39:60
+ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:30:9-34:60
 	android:parentActivityName
-		ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:37:13-55
+		ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:33:13-55
 	android:label
-		ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:38:13-39
+		ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:32:13-39
+	android:theme
+		ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:34:13-57
+	android:name
+		ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:31:13-37
+activity#com.farm.ngo.farm.weatherfiveday
+ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:35:9-39:60
+	android:parentActivityName
+		ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:38:13-55
+	android:label
+		ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:37:13-36
 	android:theme
 		ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:39:13-57
 	android:name
-		ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:36:19-43
-activity#com.farm.ngo.farm.weatherfiveday
-ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:40:9-43:48
-	android:parentActivityName
-		ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:41:13-55
-	android:label
-		ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:43:13-36
-	android:theme
-		ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:42:13-57
-	android:name
-		ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:40:19-49
+		ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:36:13-43
 activity#com.farm.ngo.farm.activity.ShopActivity
-ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:44:9-47:59
+ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:40:9-44:60
 	android:parentActivityName
-		ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:45:13-55
+		ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:43:13-55
 	android:label
-		ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:47:13-57
+		ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:42:13-57
 	android:theme
-		ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:46:13-57
+		ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:44:13-57
 	android:name
-		ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:44:19-56
+		ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:41:13-50
+activity#com.farm.ngo.farm.welcome
+ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:45:9-49:36
+	android:name
+		ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:45:19-42
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:45:43-49:25
+action#android.intent.action.MAIN
+ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:46:13-65
+	android:name
+		ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:46:21-62
+category#android.intent.category.LAUNCHER
+ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:48:13-73
+	android:name
+		ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:48:23-70
 uses-sdk
 INJECTED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml
@@ -303,6 +313,10 @@ MERGED from [com.google.android.gms:play-services-ads-identifier:15.0.1] /home/k
 MERGED from [com.google.android.gms:play-services-ads-identifier:15.0.1] /home/kyaw/.gradle/caches/transforms-1/files-1.1/play-services-ads-identifier-15.0.1.aar/0a09353ba46f787884c51dc00d8f8fba/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-basement:15.0.1] /home/kyaw/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/8e29abe56387f1787055d1fc347920fb/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-basement:15.0.1] /home/kyaw/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/8e29abe56387f1787055d1fc347920fb/AndroidManifest.xml:20:5-44
+MERGED from [com.github.barteksc:android-pdf-viewer:3.1.0-beta.1] /home/kyaw/.gradle/caches/transforms-1/files-1.1/android-pdf-viewer-3.1.0-beta.1.aar/ec9c7c08df783c91dd05f3781636cead/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.barteksc:android-pdf-viewer:3.1.0-beta.1] /home/kyaw/.gradle/caches/transforms-1/files-1.1/android-pdf-viewer-3.1.0-beta.1.aar/ec9c7c08df783c91dd05f3781636cead/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.barteksc:pdfium-android:1.9.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/pdfium-android-1.9.0.aar/794372e22f74c5552d6a859b249fb8d4/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.barteksc:pdfium-android:1.9.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/pdfium-android-1.9.0.aar/794372e22f74c5552d6a859b249fb8d4/AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:support-v4:27.1.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.0.aar/32d894bb54eee209458a91220c1acaaa/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-v4:27.1.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.0.aar/32d894bb54eee209458a91220c1acaaa/AndroidManifest.xml:20:5-44
 MERGED from [com.github.bumptech.glide:glide:4.8.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/glide-4.8.0.aar/6d328cd70cd152571140c2feee903291/AndroidManifest.xml:6:5-8:41
