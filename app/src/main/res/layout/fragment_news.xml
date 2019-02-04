@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/grey_300"
-    tools:context="com.farm.ngo.farm.Fragment.NewsFragment">
+    tools:context="com.farm.ngo.farm.fragment.NewsFragment">
     <android.support.v7.widget.Toolbar
         android:layout_alignParentTop="true"
         app:titleTextColor="@color/colorPrimary"

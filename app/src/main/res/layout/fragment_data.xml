@@ -6,7 +6,7 @@
     android:background="#DCDCDC"
     android:paddingTop="8dp"
     android:paddingBottom="8dp"
-    tools:context=".Fragment.DataFragment">
+    tools:context=".fragment.DataFragment">
 
    <android.support.v7.widget.RecyclerView
        android:id="@+id/data_list_grid_view"

@@ -5,10 +5,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
-import com.farm.ngo.farm.Holder.UsingSQLiteHelper;
-import com.farm.ngo.farm.Model.Pwalyone;
+import com.farm.ngo.farm.adapter.PwayloneAdapter;
+import com.farm.ngo.farm.data.UsingSQLiteHelper;
+import com.farm.ngo.farm.model.Pwalyone;
 import com.farm.ngo.farm.R;
-import com.farm.ngo.farm.pwalyone;
+
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -25,7 +26,7 @@ public class ShopActivity extends AppCompatActivity {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        com.farm.ngo.farm.Adapter.addressAdapter adapter=new com.farm.ngo.farm.Adapter.addressAdapter(this,pp);
+        PwayloneAdapter adapter=new PwayloneAdapter(this,pp);
         rc.setAdapter(adapter);
         LinearLayoutManager k=new LinearLayoutManager(this,LinearLayoutManager.VERTICAL, false);
         rc.setLayoutManager(k);

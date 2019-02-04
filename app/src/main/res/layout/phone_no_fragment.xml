@@ -13,7 +13,6 @@
         android:src="@drawable/uscpkku_logo"
         android:layout_centerHorizontal="true"/>
     <TextView
-        android:id="@+id/ucspkku_title"
         android:layout_below="@+id/logo"
         android:layout_marginTop="8dp"
         android:textStyle="bold"
@@ -62,7 +61,6 @@
         android:background="@drawable/input_outline"
         android:layout_marginBottom="@dimen/activity_horizontal_margin"/>
     <EditText
-        android:id="@+id/user_township"
         android:layout_below="@+id/user_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

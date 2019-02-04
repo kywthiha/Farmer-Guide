@@ -12,7 +12,6 @@
             android:scaleX="1.15"
             android:text="Registeration"
             android:textAlignment="center"
-            android:id="@+id/userphonenumber"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 

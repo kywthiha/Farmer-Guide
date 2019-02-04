@@ -1,7 +1,7 @@
-#Thu Dec 27 07:23:30 MMT 2018
+#Mon Feb 04 18:01:04 MMT 2019
 base.0=/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/transforms/dexMerger/debug/0
-path.1=classes2.dex
+path.1=classes.dex
 renamed.1=classes2.dex
 path.0=classes.dex
 renamed.0=classes.dex
-base.1=/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/transforms/dexMerger/debug/0
+base.1=/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/transforms/dexMerger/debug/1

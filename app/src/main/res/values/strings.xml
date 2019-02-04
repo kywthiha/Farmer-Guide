@@ -1,24 +1,11 @@
 <resources>
     <string name="app_name">Farmer Guide</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="weathertitle">ယေန႔ မိုးေလ၀သအေျခအေန</string>
     <string name="otherfruit">အျခားသီးနွံမ်ား</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="weather_sunny">&#xf00d;</string>
-    <string name="weather_clear_night">&#xf02e;</string>
-    <string name="pref_previously_started">false</string>
-    <string name="weather_foggy">&#xf014;</string>
-    <string name="weather_cloudy">&#xf013;</string>
-    <string name="weather_rainy">&#xf019;</string>
-    <string name="weather_snowy">&#xf01b;</string>
-    <string name="weather_thunder">&#xf01e;</string>
-    <string name="weather_drizzle">&#xf01c;</string>
-    <string name="open_weather_maps_app_id">11111</string>
-    <string name="title_activity_showdesign">showdesign</string>
     <string name="showmore">အျပည့္စုံဖတ္ရန္</string>
     <string name="instant_validation">(instant validation)</string>
-    <string name="place_not_found">Sorry, no weather data found.</string>
     <string name="phone_call">Phone Call Argicultural Office</string>
     <string name="welcome">ေတာင္သူလက္စြဲ မွႀကိဳစိုပါ၏</string>
     <string name="message_enter_phone">သင္၏ ဖုန္းနံပါတ္ ကို႐ိုက္ထည့္ပါ</string>
@@ -42,6 +29,5 @@
         <item>pakokku</item>
         <item>yesagyo</item>
     </string-array>
-    <string name="law">https://www.mlis.gov.mm/mLsView.do?lawordSn=182</string>
 
 </resources>

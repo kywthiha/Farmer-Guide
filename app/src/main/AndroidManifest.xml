@@ -18,31 +18,31 @@
         android:largeHeap="true"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".activity.MainActivity">
 
         </activity>
         <activity android:name=".activity.QuestionAnswerActivity" />
-        <activity android:name=".auth.ui.UserLoginActivity" />
+        <activity android:name=".activity.UserLoginActivity" />
         <activity android:name=".activity.ChatActivity" />
-        <activity android:name=".DataViewActivity" />
-        <activity android:name=".activity.postshowdetail" />
-        <activity android:name=".phonecall" />
+        <activity android:name=".activity.DataViewActivity" />
+        <activity android:name=".activity.PostshowdetailActivity" />
+        <activity android:name=".activity.PhoneActivity" />
         <activity
-            android:name=".pwalyone"
+            android:name=".activity.PwalyoneActivity"
             android:label="ပြဲရုံမ်ား"
-            android:parentActivityName=".MainActivity"
+            android:parentActivityName=".activity.MainActivity"
             android:theme="@style/Theme.AppCompat.Light" />
         <activity
-            android:name=".weatherfiveday"
+            android:name=".activity.WeatherFiveDatyActivity"
             android:label="ရာသီဥတု"
-            android:parentActivityName=".MainActivity"
+            android:parentActivityName=".activity.MainActivity"
             android:theme="@style/Theme.AppCompat.Light" />
         <activity
             android:name=".activity.ShopActivity"
             android:label="စိုက္ပ်ိဳးေရးပစၥည္းဆိုင္မ်ား"
-            android:parentActivityName=".MainActivity"
+            android:parentActivityName=".activity.MainActivity"
             android:theme="@style/Theme.AppCompat.Light" />
-        <activity android:name=".welcome"><intent-filter>
+        <activity android:name=".activity.WelcomeActivity"><intent-filter>
             <action android:name="android.intent.action.MAIN" />
 
             <category android:name="android.intent.category.LAUNCHER" />

@@ -3,27 +3,13 @@
     <color name="colorPrimary">#389f56</color>
     <color name="colorPrimaryDark">#338f4d</color>
     <color name="colorAccent">#fff</color>
-    <color name="background_color">#E8B80C</color>
-    <color name="text_color">#FF0000</color>
     <color name="material_green_50">#E8F5E9</color>
     <color name="material_green_500">#4CAF50</color>
     <color name="material_green_700">#388e3c</color>
-    <color name="material_green_a200">#69F0AE</color>
-    <color name="material_lime_a700">#AEEA00</color>
-    <color name="material_purple_a700">#AA00FF</color>
-    <color name="chat_unseen">#c8e6c9</color>
-    <color name="colorCardView">#f7f7f7</color>
-    <color name="grey_100">#F5F5F5</color>
     <color name="grey_300">#E0E0E0</color>
-    <color name="grey_500">#9E9E9E</color>
     <color name="stock">#d7ffd9</color>
     <color name="stock_new_btn">#009624</color>
-    <color name="delete_back">#d96a5e</color>
-    <color name="yso_color">#d96a5e</color>
     <color name="post_show_detail">#883b860d</color>
-    <color name="pauk_color">#68c853</color>
-    <color name="chauk_color">#ffee97</color>
-    <color name="myaing_color">#0088a3</color>
     <color name="white_color">#ffffff</color>
 
 </resources>

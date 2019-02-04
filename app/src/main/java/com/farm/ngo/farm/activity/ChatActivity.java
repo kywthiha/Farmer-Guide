@@ -25,19 +25,18 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
-import com.farm.ngo.farm.Adapter.AdminMessageAdapter;
-import com.farm.ngo.farm.Model.Image;
-import com.farm.ngo.farm.Model.ImageUpload;
-import com.farm.ngo.farm.Model.Message;
-import com.farm.ngo.farm.Model.MessageType;
-import com.farm.ngo.farm.Model.Type;
-import com.farm.ngo.farm.Model.User;
+import com.farm.ngo.farm.adapter.AdminMessageAdapter;
+import com.farm.ngo.farm.model.Image;
+import com.farm.ngo.farm.model.ImageUpload;
+import com.farm.ngo.farm.model.Message;
+import com.farm.ngo.farm.model.MessageType;
+import com.farm.ngo.farm.model.Type;
+import com.farm.ngo.farm.model.User;
 import com.farm.ngo.farm.R;
-import com.farm.ngo.farm.Service.ChatHelper;
-import com.farm.ngo.farm.Utility.ChatStatic;
-import com.farm.ngo.farm.Utility.FileUtil;
-import com.farm.ngo.farm.Utility.ImageUtil;
-import com.firebase.client.Firebase;
+import com.farm.ngo.farm.service.ChatHelper;
+import com.farm.ngo.farm.utility.ChatStatic;
+import com.farm.ngo.farm.utility.FileUtil;
+import com.farm.ngo.farm.utility.ImageUtil;
 import com.google.firebase.FirebaseApp;
 import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
@@ -79,7 +78,6 @@ public class ChatActivity extends AppCompatActivity {
 
     private final String API_KEY = "AIzaSyAlc7IIpWJIvdTQbqUOQBSsyAbZ8pzeFUA ";
     private Context mContext;
-    private Firebase mFirebase;
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -95,8 +93,6 @@ public class ChatActivity extends AppCompatActivity {
         mContext=getApplicationContext();
         setContentView(R.layout.admin_question_answer);
         FirebaseApp.initializeApp(getApplicationContext());
-        Firebase.setAndroidContext(getApplicationContext());
-
         //Tool Bar Setup
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -209,24 +205,6 @@ public class ChatActivity extends AppCompatActivity {
             if (resultCode == RESULT_OK) {
                 final Image image=new Image((Bitmap)data.getExtras().get("data"),user);
                 new ImageUpload(this,true).execute(image);
-//                AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
-//                builder.setMessage("Are you sure want to send this photo");
-//                builder.setPositiveButton("SEND", new DialogInterface.OnClickListener() {
-//                    public void onClick(DialogInterface dialog, int id) {
-//                        // User clicked OK load
-//
-//                    }
-//
-//                });
-//                builder.setNegativeButton("CANCEL", new DialogInterface.OnClickListener() {
-//                    public void onClick(DialogInterface dialog, int id) {
-//                        // User cancelled the dialog
-//                    }
-//                });
-//                AlertDialog dialog = builder.create();
-//                dialog.show();
-//
-
             } else {
                 Toast.makeText(getApplicationContext(), "", Toast.LENGTH_SHORT).show();
                 Toast.makeText(getApplicationContext(), "Taking picture failed.", Toast.LENGTH_SHORT).show();

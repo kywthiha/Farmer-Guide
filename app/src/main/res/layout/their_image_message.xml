@@ -6,7 +6,6 @@
     android:paddingVertical="10dp"
     android:paddingLeft="10dp"
     android:paddingRight="60dp"
-    android:id="@+id/their"
     android:clipToPadding="false">
     <de.hdodenhof.circleimageview.CircleImageView
         android:src="@drawable/ic_farmer"

@@ -28,19 +28,16 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
-import com.farm.ngo.farm.Model.Image;
-import com.farm.ngo.farm.Model.ImageUpload;
-import com.farm.ngo.farm.Model.Message;
-import com.farm.ngo.farm.Model.MessageType;
-import com.farm.ngo.farm.Model.Type;
-import com.farm.ngo.farm.Model.User;
+import com.farm.ngo.farm.model.Image;
+import com.farm.ngo.farm.model.ImageUpload;
+import com.farm.ngo.farm.model.Message;
+import com.farm.ngo.farm.model.MessageType;
+import com.farm.ngo.farm.model.Type;
+import com.farm.ngo.farm.model.User;
 import com.farm.ngo.farm.R;
-import com.farm.ngo.farm.Service.ChatHelper;
-import com.farm.ngo.farm.Utility.FileUtil;
-import com.farm.ngo.farm.Utility.ImageUtil;
-import com.farm.ngo.farm.auth.ui.UserLoginActivity;
-import com.firebase.client.Firebase;
-import com.google.firebase.FirebaseApp;
+import com.farm.ngo.farm.service.ChatHelper;
+import com.farm.ngo.farm.utility.FileUtil;
+import com.farm.ngo.farm.utility.ImageUtil;
 import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -48,8 +45,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ServerValue;
-import com.farm.ngo.farm.Adapter.MessageAdapter;
-
+import com.farm.ngo.farm.adapter.MessageAdapter;
 import java.io.File;
 import java.io.IOException;
 import java.util.LinkedList;
@@ -91,7 +87,7 @@ public class QuestionAnswerActivity extends AppCompatActivity {
         if (item.getItemId() == android.R.id.home)
             finish();
         else if (item.getItemId() == R.id.phoneCall) {
-           Intent i=new Intent(this,com.farm.ngo.farm.phonecall.class);
+           Intent i=new Intent(this,PhoneActivity.class);
            startActivity(i);
         }
         return super.onOptionsItemSelected(item);
@@ -115,10 +111,6 @@ public class QuestionAnswerActivity extends AppCompatActivity {
         }catch (Exception er){
             user=null;
         }
-
-        FirebaseApp.initializeApp(getApplicationContext());
-        Firebase.setAndroidContext(getApplicationContext());
-
         //Tool Bar Setup
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
