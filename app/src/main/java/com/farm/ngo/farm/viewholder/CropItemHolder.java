@@ -1,19 +1,20 @@
 package com.farm.ngo.farm.viewholder;
 
+
 import android.content.Context;
-import android.content.Intent;
 import android.content.res.Resources;
-import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.support.annotation.NonNull;
+import android.support.v4.app.FragmentManager;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.farm.ngo.farm.fragment.DetailCropFragment;
 import com.farm.ngo.farm.model.CropItem;
-import com.farm.ngo.farm.activity.DataViewActivity;
 import com.farm.ngo.farm.R;
 
 public class CropItemHolder extends RecyclerView.ViewHolder {
@@ -34,11 +35,10 @@ public class CropItemHolder extends RecyclerView.ViewHolder {
         mView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mView.setBackgroundColor(Color.BLUE);
-                Intent intent = new Intent(v.getContext(), DataViewActivity.class);
-                intent.putExtra("object", cropItem);
-                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                v.getContext().startActivity(intent);
+                FragmentManager fragmentManager = ((AppCompatActivity)mContext).getSupportFragmentManager();
+                DetailCropFragment newFragment = DetailCropFragment.newInstance(cropItem);
+                newFragment.show(fragmentManager, "slideshow");
+
             }
         });
 

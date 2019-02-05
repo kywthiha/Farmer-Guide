@@ -4,7 +4,18 @@
             "outputFile": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v17/values-v17.xml",
             "map": [
                 {
-                    "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/1303cabcc593c6436c13419ddd9fd001/res/values-v17/values-v17.xml",
+                    "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.39.0.aar/12db8529c5142ad85b1162b8b9fd93f9/res/values-v17/values-v17.xml",
+                    "from": {
+                        "startLines": "2,14",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,669",
+                        "endLines": "13,17",
+                        "endColumns": "12,12",
+                        "endOffsets": "664,942"
+                    }
+                },
+                {
+                    "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/dd6370db221e18e814dff90c899c4720/res/values-v17/values-v17.xml",
                     "from": {
                         "startLines": "2,5,9,12,15,18,22,26,29,32,35,39,42,46",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -12,6 +23,14 @@
                         "endLines": "4,8,11,14,17,21,25,28,31,34,38,41,45,49",
                         "endColumns": "12,12,12,12,12,12,12,12,12,12,12,12,12,12",
                         "endOffsets": "223,451,609,759,931,1159,1401,1572,1746,1915,2188,2388,2592,2921"
+                    },
+                    "to": {
+                        "startLines": "18,21,25,28,31,34,38,42,45,48,51,55,58,62",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "947,1120,1348,1506,1656,1828,2056,2298,2469,2643,2812,3085,3285,3489",
+                        "endLines": "20,24,27,30,33,37,41,44,47,50,54,57,61,65",
+                        "endColumns": "12,12,12,12,12,12,12,12,12,12,12,12,12,12",
+                        "endOffsets": "1115,1343,1501,1651,1823,2051,2293,2464,2638,2807,3080,3280,3484,3813"
                     }
                 }
             ]

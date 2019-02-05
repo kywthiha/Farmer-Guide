@@ -1,5 +1,15 @@
 <resources>
-    <string name="app_name">Farmer Guide</string>
+    <string name="app_name">Farm</string>
+    <string name="FACEBOOK_APP_ID">568815240254142</string>
+    <string name="ACCOUNT_KIT_CLIENT_TOKEN">ae063e9361ed10beafe54c28799e8c23</string>
+    <string name="permissions_read_phone_state_title">Read Phone Number</string>
+    <string name="permissions_receive_sms_message">
+        Grant permission to read your SMS code from your device to pre-fill.
+    </string>
+    <string name="permissions_receive_sms_title">Read SMS Code</string>
+    <string name="permissions_read_phone_state_message">
+        Grant permission to read your phone number from your device to pre-fill.
+    </string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="weathertitle">ယေန႔ မိုးေလ၀သအေျခအေန</string>
     <string name="otherfruit">အျခားသီးနွံမ်ား</string>

@@ -4,7 +4,36 @@
             "outputFile": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/1303cabcc593c6436c13419ddd9fd001/res/values-v16/values-v16.xml",
+                    "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.39.0.aar/12db8529c5142ad85b1162b8b9fd93f9/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2,5,8,11,14",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "55,215,358,510,652",
+                        "endLines": "4,7,10,13,16",
+                        "endColumns": "12,12,12,12,12",
+                        "endOffsets": "210,353,505,647,795"
+                    },
+                    "to": {
+                        "startLines": "3,6,9,12,15",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "121,281,424,576,718",
+                        "endLines": "5,8,11,14,17",
+                        "endColumns": "12,12,12,12,12",
+                        "endOffsets": "276,419,571,713,861"
+                    }
+                },
+                {
+                    "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/f171aef7b903b38255a3bf315bd90282/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
+                    }
+                },
+                {
+                    "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/dd6370db221e18e814dff90c899c4720/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -14,22 +43,12 @@
                         "endOffsets": "223"
                     },
                     "to": {
-                        "startLines": "3",
+                        "startLines": "18",
                         "startColumns": "4",
-                        "startOffsets": "121",
-                        "endLines": "6",
+                        "startOffsets": "866",
+                        "endLines": "21",
                         "endColumns": "12",
-                        "endOffsets": "289"
-                    }
-                },
-                {
-                    "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/7be81667ad95fac28a4e957e7fdaf68e/res/values-v16/values-v16.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "65",
-                        "endOffsets": "116"
+                        "endOffsets": "1034"
                     }
                 }
             ]

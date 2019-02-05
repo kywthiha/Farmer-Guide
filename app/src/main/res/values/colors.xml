@@ -11,5 +11,6 @@
     <color name="stock_new_btn">#009624</color>
     <color name="post_show_detail">#883b860d</color>
     <color name="white_color">#ffffff</color>
+    <color name="no_color">#00ffffff</color>
 
 </resources>

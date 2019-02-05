@@ -72,18 +72,12 @@ public class NewsFragment extends Fragment  {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.fragment_news, container, false);
-
-
-
-
         postAdapter = new PostAdapter(mContext, postArray, visible);
         Toolbar toolbar = (Toolbar)rootView. findViewById(R.id.news_tool_bar);
         AppCompatActivity mActivity=((AppCompatActivity)getActivity());
        mActivity.setSupportActionBar(toolbar);
        mActivity. getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         mActivity.setTitle("News");
-
-
         postRecyclerview = (RecyclerView) rootView.findViewById(R.id.postRecyclerview);
         layoutManager = new LinearLayoutManager(mContext);
         ladingData=(ImageView)rootView.findViewById(R.id.loading_img);

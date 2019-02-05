@@ -5,12 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activity.WeatherFiveDatyActivity"
+    android:background="@drawable/weatherbg"
     >
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/colorPrimary"
         android:orientation="vertical">
 
         <LinearLayout
@@ -24,7 +24,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
                 android:text="Today"
-                android:textColor="#fff"
+                android:textColor="@color/colorPrimary"
                 android:textSize="20dp" />
         </LinearLayout>
 
@@ -43,18 +43,20 @@
                 android:layout_marginTop="15dp"
                 android:textSize="50sp"
                 android:text="23°C"
-                android:textStyle="bold"
-                android:textColor="#fff"
+                android:textColor="@color/colorPrimary"
                 />
         </LinearLayout>
 
 
         <LinearLayout
+
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
             <TextView
+                android:textColor="@color/colorPrimary"
                 android:id="@+id/hum"
                 android:layout_weight="0.5"
                 android:layout_width="match_parent"
@@ -64,7 +66,6 @@
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="10dp"
                 android:text="စိုးထိုင္းဆ = 80%"
-                android:textColor="#fff"
                 android:textSize="18dp" />
 
             <TextView
@@ -77,7 +78,7 @@
                 android:layout_marginRight="10dp"
                 android:layout_marginBottom="10dp"
                 android:text="pressure=1000"
-                android:textColor="#fff"
+                android:textColor="@color/colorPrimary"
                 />
         </LinearLayout>
         <android.support.v7.widget.RecyclerView

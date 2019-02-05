@@ -121,7 +121,7 @@ public class QuestionAnswerActivity extends AppCompatActivity {
         //get user data from chat34
 
         this.phone_number = user.getId();
-        getSupportActionBar().setTitle(user.getName());
+        getSupportActionBar().setTitle(user.getId());
 
 
         //set message to seen

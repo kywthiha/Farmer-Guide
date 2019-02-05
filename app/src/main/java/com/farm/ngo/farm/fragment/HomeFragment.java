@@ -18,6 +18,7 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.farm.ngo.farm.activity.FacebookAccKitActivity;
 import com.farm.ngo.farm.utility.NetWorkUtail;
 import com.farm.ngo.farm.activity.PwalyoneActivity;
 import com.farm.ngo.farm.R;
@@ -138,8 +139,7 @@ public class HomeFragment extends Fragment {
         questionAndAnswerCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               // User u= UsingSQLiteHelper.getUser(getActivity());
-                Intent in = new Intent(getActivity(),UserLoginActivity.class);
+                Intent in = new Intent(getActivity(),FacebookAccKitActivity.class);
                 getActivity().startActivity(in);
             }
         });

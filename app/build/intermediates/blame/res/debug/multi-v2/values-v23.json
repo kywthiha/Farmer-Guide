@@ -4,7 +4,7 @@
             "outputFile": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v23/values-v23.xml",
             "map": [
                 {
-                    "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.1.0.aar/f8bcc1df311fca3bbde82f05acb21b7a/res/values-v23/values-v23.xml",
+                    "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.1.0.aar/43af87c8dc0e29075c596524b2e7a004/res/values-v23/values-v23.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -14,16 +14,16 @@
                         "endOffsets": "200"
                     },
                     "to": {
-                        "startLines": "37",
+                        "startLines": "49",
                         "startColumns": "4",
-                        "startOffsets": "2646",
-                        "endLines": "39",
+                        "startOffsets": "3224",
+                        "endLines": "51",
                         "endColumns": "12",
-                        "endOffsets": "2791"
+                        "endOffsets": "3369"
                     }
                 },
                 {
-                    "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/1303cabcc593c6436c13419ddd9fd001/res/values-v23/values-v23.xml",
+                    "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/dd6370db221e18e814dff90c899c4720/res/values-v23/values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,19,32,33,34,35,36",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
@@ -31,6 +31,25 @@
                         "endLines": "2,3,4,5,18,31,32,33,34,35,36",
                         "endColumns": "134,134,74,86,12,12,126,104,114,106,112",
                         "endOffsets": "185,320,395,482,1272,2074,2201,2306,2421,2528,2641"
+                    },
+                    "to": {
+                        "startLines": "14,15,16,17,18,31,44,45,46,47,48",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "633,768,903,978,1065,1855,2657,2784,2889,3004,3111",
+                        "endLines": "14,15,16,17,30,43,44,45,46,47,48",
+                        "endColumns": "134,134,74,86,12,12,126,104,114,106,112",
+                        "endOffsets": "763,898,973,1060,1850,2652,2779,2884,2999,3106,3219"
+                    }
+                },
+                {
+                    "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.39.0.aar/12db8529c5142ad85b1162b8b9fd93f9/res/values-v23/values-v23.xml",
+                    "from": {
+                        "startLines": "2,5,8,11",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,208,353,488",
+                        "endLines": "4,7,10,13",
+                        "endColumns": "12,12,12,12",
+                        "endOffsets": "203,348,483,628"
                     }
                 }
             ]

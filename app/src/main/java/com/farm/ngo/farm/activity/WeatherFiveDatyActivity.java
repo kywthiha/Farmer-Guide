@@ -20,6 +20,7 @@ import org.json.JSONObject;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.Locale;
 
 public class WeatherFiveDatyActivity extends AppCompatActivity {
@@ -28,7 +29,7 @@ public class WeatherFiveDatyActivity extends AppCompatActivity {
     public void addVehicle( String string ) {
         ary.add( string );
     }
-    String city = "lat=21.3343&lon=95.0944";
+    String city = "lat=21.3343&lon=95.0944";// for pakokku
     String OPEN_WEATHER_MAP_API = "cccd055e7a485c62e5ed11986aaf08c1";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,7 +68,7 @@ public class WeatherFiveDatyActivity extends AppCompatActivity {
         }
         protected String doInBackground(String...args) {
             String xml = NetWorkUtail.excuteGet("http://api.openweathermap.org/data/2.5/forecast?" + args[0] +
-                    "&cnt=5&appid=" + OPEN_WEATHER_MAP_API);
+                    "&units=metric&appid=" + OPEN_WEATHER_MAP_API);
             return xml;
         }
         @Override
@@ -82,19 +83,14 @@ public class WeatherFiveDatyActivity extends AppCompatActivity {
                         JSONObject list = lis.getJSONObject(i);
                         JSONObject details = list.getJSONArray("weather").getJSONObject(0);
                         JSONObject main = list.getJSONObject("main");
-                        SimpleDateFormat sdf=new SimpleDateFormat("dd/MM/yy");
-
+                        SimpleDateFormat sdf=new SimpleDateFormat("EEE,dd MMM");
                         DateFormat df = DateFormat.getDateTimeInstance();
                         //  String in=String.valueOf(Html.fromHtml(NetWorkUtail.setWeatherIcon(details.getInt("id"),
                         //  list.getJSONObject("sys").getLong("sunrise") * 1000,
                         //  list.getJSONObject("sys").getLong("sunset") * 1000)));
-
-                        String in=details.getString("description").toUpperCase(Locale.US)+","+String.format("%.0f", (main.getDouble("temp")-273.15)) + "°C"+","+details.getString("icon");
-
-                        weatherin.add(in);
-                        Log.i("in", in);
-                        Log.i("date", String.valueOf(list.getLong("dt")*1000));
-                        Log.i("kyaw", in);}
+                        String in=sdf.format(new Date(list.getLong("dt") * 1000))+","+details.getString("description").toUpperCase(Locale.US)+","+String.format("%.0f", (main.getDouble("temp")-273.15)) + "°C"+","+details.getString("icon");
+                        //weatherin.add(in);
+                        Log.i("kk",sdf.format(new Date(list.getLong("dt") * 1000)));}
                     com.farm.ngo.farm.adapter.weatherfivedayAdapter adapter=new com.farm.ngo.farm.adapter.weatherfivedayAdapter(WeatherFiveDatyActivity.this,weatherin);
                     rc.setAdapter(adapter);
                     LinearLayoutManager k=new LinearLayoutManager(WeatherFiveDatyActivity.this,LinearLayoutManager.VERTICAL, false);
