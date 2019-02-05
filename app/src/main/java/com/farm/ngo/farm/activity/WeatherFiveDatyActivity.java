@@ -83,13 +83,13 @@ public class WeatherFiveDatyActivity extends AppCompatActivity {
                         JSONObject list = lis.getJSONObject(i);
                         JSONObject details = list.getJSONArray("weather").getJSONObject(0);
                         JSONObject main = list.getJSONObject("main");
-                        SimpleDateFormat sdf=new SimpleDateFormat("EEE,dd MMM");
+                        SimpleDateFormat sdf=new SimpleDateFormat("EEE, d MMM\nh:mm a");
                         DateFormat df = DateFormat.getDateTimeInstance();
                         //  String in=String.valueOf(Html.fromHtml(NetWorkUtail.setWeatherIcon(details.getInt("id"),
                         //  list.getJSONObject("sys").getLong("sunrise") * 1000,
                         //  list.getJSONObject("sys").getLong("sunset") * 1000)));
-                        String in=sdf.format(new Date(list.getLong("dt") * 1000))+","+details.getString("description").toUpperCase(Locale.US)+","+String.format("%.0f", (main.getDouble("temp")-273.15)) + "°C"+","+details.getString("icon");
-                        //weatherin.add(in);
+                        String in=sdf.format(new Date(list.getLong("dt") * 1000))+"~"+String.format("%.0f", (main.getDouble("temp"))) + "°C"+"~"+details.getString("icon");
+                        weatherin.add(in);
                         Log.i("kk",sdf.format(new Date(list.getLong("dt") * 1000)));}
                     com.farm.ngo.farm.adapter.weatherfivedayAdapter adapter=new com.farm.ngo.farm.adapter.weatherfivedayAdapter(WeatherFiveDatyActivity.this,weatherin);
                     rc.setAdapter(adapter);

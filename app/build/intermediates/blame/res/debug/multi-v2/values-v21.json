@@ -4,25 +4,6 @@
             "outputFile": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v21/values-v21.xml",
             "map": [
                 {
-                    "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.39.0.aar/12db8529c5142ad85b1162b8b9fd93f9/res/values-v21/values-v21.xml",
-                    "from": {
-                        "startLines": "2,6",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,258",
-                        "endLines": "5,9",
-                        "endColumns": "12,12",
-                        "endOffsets": "253,498"
-                    },
-                    "to": {
-                        "startLines": "6,10",
-                        "startColumns": "4,4",
-                        "startOffsets": "354,557",
-                        "endLines": "9,13",
-                        "endColumns": "12,12",
-                        "endOffsets": "552,797"
-                    }
-                },
-                {
                     "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/dd6370db221e18e814dff90c899c4720/res/values-v21/values-v21.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,17,19,20,21,22,24,26,27,28,29,30,32,34,36,38,40,42,43,48,50,52,53,54,56,58,59,60,61,62,63,107,110,154,157,160,162,164,166,169,171,174,175,176,179,180,181,182,183,184,187,188,190,192,194,196,200,202,203,204,205,207,211,213,215,216,217,218,219,221,222,223,233,234,235,247",
@@ -96,6 +77,25 @@
                         "endLines": "2,3,4,5,275,276,283,287,293,298",
                         "endColumns": "103,63,66,63,115,125,125,127,12,12",
                         "endOffsets": "154,218,285,349,20129,20255,20712,21008,21347,21685"
+                    }
+                },
+                {
+                    "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.23.0.aar/346e5de764bf38c581d1473b6b5136e3/res/values-v21/values-v21.xml",
+                    "from": {
+                        "startLines": "2,6",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,258",
+                        "endLines": "5,9",
+                        "endColumns": "12,12",
+                        "endOffsets": "253,498"
+                    },
+                    "to": {
+                        "startLines": "6,10",
+                        "startColumns": "4,4",
+                        "startOffsets": "354,557",
+                        "endLines": "9,13",
+                        "endColumns": "12,12",
+                        "endOffsets": "552,797"
                     }
                 }
             ]

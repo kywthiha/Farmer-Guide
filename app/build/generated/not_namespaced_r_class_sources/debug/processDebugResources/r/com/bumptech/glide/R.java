@@ -96,7 +96,7 @@ public final class R {
         public static final int blocking = 0x7f09002c;
         public static final int bottom = 0x7f09002d;
         public static final int chronometer = 0x7f090042;
-        public static final int end = 0x7f090097;
+        public static final int end = 0x7f090098;
         public static final int forever = 0x7f0900a7;
         public static final int glide_custom_view_target_tag = 0x7f0900a9;
         public static final int icon = 0x7f0900b0;
@@ -140,7 +140,7 @@ public final class R {
     public static final class string {
         private string() {}
 
-        public static final int status_bar_notification_info_overflow = 0x7f0e00a3;
+        public static final int status_bar_notification_info_overflow = 0x7f0e008a;
     }
     public static final class style {
         private style() {}

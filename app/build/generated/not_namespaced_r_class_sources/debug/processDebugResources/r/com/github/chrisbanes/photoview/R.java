@@ -637,15 +637,15 @@ public final class R {
         public static final int buttonPanel = 0x7f090036;
         public static final int checkbox = 0x7f090040;
         public static final int chronometer = 0x7f090042;
-        public static final int contentPanel = 0x7f09006f;
-        public static final int custom = 0x7f090078;
-        public static final int customPanel = 0x7f090079;
-        public static final int decor_content_parent = 0x7f090081;
-        public static final int default_activity_button = 0x7f090082;
-        public static final int edit_query = 0x7f09008e;
-        public static final int end = 0x7f090097;
-        public static final int expand_activities_button = 0x7f09009c;
-        public static final int expanded_menu = 0x7f09009d;
+        public static final int contentPanel = 0x7f090070;
+        public static final int custom = 0x7f090079;
+        public static final int customPanel = 0x7f09007a;
+        public static final int decor_content_parent = 0x7f090082;
+        public static final int default_activity_button = 0x7f090083;
+        public static final int edit_query = 0x7f09008f;
+        public static final int end = 0x7f090098;
+        public static final int expand_activities_button = 0x7f09009d;
+        public static final int expanded_menu = 0x7f09009e;
         public static final int forever = 0x7f0900a7;
         public static final int home = 0x7f0900ac;
         public static final int icon = 0x7f0900b0;
@@ -794,8 +794,8 @@ public final class R {
         public static final int abc_shareactionprovider_share_with = 0x7f0e001c;
         public static final int abc_shareactionprovider_share_with_application = 0x7f0e001d;
         public static final int abc_toolbar_collapse_description = 0x7f0e001e;
-        public static final int search_menu_title = 0x7f0e00a1;
-        public static final int status_bar_notification_info_overflow = 0x7f0e00a3;
+        public static final int search_menu_title = 0x7f0e0088;
+        public static final int status_bar_notification_info_overflow = 0x7f0e008a;
     }
     public static final class style {
         private style() {}

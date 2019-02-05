@@ -42,7 +42,7 @@
                     }
                 },
                 {
-                    "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.39.0.aar/12db8529c5142ad85b1162b8b9fd93f9/res/values-v23/values-v23.xml",
+                    "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.23.0.aar/346e5de764bf38c581d1473b6b5136e3/res/values-v23/values-v23.xml",
                     "from": {
                         "startLines": "2,5,8,11",
                         "startColumns": "4,4,4,4",

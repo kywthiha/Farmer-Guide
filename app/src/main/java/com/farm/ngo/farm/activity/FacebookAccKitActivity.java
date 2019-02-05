@@ -4,6 +4,12 @@ package com.farm.ngo.farm.activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Spinner;
+import android.widget.TimePicker;
 import android.widget.Toast;
 import com.facebook.accountkit.Account;
 import com.facebook.accountkit.AccountKit;
@@ -15,22 +21,31 @@ import com.facebook.accountkit.ui.AccountKitConfiguration;
 import com.facebook.accountkit.ui.LoginType;
 import com.facebook.accountkit.AccountKitLoginResult;
 import com.farm.ngo.farm.R;
+import com.farm.ngo.farm.data.UsingSQLiteHelper;
 import com.farm.ngo.farm.model.User;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 public class FacebookAccKitActivity extends AppCompatActivity {
     public static int APP_REQUEST_CODE = 99;
+    private String phonenumber;
+    Button mContinue;
+    Spinner mTownship;
+    EditText mName;
 
     private void getCurrentUser(){
         AccountKit.getCurrentAccount(new AccountKitCallback<Account>() {
             @Override
             public void onSuccess(final Account account) {
-                final PhoneNumber number = account.getPhoneNumber();
-                Intent in=new Intent(getApplicationContext(),QuestionAnswerActivity.class);
-                User user=new User();
-                user.setId(number.toString());
-                in.putExtra("user",user);
-                startActivity(in);
-                finish();
+                phonenumber=account.getPhoneNumber().toString();
+                Toast.makeText(getApplicationContext(),phonenumber,Toast.LENGTH_SHORT).show();
+                Log.i("facebook 1",phonenumber);
+                //registerUser(phonenumber);
+
+
             }
 
             @Override
@@ -39,18 +54,44 @@ public class FacebookAccKitActivity extends AppCompatActivity {
         });
     }
     @Override
-    protected void onResume() {
-        super.onResume();
-
-     // getCurrentUser();
+    protected void onStart() {
+        super.onStart();
+        startChart();
+    }
+    private void startChart(){
+        User user= UsingSQLiteHelper.getUser(this);
+        if(user!=null){
+            Intent in=new Intent(getApplicationContext(),QuestionAnswerActivity.class);
+            in.putExtra("user",user);
+            startActivity(in);
+            this.finish();
+        }
     }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.facebook_acc_kit);
+        mContinue=(Button)findViewById(R.id.btnContinue);
+        mTownship=(Spinner)findViewById(R.id.usertownship);
+        mName=(EditText)findViewById(R.id.username);
+        mContinue.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                DatabaseReference databaseuser=FirebaseDatabase.getInstance().getReference().child("users").child(phonenumber);
+                    User user=new User(phonenumber,mName.getText().toString(),"","","Pakokku");
+                    databaseuser.setValue(user);
+                    UsingSQLiteHelper.setUser(user,getApplicationContext());
+                Log.i("facebook",user.getId());
+//                    Intent in=new Intent(FacebookAccKitActivity.this,QuestionAnswerActivity.class);
+//                    in.putExtra("user",user);
+//                    startActivity(in);
+//                    finish();
+            }
+        });
+
         if (AccountKit.getCurrentAccessToken() != null && savedInstanceState == null) {
-           //getCurrentUser();
+           startChart();
         }
         else {
             phoneLogin();
@@ -92,7 +133,8 @@ public class FacebookAccKitActivity extends AppCompatActivity {
             } else {
                 if (loginResult.getAccessToken() != null) {
                     toastMessage = "Success:" + loginResult.getAccessToken().getAccountId();
-                   // getCurrentUser();
+                    getCurrentUser();
+
                 } else {
                     toastMessage = String.format(
                             "Success:%s...",
@@ -114,6 +156,28 @@ public class FacebookAccKitActivity extends AppCompatActivity {
                     Toast.LENGTH_LONG)
                     .show();
         }
+    }
+    public void registerUser(final String phonenumber) {
+        final DatabaseReference database=FirebaseDatabase.getInstance().getReference().child("users");
+        database.child(phonenumber).addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                if(dataSnapshot.exists()){
+                    User user=dataSnapshot.getValue(User.class);
+                    UsingSQLiteHelper.setUser(user,getApplicationContext());
+                    Intent in=new Intent(getApplicationContext(),QuestionAnswerActivity.class);
+                    in.putExtra("user",user);
+                    startActivity(in);
+                    finish();
+                }
+
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
     }
 
 

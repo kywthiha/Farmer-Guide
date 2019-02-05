@@ -7,15 +7,13 @@ INJECTED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.x
 MERGED from [com.android.support:multidex:1.0.2] /home/kyaw/.gradle/caches/transforms-1/files-1.1/multidex-1.0.2.aar/a4d4bd12b7634d2f64f3406857f2d186/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/kyaw/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/de7b1a52f7ee8fac3e385b908458fa13/AndroidManifest.xml:2:1-11:12
 MERGED from [com.github.barteksc:android-pdf-viewer:3.1.0-beta.1] /home/kyaw/.gradle/caches/transforms-1/files-1.1/android-pdf-viewer-3.1.0-beta.1.aar/9d9e5a3e03ddce6f8cd039ed9c2739cf/AndroidManifest.xml:2:1-11:12
-MERGED from [com.facebook.android:account-kit-sdk:4.39.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.39.0.aar/12db8529c5142ad85b1162b8b9fd93f9/AndroidManifest.xml:21:1-55:12
+MERGED from [com.facebook.android:account-kit-sdk:4.23.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.23.0.aar/346e5de764bf38c581d1473b6b5136e3/AndroidManifest.xml:21:1-55:12
 MERGED from [com.github.chrisbanes:PhotoView:2.1.4] /home/kyaw/.gradle/caches/transforms-1/files-1.1/PhotoView-2.1.4.aar/95baa503bd8c0531d906a3954333a317/AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.support:design:27.1.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/design-27.1.0.aar/c5b01bd8a993618d5a7167007f15b2f4/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:appcompat-v7:27.1.1] /home/kyaw/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/dd6370db221e18e814dff90c899c4720/AndroidManifest.xml:17:1-22:12
 MERGED from [com.github.barteksc:pdfium-android:1.9.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/pdfium-android-1.9.0.aar/11839d44edda4ccba7d2610f7f2aa4db/AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.firebase:firebase-database:16.0.1] /home/kyaw/.gradle/caches/transforms-1/files-1.1/firebase-database-16.0.1.aar/de9b8f3de50197dd3a7c7968e50fbc42/AndroidManifest.xml:2:1-8:12
 MERGED from [com.google.firebase:firebase-storage:16.0.1] /home/kyaw/.gradle/caches/transforms-1/files-1.1/firebase-storage-16.0.1.aar/a2c73d63bbaca783428c57dcd3bc78f6/AndroidManifest.xml:2:1-7:12
-MERGED from [com.google.android.gms:play-services-auth:11.8.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.8.0.aar/d38b0b69c9fe75fb722ccaec51d660a3/AndroidManifest.xml:17:1-39:12
-MERGED from [com.google.android.gms:play-services-auth-api-phone:11.8.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/play-services-auth-api-phone-11.8.0.aar/9011ce86f73953a381061ecaa8a1e9f3/AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.firebase:firebase-database-connection:16.0.1] /home/kyaw/.gradle/caches/transforms-1/files-1.1/firebase-database-connection-16.0.1.aar/b56ed7936b70bd5595aa6bc6dc94a9e2/AndroidManifest.xml:2:1-10:12
 MERGED from [com.google.firebase:firebase-core:16.0.1] /home/kyaw/.gradle/caches/transforms-1/files-1.1/firebase-core-16.0.1.aar/3b96f3548c3c70fee497411efb37b8f6/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.firebase:firebase-measurement-connector-impl:16.0.1] /home/kyaw/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-16.0.1.aar/2697e4bf35d252a1ee9181d9d5c130f5/AndroidManifest.xml:17:1-34:12
@@ -23,15 +21,14 @@ MERGED from [com.google.firebase:firebase-analytics:16.0.1] /home/kyaw/.gradle/c
 MERGED from [com.google.firebase:firebase-analytics-impl:16.1.1] /home/kyaw/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.1.1.aar/640faa86f513206d03a92cdf75d1239c/AndroidManifest.xml:17:1-40:12
 MERGED from [com.google.firebase:firebase-iid:16.0.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/3334cba2fc21d10821bce9e535769e62/AndroidManifest.xml:17:1-65:12
 MERGED from [com.google.firebase:firebase-common:16.0.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.0.aar/1603ab942d3e575a867f23e03b3d7708/AndroidManifest.xml:2:1-16:12
-MERGED from [com.google.firebase:firebase-database-collection:15.0.1] /home/kyaw/.gradle/caches/transforms-1/files-1.1/firebase-database-collection-15.0.1.aar/6ae944aeb7ebb25f71d35c2220e2fd3d/AndroidManifest.xml:2:1-8:12
-MERGED from [com.google.firebase:firebase-storage-common:16.0.1] /home/kyaw/.gradle/caches/transforms-1/files-1.1/firebase-storage-common-16.0.1.aar/f9a69d9d06372ff67b0d415a807193ea/AndroidManifest.xml:2:1-10:12
-MERGED from [com.google.android.gms:play-services-auth-base:11.8.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-11.8.0.aar/317c43513c1114642db5f0a655898fb5/AndroidManifest.xml:2:1-7:12
-MERGED from [com.google.android.gms:play-services-stats:15.0.1] /home/kyaw/.gradle/caches/transforms-1/files-1.1/play-services-stats-15.0.1.aar/1188ffdadc4c8683b945afc300698372/AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.firebase:firebase-measurement-connector:16.0.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-16.0.0.aar/08fc74b067d9b102661149793042b64c/AndroidManifest.xml:17:1-25:12
-MERGED from [com.google.android.gms:play-services-ads-identifier:15.0.1] /home/kyaw/.gradle/caches/transforms-1/files-1.1/play-services-ads-identifier-15.0.1.aar/635ea743d09d15fa5a42829515ecc84b/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.firebase:firebase-iid-interop:16.0.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/firebase-iid-interop-16.0.0.aar/09816f31f45c05605cd23a7da3792fd7/AndroidManifest.xml:2:1-10:12
 MERGED from [com.google.android.gms:play-services-base:15.0.1] /home/kyaw/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/b6c12b3c271ccfe6842834ed35071024/AndroidManifest.xml:17:1-29:12
 MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /home/kyaw/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/aba51fa173e49c07688efd4d3b84a3ba/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-database-collection:15.0.1] /home/kyaw/.gradle/caches/transforms-1/files-1.1/firebase-database-collection-15.0.1.aar/6ae944aeb7ebb25f71d35c2220e2fd3d/AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.firebase:firebase-storage-common:16.0.1] /home/kyaw/.gradle/caches/transforms-1/files-1.1/firebase-storage-common-16.0.1.aar/f9a69d9d06372ff67b0d415a807193ea/AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.android.gms:play-services-stats:15.0.1] /home/kyaw/.gradle/caches/transforms-1/files-1.1/play-services-stats-15.0.1.aar/1188ffdadc4c8683b945afc300698372/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-measurement-connector:16.0.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-16.0.0.aar/08fc74b067d9b102661149793042b64c/AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.gms:play-services-ads-identifier:15.0.1] /home/kyaw/.gradle/caches/transforms-1/files-1.1/play-services-ads-identifier-15.0.1.aar/635ea743d09d15fa5a42829515ecc84b/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services-basement:15.0.1] /home/kyaw/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/e45e3a57c6ee28faf359d489b0e283e8/AndroidManifest.xml:17:1-28:12
 MERGED from [com.android.support:support-v4:27.1.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.0.aar/3b97c2b7431359f626ef7501ce07f9a9/AndroidManifest.xml:17:1-22:12
 MERGED from [com.github.bumptech.glide:glide:4.8.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/glide-4.8.0.aar/a6482f29227cd96618bf8737186afe5e/AndroidManifest.xml:2:1-12:12
@@ -55,9 +52,7 @@ MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /home/kyaw/.gradle/cach
 MERGED from [android.arch.core:runtime:1.1.1] /home/kyaw/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/f473dc6fc936cf3c89407785174398d4/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/kyaw/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/7969cd0433cfd202382a46c94ced432b/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /home/kyaw/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/d4b2434e766cbf6ca7c66a4c6315e4fe/AndroidManifest.xml:17:1-22:12
-MERGED from [com.google.android.gms:play-services-auth-api-phone-license:11.8.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/play-services-auth-api-phone-license-11.8.0.aar/3d3b4e647e384508a5f294c92d23a9de/AndroidManifest.xml:2:1-6:12
 MERGED from [com.google.android.gms:play-services-measurement-base:16.0.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/play-services-measurement-base-16.0.0.aar/8133a71fd9d53ed8d3acf4384503adf9/AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.android.gms:play-services-auth-base-license:11.8.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-license-11.8.0.aar/cb67176d1bc465c0f61c99a77e3f39e8/AndroidManifest.xml:2:1-6:12
 INJECTED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:2:1-68:12
 INJECTED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:2:1-68:12
 INJECTED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:2:1-68:12
@@ -137,10 +132,8 @@ application
 ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:15:5-66:19
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/kyaw/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/de7b1a52f7ee8fac3e385b908458fa13/AndroidManifest.xml:9:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/kyaw/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/de7b1a52f7ee8fac3e385b908458fa13/AndroidManifest.xml:9:5-20
-MERGED from [com.facebook.android:account-kit-sdk:4.39.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.39.0.aar/12db8529c5142ad85b1162b8b9fd93f9/AndroidManifest.xml:28:5-53:19
-MERGED from [com.facebook.android:account-kit-sdk:4.39.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.39.0.aar/12db8529c5142ad85b1162b8b9fd93f9/AndroidManifest.xml:28:5-53:19
-MERGED from [com.google.android.gms:play-services-auth:11.8.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.8.0.aar/d38b0b69c9fe75fb722ccaec51d660a3/AndroidManifest.xml:22:5-37:19
-MERGED from [com.google.android.gms:play-services-auth:11.8.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.8.0.aar/d38b0b69c9fe75fb722ccaec51d660a3/AndroidManifest.xml:22:5-37:19
+MERGED from [com.facebook.android:account-kit-sdk:4.23.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.23.0.aar/346e5de764bf38c581d1473b6b5136e3/AndroidManifest.xml:28:5-53:19
+MERGED from [com.facebook.android:account-kit-sdk:4.23.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.23.0.aar/346e5de764bf38c581d1473b6b5136e3/AndroidManifest.xml:28:5-53:19
 MERGED from [com.google.firebase:firebase-core:16.0.1] /home/kyaw/.gradle/caches/transforms-1/files-1.1/firebase-core-16.0.1.aar/3b96f3548c3c70fee497411efb37b8f6/AndroidManifest.xml:7:5-20
 MERGED from [com.google.firebase:firebase-core:16.0.1] /home/kyaw/.gradle/caches/transforms-1/files-1.1/firebase-core-16.0.1.aar/3b96f3548c3c70fee497411efb37b8f6/AndroidManifest.xml:7:5-20
 MERGED from [com.google.firebase:firebase-measurement-connector-impl:16.0.1] /home/kyaw/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-16.0.1.aar/2697e4bf35d252a1ee9181d9d5c130f5/AndroidManifest.xml:26:5-32:19
@@ -153,18 +146,18 @@ MERGED from [com.google.firebase:firebase-iid:16.0.0] /home/kyaw/.gradle/caches/
 MERGED from [com.google.firebase:firebase-iid:16.0.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/3334cba2fc21d10821bce9e535769e62/AndroidManifest.xml:34:5-63:19
 MERGED from [com.google.firebase:firebase-common:16.0.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.0.aar/1603ab942d3e575a867f23e03b3d7708/AndroidManifest.xml:8:5-14:19
 MERGED from [com.google.firebase:firebase-common:16.0.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.0.aar/1603ab942d3e575a867f23e03b3d7708/AndroidManifest.xml:8:5-14:19
-MERGED from [com.google.android.gms:play-services-stats:15.0.1] /home/kyaw/.gradle/caches/transforms-1/files-1.1/play-services-stats-15.0.1.aar/1188ffdadc4c8683b945afc300698372/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-stats:15.0.1] /home/kyaw/.gradle/caches/transforms-1/files-1.1/play-services-stats-15.0.1.aar/1188ffdadc4c8683b945afc300698372/AndroidManifest.xml:7:5-20
-MERGED from [com.google.firebase:firebase-measurement-connector:16.0.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-16.0.0.aar/08fc74b067d9b102661149793042b64c/AndroidManifest.xml:22:5-23:19
-MERGED from [com.google.firebase:firebase-measurement-connector:16.0.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-16.0.0.aar/08fc74b067d9b102661149793042b64c/AndroidManifest.xml:22:5-23:19
-MERGED from [com.google.android.gms:play-services-ads-identifier:15.0.1] /home/kyaw/.gradle/caches/transforms-1/files-1.1/play-services-ads-identifier-15.0.1.aar/635ea743d09d15fa5a42829515ecc84b/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-ads-identifier:15.0.1] /home/kyaw/.gradle/caches/transforms-1/files-1.1/play-services-ads-identifier-15.0.1.aar/635ea743d09d15fa5a42829515ecc84b/AndroidManifest.xml:22:5-20
 MERGED from [com.google.firebase:firebase-iid-interop:16.0.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/firebase-iid-interop-16.0.0.aar/09816f31f45c05605cd23a7da3792fd7/AndroidManifest.xml:7:5-8:19
 MERGED from [com.google.firebase:firebase-iid-interop:16.0.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/firebase-iid-interop-16.0.0.aar/09816f31f45c05605cd23a7da3792fd7/AndroidManifest.xml:7:5-8:19
 MERGED from [com.google.android.gms:play-services-base:15.0.1] /home/kyaw/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/b6c12b3c271ccfe6842834ed35071024/AndroidManifest.xml:22:5-27:19
 MERGED from [com.google.android.gms:play-services-base:15.0.1] /home/kyaw/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/b6c12b3c271ccfe6842834ed35071024/AndroidManifest.xml:22:5-27:19
 MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /home/kyaw/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/aba51fa173e49c07688efd4d3b84a3ba/AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /home/kyaw/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/aba51fa173e49c07688efd4d3b84a3ba/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:15.0.1] /home/kyaw/.gradle/caches/transforms-1/files-1.1/play-services-stats-15.0.1.aar/1188ffdadc4c8683b945afc300698372/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:15.0.1] /home/kyaw/.gradle/caches/transforms-1/files-1.1/play-services-stats-15.0.1.aar/1188ffdadc4c8683b945afc300698372/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-measurement-connector:16.0.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-16.0.0.aar/08fc74b067d9b102661149793042b64c/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-measurement-connector:16.0.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-16.0.0.aar/08fc74b067d9b102661149793042b64c/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-ads-identifier:15.0.1] /home/kyaw/.gradle/caches/transforms-1/files-1.1/play-services-ads-identifier-15.0.1.aar/635ea743d09d15fa5a42829515ecc84b/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-ads-identifier:15.0.1] /home/kyaw/.gradle/caches/transforms-1/files-1.1/play-services-ads-identifier-15.0.1.aar/635ea743d09d15fa5a42829515ecc84b/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services-basement:15.0.1] /home/kyaw/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/e45e3a57c6ee28faf359d489b0e283e8/AndroidManifest.xml:22:5-26:19
 MERGED from [com.google.android.gms:play-services-basement:15.0.1] /home/kyaw/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/e45e3a57c6ee28faf359d489b0e283e8/AndroidManifest.xml:22:5-26:19
 MERGED from [com.github.bumptech.glide:glide:4.8.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/glide-4.8.0.aar/a6482f29227cd96618bf8737186afe5e/AndroidManifest.xml:10:5-20
@@ -175,12 +168,8 @@ MERGED from [android.arch.lifecycle:extensions:1.1.1] /home/kyaw/.gradle/caches/
 MERGED from [android.arch.lifecycle:extensions:1.1.1] /home/kyaw/.gradle/caches/transforms-1/files-1.1/extensions-1.1.1.aar/c9f28cd21ee90815fb1d33239b01de98/AndroidManifest.xml:22:5-28:19
 MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.8.0.aar/10503e68479dc4e77882e451aebfb482/AndroidManifest.xml:9:5-20
 MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.8.0.aar/10503e68479dc4e77882e451aebfb482/AndroidManifest.xml:9:5-20
-MERGED from [com.google.android.gms:play-services-auth-api-phone-license:11.8.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/play-services-auth-api-phone-license-11.8.0.aar/3d3b4e647e384508a5f294c92d23a9de/AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-auth-api-phone-license:11.8.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/play-services-auth-api-phone-license-11.8.0.aar/3d3b4e647e384508a5f294c92d23a9de/AndroidManifest.xml:5:5-20
 MERGED from [com.google.android.gms:play-services-measurement-base:16.0.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/play-services-measurement-base-16.0.0.aar/8133a71fd9d53ed8d3acf4384503adf9/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services-measurement-base:16.0.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/play-services-measurement-base-16.0.0.aar/8133a71fd9d53ed8d3acf4384503adf9/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-auth-base-license:11.8.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-license-11.8.0.aar/cb67176d1bc465c0f61c99a77e3f39e8/AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-auth-base-license:11.8.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-license-11.8.0.aar/cb67176d1bc465c0f61c99a77e3f39e8/AndroidManifest.xml:5:5-20
 	android:supportsRtl
 		ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:20:9-35
 	android:label
@@ -211,16 +200,16 @@ ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:
 		ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:26:20-70
 activity#com.facebook.accountkit.ui.AccountKitActivity
 ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:29:9-30:76
-MERGED from [com.facebook.android:account-kit-sdk:4.39.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.39.0.aar/12db8529c5142ad85b1162b8b9fd93f9/AndroidManifest.xml:29:9-34:58
-MERGED from [com.facebook.android:account-kit-sdk:4.39.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.39.0.aar/12db8529c5142ad85b1162b8b9fd93f9/AndroidManifest.xml:29:9-34:58
+MERGED from [com.facebook.android:account-kit-sdk:4.23.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.23.0.aar/346e5de764bf38c581d1473b6b5136e3/AndroidManifest.xml:29:9-34:58
+MERGED from [com.facebook.android:account-kit-sdk:4.23.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.23.0.aar/346e5de764bf38c581d1473b6b5136e3/AndroidManifest.xml:29:9-34:58
 	android:label
-		ADDED from [com.facebook.android:account-kit-sdk:4.39.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.39.0.aar/12db8529c5142ad85b1162b8b9fd93f9/AndroidManifest.xml:31:13-65
+		ADDED from [com.facebook.android:account-kit-sdk:4.23.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.23.0.aar/346e5de764bf38c581d1473b6b5136e3/AndroidManifest.xml:31:13-65
 	android:launchMode
-		ADDED from [com.facebook.android:account-kit-sdk:4.39.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.39.0.aar/12db8529c5142ad85b1162b8b9fd93f9/AndroidManifest.xml:32:13-43
+		ADDED from [com.facebook.android:account-kit-sdk:4.23.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.23.0.aar/346e5de764bf38c581d1473b6b5136e3/AndroidManifest.xml:32:13-43
 	android:windowSoftInputMode
-		ADDED from [com.facebook.android:account-kit-sdk:4.39.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.39.0.aar/12db8529c5142ad85b1162b8b9fd93f9/AndroidManifest.xml:34:13-55
+		ADDED from [com.facebook.android:account-kit-sdk:4.23.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.23.0.aar/346e5de764bf38c581d1473b6b5136e3/AndroidManifest.xml:34:13-55
 	android:theme
-		ADDED from [com.facebook.android:account-kit-sdk:4.39.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.39.0.aar/12db8529c5142ad85b1162b8b9fd93f9/AndroidManifest.xml:33:13-52
+		ADDED from [com.facebook.android:account-kit-sdk:4.23.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.23.0.aar/346e5de764bf38c581d1473b6b5136e3/AndroidManifest.xml:33:13-52
 	android:name
 		ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml:30:13-73
 meta-data#com.facebook.accountkit.FacebookAppEventsEnabled
@@ -317,8 +306,8 @@ MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/kyaw/
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/kyaw/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/de7b1a52f7ee8fac3e385b908458fa13/AndroidManifest.xml:5:5-7:41
 MERGED from [com.github.barteksc:android-pdf-viewer:3.1.0-beta.1] /home/kyaw/.gradle/caches/transforms-1/files-1.1/android-pdf-viewer-3.1.0-beta.1.aar/9d9e5a3e03ddce6f8cd039ed9c2739cf/AndroidManifest.xml:7:5-9:41
 MERGED from [com.github.barteksc:android-pdf-viewer:3.1.0-beta.1] /home/kyaw/.gradle/caches/transforms-1/files-1.1/android-pdf-viewer-3.1.0-beta.1.aar/9d9e5a3e03ddce6f8cd039ed9c2739cf/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.android:account-kit-sdk:4.39.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.39.0.aar/12db8529c5142ad85b1162b8b9fd93f9/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:account-kit-sdk:4.39.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.39.0.aar/12db8529c5142ad85b1162b8b9fd93f9/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:account-kit-sdk:4.23.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.23.0.aar/346e5de764bf38c581d1473b6b5136e3/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:account-kit-sdk:4.23.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.23.0.aar/346e5de764bf38c581d1473b6b5136e3/AndroidManifest.xml:24:5-26:41
 MERGED from [com.github.chrisbanes:PhotoView:2.1.4] /home/kyaw/.gradle/caches/transforms-1/files-1.1/PhotoView-2.1.4.aar/95baa503bd8c0531d906a3954333a317/AndroidManifest.xml:7:5-9:41
 MERGED from [com.github.chrisbanes:PhotoView:2.1.4] /home/kyaw/.gradle/caches/transforms-1/files-1.1/PhotoView-2.1.4.aar/95baa503bd8c0531d906a3954333a317/AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:design:27.1.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/design-27.1.0.aar/c5b01bd8a993618d5a7167007f15b2f4/AndroidManifest.xml:20:5-44
@@ -331,10 +320,6 @@ MERGED from [com.google.firebase:firebase-database:16.0.1] /home/kyaw/.gradle/ca
 MERGED from [com.google.firebase:firebase-database:16.0.1] /home/kyaw/.gradle/caches/transforms-1/files-1.1/firebase-database-16.0.1.aar/de9b8f3de50197dd3a7c7968e50fbc42/AndroidManifest.xml:6:5-44
 MERGED from [com.google.firebase:firebase-storage:16.0.1] /home/kyaw/.gradle/caches/transforms-1/files-1.1/firebase-storage-16.0.1.aar/a2c73d63bbaca783428c57dcd3bc78f6/AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-storage:16.0.1] /home/kyaw/.gradle/caches/transforms-1/files-1.1/firebase-storage-16.0.1.aar/a2c73d63bbaca783428c57dcd3bc78f6/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-auth:11.8.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.8.0.aar/d38b0b69c9fe75fb722ccaec51d660a3/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-auth:11.8.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.8.0.aar/d38b0b69c9fe75fb722ccaec51d660a3/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-auth-api-phone:11.8.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/play-services-auth-api-phone-11.8.0.aar/9011ce86f73953a381061ecaa8a1e9f3/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-auth-api-phone:11.8.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/play-services-auth-api-phone-11.8.0.aar/9011ce86f73953a381061ecaa8a1e9f3/AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-database-connection:16.0.1] /home/kyaw/.gradle/caches/transforms-1/files-1.1/firebase-database-connection-16.0.1.aar/b56ed7936b70bd5595aa6bc6dc94a9e2/AndroidManifest.xml:6:5-44
 MERGED from [com.google.firebase:firebase-database-connection:16.0.1] /home/kyaw/.gradle/caches/transforms-1/files-1.1/firebase-database-connection-16.0.1.aar/b56ed7936b70bd5595aa6bc6dc94a9e2/AndroidManifest.xml:6:5-44
 MERGED from [com.google.firebase:firebase-core:16.0.1] /home/kyaw/.gradle/caches/transforms-1/files-1.1/firebase-core-16.0.1.aar/3b96f3548c3c70fee497411efb37b8f6/AndroidManifest.xml:5:5-44
@@ -349,24 +334,22 @@ MERGED from [com.google.firebase:firebase-iid:16.0.0] /home/kyaw/.gradle/caches/
 MERGED from [com.google.firebase:firebase-iid:16.0.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/3334cba2fc21d10821bce9e535769e62/AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-common:16.0.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.0.aar/1603ab942d3e575a867f23e03b3d7708/AndroidManifest.xml:5:5-6:37
 MERGED from [com.google.firebase:firebase-common:16.0.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.0.aar/1603ab942d3e575a867f23e03b3d7708/AndroidManifest.xml:5:5-6:37
-MERGED from [com.google.firebase:firebase-database-collection:15.0.1] /home/kyaw/.gradle/caches/transforms-1/files-1.1/firebase-database-collection-15.0.1.aar/6ae944aeb7ebb25f71d35c2220e2fd3d/AndroidManifest.xml:6:5-44
-MERGED from [com.google.firebase:firebase-database-collection:15.0.1] /home/kyaw/.gradle/caches/transforms-1/files-1.1/firebase-database-collection-15.0.1.aar/6ae944aeb7ebb25f71d35c2220e2fd3d/AndroidManifest.xml:6:5-44
-MERGED from [com.google.firebase:firebase-storage-common:16.0.1] /home/kyaw/.gradle/caches/transforms-1/files-1.1/firebase-storage-common-16.0.1.aar/f9a69d9d06372ff67b0d415a807193ea/AndroidManifest.xml:5:5-44
-MERGED from [com.google.firebase:firebase-storage-common:16.0.1] /home/kyaw/.gradle/caches/transforms-1/files-1.1/firebase-storage-common-16.0.1.aar/f9a69d9d06372ff67b0d415a807193ea/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-auth-base:11.8.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-11.8.0.aar/317c43513c1114642db5f0a655898fb5/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-auth-base:11.8.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-11.8.0.aar/317c43513c1114642db5f0a655898fb5/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-stats:15.0.1] /home/kyaw/.gradle/caches/transforms-1/files-1.1/play-services-stats-15.0.1.aar/1188ffdadc4c8683b945afc300698372/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-stats:15.0.1] /home/kyaw/.gradle/caches/transforms-1/files-1.1/play-services-stats-15.0.1.aar/1188ffdadc4c8683b945afc300698372/AndroidManifest.xml:5:5-44
-MERGED from [com.google.firebase:firebase-measurement-connector:16.0.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-16.0.0.aar/08fc74b067d9b102661149793042b64c/AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-measurement-connector:16.0.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-16.0.0.aar/08fc74b067d9b102661149793042b64c/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-ads-identifier:15.0.1] /home/kyaw/.gradle/caches/transforms-1/files-1.1/play-services-ads-identifier-15.0.1.aar/635ea743d09d15fa5a42829515ecc84b/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-ads-identifier:15.0.1] /home/kyaw/.gradle/caches/transforms-1/files-1.1/play-services-ads-identifier-15.0.1.aar/635ea743d09d15fa5a42829515ecc84b/AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-iid-interop:16.0.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/firebase-iid-interop-16.0.0.aar/09816f31f45c05605cd23a7da3792fd7/AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-iid-interop:16.0.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/firebase-iid-interop-16.0.0.aar/09816f31f45c05605cd23a7da3792fd7/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-base:15.0.1] /home/kyaw/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/b6c12b3c271ccfe6842834ed35071024/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-base:15.0.1] /home/kyaw/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/b6c12b3c271ccfe6842834ed35071024/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /home/kyaw/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/aba51fa173e49c07688efd4d3b84a3ba/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /home/kyaw/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/aba51fa173e49c07688efd4d3b84a3ba/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-database-collection:15.0.1] /home/kyaw/.gradle/caches/transforms-1/files-1.1/firebase-database-collection-15.0.1.aar/6ae944aeb7ebb25f71d35c2220e2fd3d/AndroidManifest.xml:6:5-44
+MERGED from [com.google.firebase:firebase-database-collection:15.0.1] /home/kyaw/.gradle/caches/transforms-1/files-1.1/firebase-database-collection-15.0.1.aar/6ae944aeb7ebb25f71d35c2220e2fd3d/AndroidManifest.xml:6:5-44
+MERGED from [com.google.firebase:firebase-storage-common:16.0.1] /home/kyaw/.gradle/caches/transforms-1/files-1.1/firebase-storage-common-16.0.1.aar/f9a69d9d06372ff67b0d415a807193ea/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-storage-common:16.0.1] /home/kyaw/.gradle/caches/transforms-1/files-1.1/firebase-storage-common-16.0.1.aar/f9a69d9d06372ff67b0d415a807193ea/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:15.0.1] /home/kyaw/.gradle/caches/transforms-1/files-1.1/play-services-stats-15.0.1.aar/1188ffdadc4c8683b945afc300698372/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:15.0.1] /home/kyaw/.gradle/caches/transforms-1/files-1.1/play-services-stats-15.0.1.aar/1188ffdadc4c8683b945afc300698372/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:16.0.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-16.0.0.aar/08fc74b067d9b102661149793042b64c/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:16.0.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-16.0.0.aar/08fc74b067d9b102661149793042b64c/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:15.0.1] /home/kyaw/.gradle/caches/transforms-1/files-1.1/play-services-ads-identifier-15.0.1.aar/635ea743d09d15fa5a42829515ecc84b/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:15.0.1] /home/kyaw/.gradle/caches/transforms-1/files-1.1/play-services-ads-identifier-15.0.1.aar/635ea743d09d15fa5a42829515ecc84b/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-basement:15.0.1] /home/kyaw/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/e45e3a57c6ee28faf359d489b0e283e8/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-basement:15.0.1] /home/kyaw/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/e45e3a57c6ee28faf359d489b0e283e8/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-v4:27.1.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.0.aar/3b97c2b7431359f626ef7501ce07f9a9/AndroidManifest.xml:20:5-44
@@ -413,12 +396,8 @@ MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/kyaw/.gradle/caches/tra
 MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/kyaw/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/7969cd0433cfd202382a46c94ced432b/AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /home/kyaw/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/d4b2434e766cbf6ca7c66a4c6315e4fe/AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /home/kyaw/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/d4b2434e766cbf6ca7c66a4c6315e4fe/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-auth-api-phone-license:11.8.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/play-services-auth-api-phone-license-11.8.0.aar/3d3b4e647e384508a5f294c92d23a9de/AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-auth-api-phone-license:11.8.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/play-services-auth-api-phone-license-11.8.0.aar/3d3b4e647e384508a5f294c92d23a9de/AndroidManifest.xml:4:5-43
 MERGED from [com.google.android.gms:play-services-measurement-base:16.0.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/play-services-measurement-base-16.0.0.aar/8133a71fd9d53ed8d3acf4384503adf9/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-measurement-base:16.0.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/play-services-measurement-base-16.0.0.aar/8133a71fd9d53ed8d3acf4384503adf9/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-auth-base-license:11.8.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-license-11.8.0.aar/cb67176d1bc465c0f61c99a77e3f39e8/AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-auth-base-license:11.8.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-license-11.8.0.aar/cb67176d1bc465c0f61c99a77e3f39e8/AndroidManifest.xml:4:5-43
 INJECTED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml
 INJECTED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml
 	android:targetSdkVersion
@@ -430,39 +409,21 @@ INJECTED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.x
 		ADDED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml
 		INJECTED from /home/kyaw/Desktop/old Desktop/Farm/app/src/main/AndroidManifest.xml
 activity#com.facebook.accountkit.ui.AccountKitEmailRedirectActivity
-ADDED from [com.facebook.android:account-kit-sdk:4.39.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.39.0.aar/12db8529c5142ad85b1162b8b9fd93f9/AndroidManifest.xml:35:9-38:40
+ADDED from [com.facebook.android:account-kit-sdk:4.23.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.23.0.aar/346e5de764bf38c581d1473b6b5136e3/AndroidManifest.xml:35:9-38:40
 	android:noHistory
-		ADDED from [com.facebook.android:account-kit-sdk:4.39.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.39.0.aar/12db8529c5142ad85b1162b8b9fd93f9/AndroidManifest.xml:38:13-37
+		ADDED from [com.facebook.android:account-kit-sdk:4.23.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.23.0.aar/346e5de764bf38c581d1473b6b5136e3/AndroidManifest.xml:38:13-37
 	android:exported
-		ADDED from [com.facebook.android:account-kit-sdk:4.39.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.39.0.aar/12db8529c5142ad85b1162b8b9fd93f9/AndroidManifest.xml:37:13-36
+		ADDED from [com.facebook.android:account-kit-sdk:4.23.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.23.0.aar/346e5de764bf38c581d1473b6b5136e3/AndroidManifest.xml:37:13-36
 	android:name
-		ADDED from [com.facebook.android:account-kit-sdk:4.39.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.39.0.aar/12db8529c5142ad85b1162b8b9fd93f9/AndroidManifest.xml:36:13-86
+		ADDED from [com.facebook.android:account-kit-sdk:4.23.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.23.0.aar/346e5de764bf38c581d1473b6b5136e3/AndroidManifest.xml:36:13-86
 provider#com.facebook.accountkit.internal.AccountKitInitProvider
-ADDED from [com.facebook.android:account-kit-sdk:4.39.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.39.0.aar/12db8529c5142ad85b1162b8b9fd93f9/AndroidManifest.xml:49:9-52:40
+ADDED from [com.facebook.android:account-kit-sdk:4.23.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.23.0.aar/346e5de764bf38c581d1473b6b5136e3/AndroidManifest.xml:49:9-52:40
 	android:authorities
-		ADDED from [com.facebook.android:account-kit-sdk:4.39.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.39.0.aar/12db8529c5142ad85b1162b8b9fd93f9/AndroidManifest.xml:51:13-76
+		ADDED from [com.facebook.android:account-kit-sdk:4.23.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.23.0.aar/346e5de764bf38c581d1473b6b5136e3/AndroidManifest.xml:51:13-76
 	android:exported
-		ADDED from [com.facebook.android:account-kit-sdk:4.39.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.39.0.aar/12db8529c5142ad85b1162b8b9fd93f9/AndroidManifest.xml:52:13-37
+		ADDED from [com.facebook.android:account-kit-sdk:4.23.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.23.0.aar/346e5de764bf38c581d1473b6b5136e3/AndroidManifest.xml:52:13-37
 	android:name
-		ADDED from [com.facebook.android:account-kit-sdk:4.39.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.39.0.aar/12db8529c5142ad85b1162b8b9fd93f9/AndroidManifest.xml:50:13-83
-activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
-ADDED from [com.google.android.gms:play-services-auth:11.8.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.8.0.aar/d38b0b69c9fe75fb722ccaec51d660a3/AndroidManifest.xml:23:9-27:75
-	android:excludeFromRecents
-		ADDED from [com.google.android.gms:play-services-auth:11.8.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.8.0.aar/d38b0b69c9fe75fb722ccaec51d660a3/AndroidManifest.xml:25:13-46
-	android:exported
-		ADDED from [com.google.android.gms:play-services-auth:11.8.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.8.0.aar/d38b0b69c9fe75fb722ccaec51d660a3/AndroidManifest.xml:26:13-37
-	android:theme
-		ADDED from [com.google.android.gms:play-services-auth:11.8.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.8.0.aar/d38b0b69c9fe75fb722ccaec51d660a3/AndroidManifest.xml:27:13-72
-	android:name
-		ADDED from [com.google.android.gms:play-services-auth:11.8.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.8.0.aar/d38b0b69c9fe75fb722ccaec51d660a3/AndroidManifest.xml:24:13-93
-service#com.google.android.gms.auth.api.signin.RevocationBoundService
-ADDED from [com.google.android.gms:play-services-auth:11.8.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.8.0.aar/d38b0b69c9fe75fb722ccaec51d660a3/AndroidManifest.xml:33:9-36:110
-	android:exported
-		ADDED from [com.google.android.gms:play-services-auth:11.8.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.8.0.aar/d38b0b69c9fe75fb722ccaec51d660a3/AndroidManifest.xml:35:13-36
-	android:permission
-		ADDED from [com.google.android.gms:play-services-auth:11.8.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.8.0.aar/d38b0b69c9fe75fb722ccaec51d660a3/AndroidManifest.xml:36:13-107
-	android:name
-		ADDED from [com.google.android.gms:play-services-auth:11.8.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.8.0.aar/d38b0b69c9fe75fb722ccaec51d660a3/AndroidManifest.xml:34:13-89
+		ADDED from [com.facebook.android:account-kit-sdk:4.23.0] /home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.23.0.aar/346e5de764bf38c581d1473b6b5136e3/AndroidManifest.xml:50:13-83
 uses-permission#android.permission.WAKE_LOCK
 ADDED from [com.google.firebase:firebase-measurement-connector-impl:16.0.1] /home/kyaw/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-16.0.1.aar/2697e4bf35d252a1ee9181d9d5c130f5/AndroidManifest.xml:24:5-68
 MERGED from [com.google.firebase:firebase-analytics:16.0.1] /home/kyaw/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/4f822d2a24a1c6c72165de62202150fe/AndroidManifest.xml:25:5-68

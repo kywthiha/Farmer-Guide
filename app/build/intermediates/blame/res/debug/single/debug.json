@@ -32,12 +32,12 @@
         "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/dd6370db221e18e814dff90c899c4720/res/drawable-xxhdpi-v4/abc_ic_menu_paste_mtrl_am_alpha.png"
     },
     {
-        "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_text_select_handle_middle_mtrl_light.png.flat",
-        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/dd6370db221e18e814dff90c899c4720/res/drawable-xhdpi-v4/abc_text_select_handle_middle_mtrl_light.png"
-    },
-    {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_arrow_back_black_24dp.png.flat",
         "source": "/home/kyaw/Desktop/old Desktop/Farm/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_arrow_back_black_24dp.png"
+    },
+    {
+        "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_text_select_handle_middle_mtrl_light.png.flat",
+        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/dd6370db221e18e814dff90c899c4720/res/drawable-xhdpi-v4/abc_text_select_handle_middle_mtrl_light.png"
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_cab_background_top_mtrl_alpha.9.png.flat",
@@ -69,7 +69,7 @@
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_com_accountkit_get_call.png.flat",
-        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.39.0.aar/12db8529c5142ad85b1162b8b9fd93f9/res/drawable-xhdpi-v4/com_accountkit_get_call.png"
+        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.23.0.aar/346e5de764bf38c581d1473b6b5136e3/res/drawable-xhdpi-v4/com_accountkit_get_call.png"
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable_g.jpg.flat",
@@ -108,12 +108,12 @@
         "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/b6c12b3c271ccfe6842834ed35071024/res/drawable/common_google_signin_btn_text_dark_focused.xml"
     },
     {
-        "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_close_black.png.flat",
-        "source": "/home/kyaw/Desktop/old Desktop/Farm/app/build/generated/res/pngs/debug/drawable-mdpi/ic_close_black.png"
-    },
-    {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/layout_abc_popup_menu_item_layout.xml.flat",
         "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/dd6370db221e18e814dff90c899c4720/res/layout/abc_popup_menu_item_layout.xml"
+    },
+    {
+        "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_close_black.png.flat",
+        "source": "/home/kyaw/Desktop/old Desktop/Farm/app/build/generated/res/pngs/debug/drawable-mdpi/ic_close_black.png"
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_list_pressed_holo_dark.9.png.flat",
@@ -152,12 +152,12 @@
         "source": "/home/kyaw/Desktop/old Desktop/Farm/app/src/main/res/drawable/loginbackground.jpg"
     },
     {
-        "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable_virus_vi.jpg.flat",
-        "source": "/home/kyaw/Desktop/old Desktop/Farm/app/src/main/res/drawable/virus_vi.jpg"
+        "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_com_accountkit_spinner_triangle.png.flat",
+        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.23.0.aar/346e5de764bf38c581d1473b6b5136e3/res/drawable-xxxhdpi-v4/com_accountkit_spinner_triangle.png"
     },
     {
-        "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_com_accountkit_spinner_triangle.png.flat",
-        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.39.0.aar/12db8529c5142ad85b1162b8b9fd93f9/res/drawable-xxxhdpi-v4/com_accountkit_spinner_triangle.png"
+        "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable_virus_vi.jpg.flat",
+        "source": "/home/kyaw/Desktop/old Desktop/Farm/app/src/main/res/drawable/virus_vi.jpg"
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_item_delete.png.flat",
@@ -181,7 +181,7 @@
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_com_accountkit_get_call.png.flat",
-        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.39.0.aar/12db8529c5142ad85b1162b8b9fd93f9/res/drawable-xxxhdpi-v4/com_accountkit_get_call.png"
+        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.23.0.aar/346e5de764bf38c581d1473b6b5136e3/res/drawable-xxxhdpi-v4/com_accountkit_get_call.png"
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-ldrtl-xhdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat",
@@ -281,7 +281,7 @@
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_com_accountkit_code_fb.png.flat",
-        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.39.0.aar/12db8529c5142ad85b1162b8b9fd93f9/res/drawable-mdpi-v4/com_accountkit_code_fb.png"
+        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.23.0.aar/346e5de764bf38c581d1473b6b5136e3/res/drawable-mdpi-v4/com_accountkit_code_fb.png"
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_ic_commit_search_api_mtrl_alpha.png.flat",
@@ -333,7 +333,7 @@
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/layout_com_accountkit_fragment_email_login_top.xml.flat",
-        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.39.0.aar/12db8529c5142ad85b1162b8b9fd93f9/res/layout/com_accountkit_fragment_email_login_top.xml"
+        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.23.0.aar/346e5de764bf38c581d1473b6b5136e3/res/layout/com_accountkit_fragment_email_login_top.xml"
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_text_select_handle_middle_mtrl_dark.png.flat",
@@ -348,12 +348,12 @@
         "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/android-pdf-viewer-3.1.0-beta.1.aar/9d9e5a3e03ddce6f8cd039ed9c2739cf/res/drawable/default_scroll_handle_left.xml"
     },
     {
-        "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat",
-        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/dd6370db221e18e814dff90c899c4720/res/drawable-xhdpi-v4/abc_btn_check_to_on_mtrl_015.png"
-    },
-    {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-v21_design_password_eye.xml.flat",
         "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/design-27.1.0.aar/c5b01bd8a993618d5a7167007f15b2f4/res/drawable-v21/design_password_eye.xml"
+    },
+    {
+        "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat",
+        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/dd6370db221e18e814dff90c899c4720/res/drawable-xhdpi-v4/abc_btn_check_to_on_mtrl_015.png"
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-xhdpi_arrow_back.png.flat",
@@ -381,7 +381,7 @@
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable_com_accountkit_progress_complete.xml.flat",
-        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.39.0.aar/12db8529c5142ad85b1162b8b9fd93f9/res/drawable/com_accountkit_progress_complete.xml"
+        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.23.0.aar/346e5de764bf38c581d1473b6b5136e3/res/drawable/com_accountkit_progress_complete.xml"
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/layout_my_image.xml.flat",
@@ -400,12 +400,12 @@
         "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/dd6370db221e18e814dff90c899c4720/res/drawable-xxhdpi-v4/abc_ic_menu_selectall_mtrl_alpha.png"
     },
     {
-        "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_text_select_handle_left_mtrl_dark.png.flat",
-        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/dd6370db221e18e814dff90c899c4720/res/drawable-xxxhdpi-v4/abc_text_select_handle_left_mtrl_dark.png"
+        "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/layout_com_accountkit_fragment_email_verify_bottom.xml.flat",
+        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.23.0.aar/346e5de764bf38c581d1473b6b5136e3/res/layout/com_accountkit_fragment_email_verify_bottom.xml"
     },
     {
-        "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/layout_com_accountkit_fragment_email_verify_bottom.xml.flat",
-        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.39.0.aar/12db8529c5142ad85b1162b8b9fd93f9/res/layout/com_accountkit_fragment_email_verify_bottom.xml"
+        "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_text_select_handle_left_mtrl_dark.png.flat",
+        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/dd6370db221e18e814dff90c899c4720/res/drawable-xxxhdpi-v4/abc_text_select_handle_left_mtrl_dark.png"
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/anim_design_bottom_sheet_slide_out.xml.flat",
@@ -424,12 +424,12 @@
         "source": "/home/kyaw/Desktop/old Desktop/Farm/app/src/main/res/drawable/home.png"
     },
     {
-        "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable_payment.png.flat",
-        "source": "/home/kyaw/Desktop/old Desktop/Farm/app/src/main/res/drawable/payment.png"
-    },
-    {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-xhdpi_delete.png.flat",
         "source": "/home/kyaw/Desktop/old Desktop/Farm/app/build/generated/res/pngs/debug/drawable-xhdpi/delete.png"
+    },
+    {
+        "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable_payment.png.flat",
+        "source": "/home/kyaw/Desktop/old Desktop/Farm/app/src/main/res/drawable/payment.png"
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_btn_switch_to_on_mtrl_00012.9.png.flat",
@@ -544,12 +544,12 @@
         "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/design-27.1.0.aar/c5b01bd8a993618d5a7167007f15b2f4/res/drawable/design_fab_background.xml"
     },
     {
-        "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_text_select_handle_right_mtrl_light.png.flat",
-        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/dd6370db221e18e814dff90c899c4720/res/drawable-xxhdpi-v4/abc_text_select_handle_right_mtrl_light.png"
-    },
-    {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/layout-watch-v20_abc_alert_dialog_title_material.xml.flat",
         "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/dd6370db221e18e814dff90c899c4720/res/layout-watch-v20/abc_alert_dialog_title_material.xml"
+    },
+    {
+        "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_text_select_handle_right_mtrl_light.png.flat",
+        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/dd6370db221e18e814dff90c899c4720/res/drawable-xxhdpi-v4/abc_text_select_handle_right_mtrl_light.png"
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/color-v23_abc_tint_btn_checkable.xml.flat",
@@ -560,16 +560,16 @@
         "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/b6c12b3c271ccfe6842834ed35071024/res/drawable-hdpi-v4/common_google_signin_btn_icon_light_normal_background.9.png"
     },
     {
-        "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/layout_support_simple_spinner_dropdown_item.xml.flat",
-        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/dd6370db221e18e814dff90c899c4720/res/layout/support_simple_spinner_dropdown_item.xml"
+        "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/layout_com_accountkit_fragment_error_bottom.xml.flat",
+        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.23.0.aar/346e5de764bf38c581d1473b6b5136e3/res/layout/com_accountkit_fragment_error_bottom.xml"
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_googleg_standard_color_18.png.flat",
         "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/b6c12b3c271ccfe6842834ed35071024/res/drawable-hdpi-v4/googleg_standard_color_18.png"
     },
     {
-        "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/layout_com_accountkit_fragment_error_bottom.xml.flat",
-        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.39.0.aar/12db8529c5142ad85b1162b8b9fd93f9/res/layout/com_accountkit_fragment_error_bottom.xml"
+        "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/layout_support_simple_spinner_dropdown_item.xml.flat",
+        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/dd6370db221e18e814dff90c899c4720/res/layout/support_simple_spinner_dropdown_item.xml"
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable_notification_bg_low.xml.flat",
@@ -589,7 +589,7 @@
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_com_accountkit_check_sms.png.flat",
-        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.39.0.aar/12db8529c5142ad85b1162b8b9fd93f9/res/drawable-xxhdpi-v4/com_accountkit_check_sms.png"
+        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.23.0.aar/346e5de764bf38c581d1473b6b5136e3/res/drawable-xxhdpi-v4/com_accountkit_check_sms.png"
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/layout_fragment_data.xml.flat",
@@ -701,15 +701,15 @@
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/layout_com_accountkit_fragment_confirmation_code_bottom.xml.flat",
-        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.39.0.aar/12db8529c5142ad85b1162b8b9fd93f9/res/layout/com_accountkit_fragment_confirmation_code_bottom.xml"
-    },
-    {
-        "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat",
-        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/dd6370db221e18e814dff90c899c4720/res/drawable-mdpi-v4/abc_ic_menu_share_mtrl_alpha.png"
+        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.23.0.aar/346e5de764bf38c581d1473b6b5136e3/res/layout/com_accountkit_fragment_confirmation_code_bottom.xml"
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_assignment_black_24dp.png.flat",
         "source": "/home/kyaw/Desktop/old Desktop/Farm/app/build/generated/res/pngs/debug/drawable-hdpi/ic_assignment_black_24dp.png"
+    },
+    {
+        "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat",
+        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/dd6370db221e18e814dff90c899c4720/res/drawable-mdpi-v4/abc_ic_menu_share_mtrl_alpha.png"
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/color_design_tint_password_toggle.xml.flat",
@@ -726,10 +726,6 @@
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_save_black_24dp.xml.flat",
         "source": "/home/kyaw/Desktop/old Desktop/Farm/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_save_black_24dp.xml"
-    },
-    {
-        "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable_com_accountkit_progress_complete_vector.xml.flat",
-        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.39.0.aar/12db8529c5142ad85b1162b8b9fd93f9/res/drawable/com_accountkit_progress_complete_vector.xml"
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_notify_panel_notification_icon_bg.png.flat",
@@ -749,7 +745,7 @@
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/layout_com_accountkit_fragment_email_login_center.xml.flat",
-        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.39.0.aar/12db8529c5142ad85b1162b8b9fd93f9/res/layout/com_accountkit_fragment_email_login_center.xml"
+        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.23.0.aar/346e5de764bf38c581d1473b6b5136e3/res/layout/com_accountkit_fragment_email_login_center.xml"
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/layout_abc_list_menu_item_layout.xml.flat",
@@ -769,7 +765,7 @@
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_com_accountkit_check_sms.png.flat",
-        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.39.0.aar/12db8529c5142ad85b1162b8b9fd93f9/res/drawable-hdpi-v4/com_accountkit_check_sms.png"
+        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.23.0.aar/346e5de764bf38c581d1473b6b5136e3/res/drawable-hdpi-v4/com_accountkit_check_sms.png"
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_home_black_24dp.xml.flat",
@@ -797,7 +793,7 @@
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_com_accountkit_device.png.flat",
-        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.39.0.aar/12db8529c5142ad85b1162b8b9fd93f9/res/drawable-xhdpi-v4/com_accountkit_device.png"
+        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.23.0.aar/346e5de764bf38c581d1473b6b5136e3/res/drawable-xhdpi-v4/com_accountkit_device.png"
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/anim_abc_slide_out_bottom.xml.flat",
@@ -816,12 +812,12 @@
         "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/dd6370db221e18e814dff90c899c4720/res/drawable/tooltip_frame_dark.xml"
     },
     {
-        "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_notification_bg_low_pressed.9.png.flat",
-        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/f171aef7b903b38255a3bf315bd90282/res/drawable-xhdpi-v4/notification_bg_low_pressed.9.png"
-    },
-    {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable_abc_ic_ab_back_material.xml.flat",
         "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/dd6370db221e18e814dff90c899c4720/res/drawable/abc_ic_ab_back_material.xml"
+    },
+    {
+        "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_notification_bg_low_pressed.9.png.flat",
+        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/f171aef7b903b38255a3bf315bd90282/res/drawable-xhdpi-v4/notification_bg_low_pressed.9.png"
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-ldrtl-xhdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
@@ -864,12 +860,12 @@
         "source": "/home/kyaw/Desktop/old Desktop/Farm/app/build/generated/res/pngs/debug/drawable-mdpi/phone_call_admin.png"
     },
     {
-        "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/layout_image_preview.xml.flat",
-        "source": "/home/kyaw/Desktop/old Desktop/Farm/app/src/main/res/layout/image_preview.xml"
-    },
-    {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_menu_cut_mtrl_alpha.png.flat",
         "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/dd6370db221e18e814dff90c899c4720/res/drawable-mdpi-v4/abc_ic_menu_cut_mtrl_alpha.png"
+    },
+    {
+        "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/layout_image_preview.xml.flat",
+        "source": "/home/kyaw/Desktop/old Desktop/Farm/app/src/main/res/layout/image_preview.xml"
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/animator-v21_design_appbar_state_list_animator.xml.flat",
@@ -925,7 +921,7 @@
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_com_accountkit_get_call.png.flat",
-        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.39.0.aar/12db8529c5142ad85b1162b8b9fd93f9/res/drawable-mdpi-v4/com_accountkit_get_call.png"
+        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.23.0.aar/346e5de764bf38c581d1473b6b5136e3/res/drawable-mdpi-v4/com_accountkit_get_call.png"
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
@@ -984,12 +980,12 @@
         "source": "/home/kyaw/Desktop/old Desktop/Farm/app/build/generated/res/pngs/debug/drawable-hdpi/ic_clear.png"
     },
     {
-        "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-ldpi_add_image.png.flat",
-        "source": "/home/kyaw/Desktop/old Desktop/Farm/app/build/generated/res/pngs/debug/drawable-ldpi/add_image.png"
-    },
-    {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable_name.png.flat",
         "source": "/home/kyaw/Desktop/old Desktop/Farm/app/src/main/res/drawable/name.png"
+    },
+    {
+        "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-ldpi_add_image.png.flat",
+        "source": "/home/kyaw/Desktop/old Desktop/Farm/app/build/generated/res/pngs/debug/drawable-ldpi/add_image.png"
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable_virus_iii.jpg.flat",
@@ -1048,32 +1044,32 @@
         "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/dd6370db221e18e814dff90c899c4720/res/drawable-xhdpi-v4/abc_text_select_handle_right_mtrl_light.png"
     },
     {
-        "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_foreground.png.flat",
-        "source": "/home/kyaw/Desktop/old Desktop/Farm/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.png"
-    },
-    {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable_abc_seekbar_tick_mark_material.xml.flat",
         "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/dd6370db221e18e814dff90c899c4720/res/drawable/abc_seekbar_tick_mark_material.xml"
     },
     {
-        "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable_com_accountkit_error.xml.flat",
-        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.39.0.aar/12db8529c5142ad85b1162b8b9fd93f9/res/drawable/com_accountkit_error.xml"
+        "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_foreground.png.flat",
+        "source": "/home/kyaw/Desktop/old Desktop/Farm/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.png"
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable_ic_arrow_back_white.xml.flat",
-        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.39.0.aar/12db8529c5142ad85b1162b8b9fd93f9/res/drawable/ic_arrow_back_white.xml"
+        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.23.0.aar/346e5de764bf38c581d1473b6b5136e3/res/drawable/ic_arrow_back_white.xml"
+    },
+    {
+        "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable_com_accountkit_error.xml.flat",
+        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.23.0.aar/346e5de764bf38c581d1473b6b5136e3/res/drawable/com_accountkit_error.xml"
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/anim-v21_design_bottom_sheet_slide_out.xml.flat",
         "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/design-27.1.0.aar/c5b01bd8a993618d5a7167007f15b2f4/res/anim-v21/design_bottom_sheet_slide_out.xml"
     },
     {
-        "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_menu_paste_mtrl_am_alpha.png.flat",
-        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/dd6370db221e18e814dff90c899c4720/res/drawable-mdpi-v4/abc_ic_menu_paste_mtrl_am_alpha.png"
-    },
-    {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_item_delete.xml.flat",
         "source": "/home/kyaw/Desktop/old Desktop/Farm/app/build/generated/res/pngs/debug/drawable-anydpi-v21/item_delete.xml"
+    },
+    {
+        "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_menu_paste_mtrl_am_alpha.png.flat",
+        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/dd6370db221e18e814dff90c899c4720/res/drawable-mdpi-v4/abc_ic_menu_paste_mtrl_am_alpha.png"
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_list_selector_disabled_holo_dark.9.png.flat",
@@ -1092,12 +1088,12 @@
         "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/dd6370db221e18e814dff90c899c4720/res/drawable-mdpi-v4/abc_tab_indicator_mtrl_alpha.9.png"
     },
     {
-        "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_home_black_24dp.png.flat",
-        "source": "/home/kyaw/Desktop/old Desktop/Farm/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_home_black_24dp.png"
-    },
-    {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/layout_design_navigation_menu_item.xml.flat",
         "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/design-27.1.0.aar/c5b01bd8a993618d5a7167007f15b2f4/res/layout/design_navigation_menu_item.xml"
+    },
+    {
+        "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_home_black_24dp.png.flat",
+        "source": "/home/kyaw/Desktop/old Desktop/Farm/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_home_black_24dp.png"
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_text_dark.xml.flat",
@@ -1141,7 +1137,7 @@
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_com_accountkit_spinner_triangle.png.flat",
-        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.39.0.aar/12db8529c5142ad85b1162b8b9fd93f9/res/drawable-xxhdpi-v4/com_accountkit_spinner_triangle.png"
+        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.23.0.aar/346e5de764bf38c581d1473b6b5136e3/res/drawable-xxhdpi-v4/com_accountkit_spinner_triangle.png"
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_text_select_handle_right_mtrl_light.png.flat",
@@ -1197,7 +1193,7 @@
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/layout_com_accountkit_fragment_confirmation_code_center.xml.flat",
-        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.39.0.aar/12db8529c5142ad85b1162b8b9fd93f9/res/layout/com_accountkit_fragment_confirmation_code_center.xml"
+        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.23.0.aar/346e5de764bf38c581d1473b6b5136e3/res/layout/com_accountkit_fragment_confirmation_code_center.xml"
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable_gender.png.flat",
@@ -1213,7 +1209,7 @@
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_com_accountkit_code_fb.png.flat",
-        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.39.0.aar/12db8529c5142ad85b1162b8b9fd93f9/res/drawable-hdpi-v4/com_accountkit_code_fb.png"
+        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.23.0.aar/346e5de764bf38c581d1473b6b5136e3/res/drawable-hdpi-v4/com_accountkit_code_fb.png"
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/layout_their_image_message.xml.flat",
@@ -1265,7 +1261,7 @@
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/layout_com_accountkit_fragment_verified_code_center.xml.flat",
-        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.39.0.aar/12db8529c5142ad85b1162b8b9fd93f9/res/layout/com_accountkit_fragment_verified_code_center.xml"
+        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.23.0.aar/346e5de764bf38c581d1473b6b5136e3/res/layout/com_accountkit_fragment_verified_code_center.xml"
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/layout_their_message.xml.flat",
@@ -1320,12 +1316,12 @@
         "source": "/home/kyaw/Desktop/old Desktop/Farm/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_launcher_background.png"
     },
     {
-        "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/layout_select_dialog_singlechoice_material.xml.flat",
-        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/dd6370db221e18e814dff90c899c4720/res/layout/select_dialog_singlechoice_material.xml"
-    },
-    {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
         "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/dd6370db221e18e814dff90c899c4720/res/drawable-hdpi-v4/abc_btn_radio_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/layout_select_dialog_singlechoice_material.xml.flat",
+        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/dd6370db221e18e814dff90c899c4720/res/layout/select_dialog_singlechoice_material.xml"
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_textfield_search_activated_mtrl_alpha.9.png.flat",
@@ -1338,10 +1334,6 @@
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable_abc_seekbar_thumb_material.xml.flat",
         "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/dd6370db221e18e814dff90c899c4720/res/drawable/abc_seekbar_thumb_material.xml"
-    },
-    {
-        "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-v21_com_accountkit_progress_complete.xml.flat",
-        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.39.0.aar/12db8529c5142ad85b1162b8b9fd93f9/res/drawable-v21/com_accountkit_progress_complete.xml"
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/layout_notification_template_custom_big.xml.flat",
@@ -1373,7 +1365,7 @@
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/layout_com_accountkit_fragment_phone_login_center.xml.flat",
-        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.39.0.aar/12db8529c5142ad85b1162b8b9fd93f9/res/layout/com_accountkit_fragment_phone_login_center.xml"
+        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.23.0.aar/346e5de764bf38c581d1473b6b5136e3/res/layout/com_accountkit_fragment_phone_login_center.xml"
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_menu.png.flat",
@@ -1497,7 +1489,7 @@
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_com_accountkit_check_sms.png.flat",
-        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.39.0.aar/12db8529c5142ad85b1162b8b9fd93f9/res/drawable-xhdpi-v4/com_accountkit_check_sms.png"
+        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.23.0.aar/346e5de764bf38c581d1473b6b5136e3/res/drawable-xhdpi-v4/com_accountkit_check_sms.png"
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_assignment_black_24dp.png.flat",
@@ -1505,7 +1497,7 @@
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/layout_com_accountkit_fragment_email_verify_center.xml.flat",
-        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.39.0.aar/12db8529c5142ad85b1162b8b9fd93f9/res/layout/com_accountkit_fragment_email_verify_center.xml"
+        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.23.0.aar/346e5de764bf38c581d1473b6b5136e3/res/layout/com_accountkit_fragment_email_verify_center.xml"
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-ldpi_edit_crop.png.flat",
@@ -1514,10 +1506,6 @@
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_launcher_background.png.flat",
         "source": "/home/kyaw/Desktop/old Desktop/Farm/app/build/generated/res/pngs/debug/drawable-ldpi/ic_launcher_background.png"
-    },
-    {
-        "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-watch-v20_common_google_signin_btn_text_dark_normal.xml.flat",
-        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.8.0.aar/d38b0b69c9fe75fb722ccaec51d660a3/res/drawable-watch-v20/common_google_signin_btn_text_dark_normal.xml"
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/layout-sw600dp-v13_design_layout_snackbar.xml.flat",
@@ -1545,7 +1533,7 @@
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/layout_com_accountkit_fragment_title.xml.flat",
-        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.39.0.aar/12db8529c5142ad85b1162b8b9fd93f9/res/layout/com_accountkit_fragment_title.xml"
+        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.23.0.aar/346e5de764bf38c581d1473b6b5136e3/res/layout/com_accountkit_fragment_title.xml"
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-hdpi_delete.png.flat",
@@ -1573,7 +1561,7 @@
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/layout_com_accountkit_phone_country_code_item_layout.xml.flat",
-        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.39.0.aar/12db8529c5142ad85b1162b8b9fd93f9/res/layout/com_accountkit_phone_country_code_item_layout.xml"
+        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.23.0.aar/346e5de764bf38c581d1473b6b5136e3/res/layout/com_accountkit_phone_country_code_item_layout.xml"
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_notification_bg_low_normal.9.png.flat",
@@ -1637,7 +1625,7 @@
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable_com_accountkit_pencil.xml.flat",
-        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.39.0.aar/12db8529c5142ad85b1162b8b9fd93f9/res/drawable/com_accountkit_pencil.xml"
+        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.23.0.aar/346e5de764bf38c581d1473b6b5136e3/res/drawable/com_accountkit_pencil.xml"
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_star_black_16dp.png.flat",
@@ -1745,7 +1733,7 @@
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_com_accountkit_spinner_triangle.png.flat",
-        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.39.0.aar/12db8529c5142ad85b1162b8b9fd93f9/res/drawable-xhdpi-v4/com_accountkit_spinner_triangle.png"
+        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.23.0.aar/346e5de764bf38c581d1473b6b5136e3/res/drawable-xhdpi-v4/com_accountkit_spinner_triangle.png"
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_menu_selectall_mtrl_alpha.png.flat",
@@ -1913,7 +1901,7 @@
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_com_accountkit_code_fb.png.flat",
-        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.39.0.aar/12db8529c5142ad85b1162b8b9fd93f9/res/drawable-xhdpi-v4/com_accountkit_code_fb.png"
+        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.23.0.aar/346e5de764bf38c581d1473b6b5136e3/res/drawable-xhdpi-v4/com_accountkit_code_fb.png"
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_list_longpressed_holo.9.png.flat",
@@ -1944,10 +1932,6 @@
         "source": "/home/kyaw/Desktop/old Desktop/Farm/app/build/generated/res/pngs/debug/drawable-xxxhdpi/phone_call_admin.png"
     },
     {
-        "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/anim_com_accountkit_progress_complete_circle_anim.xml.flat",
-        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.39.0.aar/12db8529c5142ad85b1162b8b9fd93f9/res/anim/com_accountkit_progress_complete_circle_anim.xml"
-    },
-    {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_text_select_handle_right_mtrl_dark.png.flat",
         "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/dd6370db221e18e814dff90c899c4720/res/drawable-xhdpi-v4/abc_text_select_handle_right_mtrl_dark.png"
     },
@@ -1961,7 +1945,7 @@
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/layout_com_accountkit_fragment_sent_code_center.xml.flat",
-        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.39.0.aar/12db8529c5142ad85b1162b8b9fd93f9/res/layout/com_accountkit_fragment_sent_code_center.xml"
+        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.23.0.aar/346e5de764bf38c581d1473b6b5136e3/res/layout/com_accountkit_fragment_sent_code_center.xml"
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/layout_abc_list_menu_item_icon.xml.flat",
@@ -1977,7 +1961,7 @@
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/layout_com_accountkit_fragment_email_login_text.xml.flat",
-        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.39.0.aar/12db8529c5142ad85b1162b8b9fd93f9/res/layout/com_accountkit_fragment_email_login_text.xml"
+        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.23.0.aar/346e5de764bf38c581d1473b6b5136e3/res/layout/com_accountkit_fragment_email_login_text.xml"
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable_forcardviewradius.xml.flat",
@@ -2033,7 +2017,7 @@
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/layout_com_accountkit_phone_country_code_layout.xml.flat",
-        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.39.0.aar/12db8529c5142ad85b1162b8b9fd93f9/res/layout/com_accountkit_phone_country_code_layout.xml"
+        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.23.0.aar/346e5de764bf38c581d1473b6b5136e3/res/layout/com_accountkit_phone_country_code_layout.xml"
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable_store.png.flat",
@@ -2060,8 +2044,12 @@
         "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/dd6370db221e18e814dff90c899c4720/res/color/abc_btn_colored_text_material.xml"
     },
     {
+        "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable_com_accountkit_error_exclamation.xml.flat",
+        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.23.0.aar/346e5de764bf38c581d1473b6b5136e3/res/drawable/com_accountkit_error_exclamation.xml"
+    },
+    {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/layout_com_accountkit_fragment_phone_login_text.xml.flat",
-        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.39.0.aar/12db8529c5142ad85b1162b8b9fd93f9/res/layout/com_accountkit_fragment_phone_login_text.xml"
+        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.23.0.aar/346e5de764bf38c581d1473b6b5136e3/res/layout/com_accountkit_fragment_phone_login_text.xml"
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_popup_background_mtrl_mult.9.png.flat",
@@ -2105,7 +2093,7 @@
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/layout_com_accountkit_fragment_phone_login_top.xml.flat",
-        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.39.0.aar/12db8529c5142ad85b1162b8b9fd93f9/res/layout/com_accountkit_fragment_phone_login_top.xml"
+        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.23.0.aar/346e5de764bf38c581d1473b6b5136e3/res/layout/com_accountkit_fragment_phone_login_top.xml"
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
@@ -2369,15 +2357,15 @@
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/layout_com_accountkit_fragment_sending_code_center.xml.flat",
-        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.39.0.aar/12db8529c5142ad85b1162b8b9fd93f9/res/layout/com_accountkit_fragment_sending_code_center.xml"
+        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.23.0.aar/346e5de764bf38c581d1473b6b5136e3/res/layout/com_accountkit_fragment_sending_code_center.xml"
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/layout_com_accountkit_fragment_verifying_code_center.xml.flat",
-        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.39.0.aar/12db8529c5142ad85b1162b8b9fd93f9/res/layout/com_accountkit_fragment_verifying_code_center.xml"
+        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.23.0.aar/346e5de764bf38c581d1473b6b5136e3/res/layout/com_accountkit_fragment_verifying_code_center.xml"
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable_com_accountkit_progress_ring.xml.flat",
-        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.39.0.aar/12db8529c5142ad85b1162b8b9fd93f9/res/drawable/com_accountkit_progress_ring.xml"
+        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.23.0.aar/346e5de764bf38c581d1473b6b5136e3/res/drawable/com_accountkit_progress_ring.xml"
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
@@ -2509,11 +2497,11 @@
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-v21_com_accountkit_input_cursor.xml.flat",
-        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.39.0.aar/12db8529c5142ad85b1162b8b9fd93f9/res/drawable-v21/com_accountkit_input_cursor.xml"
+        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.23.0.aar/346e5de764bf38c581d1473b6b5136e3/res/drawable-v21/com_accountkit_input_cursor.xml"
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_com_accountkit_check_sms.png.flat",
-        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.39.0.aar/12db8529c5142ad85b1162b8b9fd93f9/res/drawable-xxxhdpi-v4/com_accountkit_check_sms.png"
+        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.23.0.aar/346e5de764bf38c581d1473b6b5136e3/res/drawable-xxxhdpi-v4/com_accountkit_check_sms.png"
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_star_black_48dp.png.flat",
@@ -2633,11 +2621,11 @@
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_com_accountkit_code_fb.png.flat",
-        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.39.0.aar/12db8529c5142ad85b1162b8b9fd93f9/res/drawable-xxhdpi-v4/com_accountkit_code_fb.png"
+        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.23.0.aar/346e5de764bf38c581d1473b6b5136e3/res/drawable-xxhdpi-v4/com_accountkit_code_fb.png"
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_com_accountkit_get_call.png.flat",
-        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.39.0.aar/12db8529c5142ad85b1162b8b9fd93f9/res/drawable-hdpi-v4/com_accountkit_get_call.png"
+        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.23.0.aar/346e5de764bf38c581d1473b6b5136e3/res/drawable-hdpi-v4/com_accountkit_get_call.png"
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/anim_design_bottom_sheet_slide_in.xml.flat",
@@ -2665,7 +2653,7 @@
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/layout_com_accountkit_fragment_email_login_bottom.xml.flat",
-        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.39.0.aar/12db8529c5142ad85b1162b8b9fd93f9/res/layout/com_accountkit_fragment_email_login_bottom.xml"
+        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.23.0.aar/346e5de764bf38c581d1473b6b5136e3/res/layout/com_accountkit_fragment_email_login_bottom.xml"
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_phone_black_24dp.png.flat",
@@ -2689,7 +2677,7 @@
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_com_accountkit_code_fb.png.flat",
-        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.39.0.aar/12db8529c5142ad85b1162b8b9fd93f9/res/drawable-xxxhdpi-v4/com_accountkit_code_fb.png"
+        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.23.0.aar/346e5de764bf38c581d1473b6b5136e3/res/drawable-xxxhdpi-v4/com_accountkit_code_fb.png"
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable_virus_ix.jpg.flat",
@@ -2705,7 +2693,7 @@
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable_com_accountkit_email.xml.flat",
-        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.39.0.aar/12db8529c5142ad85b1162b8b9fd93f9/res/drawable/com_accountkit_email.xml"
+        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.23.0.aar/346e5de764bf38c581d1473b6b5136e3/res/drawable/com_accountkit_email.xml"
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat",
@@ -2738,10 +2726,6 @@
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_commit_search_api_mtrl_alpha.png.flat",
         "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/dd6370db221e18e814dff90c899c4720/res/drawable-xhdpi-v4/abc_ic_commit_search_api_mtrl_alpha.png"
-    },
-    {
-        "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-watch-v20_common_google_signin_btn_text_light_normal.xml.flat",
-        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.8.0.aar/d38b0b69c9fe75fb722ccaec51d660a3/res/drawable-watch-v20/common_google_signin_btn_text_light_normal.xml"
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_ic_star_half_black_36dp.png.flat",
@@ -2869,7 +2853,7 @@
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/layout_com_accountkit_fragment_static_content.xml.flat",
-        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.39.0.aar/12db8529c5142ad85b1162b8b9fd93f9/res/layout/com_accountkit_fragment_static_content.xml"
+        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.23.0.aar/346e5de764bf38c581d1473b6b5136e3/res/layout/com_accountkit_fragment_static_content.xml"
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/layout_notification_media_cancel_action.xml.flat",
@@ -2929,7 +2913,7 @@
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/layout_com_accountkit_confirmation_code_input.xml.flat",
-        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.39.0.aar/12db8529c5142ad85b1162b8b9fd93f9/res/layout/com_accountkit_confirmation_code_input.xml"
+        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.23.0.aar/346e5de764bf38c581d1473b6b5136e3/res/layout/com_accountkit_confirmation_code_input.xml"
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-ldrtl-xxhdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat",
@@ -2941,7 +2925,7 @@
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_com_accountkit_device.png.flat",
-        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.39.0.aar/12db8529c5142ad85b1162b8b9fd93f9/res/drawable-xxhdpi-v4/com_accountkit_device.png"
+        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.23.0.aar/346e5de764bf38c581d1473b6b5136e3/res/drawable-xxhdpi-v4/com_accountkit_device.png"
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_notification_bg_low_pressed.9.png.flat",
@@ -3005,7 +2989,7 @@
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_com_accountkit_device.png.flat",
-        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.39.0.aar/12db8529c5142ad85b1162b8b9fd93f9/res/drawable-mdpi-v4/com_accountkit_device.png"
+        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.23.0.aar/346e5de764bf38c581d1473b6b5136e3/res/drawable-mdpi-v4/com_accountkit_device.png"
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_notification_bg_low_normal.9.png.flat",
@@ -3057,7 +3041,7 @@
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/layout_com_accountkit_fragment_error_center.xml.flat",
-        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.39.0.aar/12db8529c5142ad85b1162b8b9fd93f9/res/layout/com_accountkit_fragment_error_center.xml"
+        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.23.0.aar/346e5de764bf38c581d1473b6b5136e3/res/layout/com_accountkit_fragment_error_center.xml"
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/layout-v16_notification_template_custom_big.xml.flat",
@@ -3089,7 +3073,7 @@
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/layout_com_accountkit_fragment_resend_bottom.xml.flat",
-        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.39.0.aar/12db8529c5142ad85b1162b8b9fd93f9/res/layout/com_accountkit_fragment_resend_bottom.xml"
+        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.23.0.aar/346e5de764bf38c581d1473b6b5136e3/res/layout/com_accountkit_fragment_resend_bottom.xml"
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_list_focused_holo.9.png.flat",
@@ -3136,12 +3120,8 @@
         "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/dd6370db221e18e814dff90c899c4720/res/anim/abc_shrink_fade_out_from_bottom.xml"
     },
     {
-        "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/anim_com_accountkit_progress_complete_check_anim.xml.flat",
-        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.39.0.aar/12db8529c5142ad85b1162b8b9fd93f9/res/anim/com_accountkit_progress_complete_check_anim.xml"
-    },
-    {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_com_accountkit_device.png.flat",
-        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.39.0.aar/12db8529c5142ad85b1162b8b9fd93f9/res/drawable-hdpi-v4/com_accountkit_device.png"
+        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.23.0.aar/346e5de764bf38c581d1473b6b5136e3/res/drawable-hdpi-v4/com_accountkit_device.png"
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/layout_activity_data_view.xml.flat",
@@ -3150,10 +3130,6 @@
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
         "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/dd6370db221e18e814dff90c899c4720/res/drawable-mdpi-v4/abc_btn_check_to_on_mtrl_000.png"
-    },
-    {
-        "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-watch-v20_common_google_signin_btn_text_disabled.xml.flat",
-        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.8.0.aar/d38b0b69c9fe75fb722ccaec51d660a3/res/drawable-watch-v20/common_google_signin_btn_text_disabled.xml"
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_dehaze_black_24dp.png.flat",
@@ -3193,7 +3169,7 @@
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_com_accountkit_device.png.flat",
-        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.39.0.aar/12db8529c5142ad85b1162b8b9fd93f9/res/drawable-xxxhdpi-v4/com_accountkit_device.png"
+        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.23.0.aar/346e5de764bf38c581d1473b6b5136e3/res/drawable-xxxhdpi-v4/com_accountkit_device.png"
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_text_select_handle_right_mtrl_dark.png.flat",
@@ -3249,7 +3225,7 @@
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_com_accountkit_check_sms.png.flat",
-        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.39.0.aar/12db8529c5142ad85b1162b8b9fd93f9/res/drawable-mdpi-v4/com_accountkit_check_sms.png"
+        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.23.0.aar/346e5de764bf38c581d1473b6b5136e3/res/drawable-mdpi-v4/com_accountkit_check_sms.png"
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_ic_star_half_black_48dp.png.flat",
@@ -3293,7 +3269,7 @@
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_com_accountkit_spinner_triangle.png.flat",
-        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.39.0.aar/12db8529c5142ad85b1162b8b9fd93f9/res/drawable-hdpi-v4/com_accountkit_spinner_triangle.png"
+        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.23.0.aar/346e5de764bf38c581d1473b6b5136e3/res/drawable-hdpi-v4/com_accountkit_spinner_triangle.png"
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
@@ -3349,7 +3325,7 @@
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/layout_com_accountkit_activity_layout.xml.flat",
-        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.39.0.aar/12db8529c5142ad85b1162b8b9fd93f9/res/layout/com_accountkit_activity_layout.xml"
+        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.23.0.aar/346e5de764bf38c581d1473b6b5136e3/res/layout/com_accountkit_activity_layout.xml"
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_switch_track_mtrl_alpha.9.png.flat",
@@ -3369,7 +3345,7 @@
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_com_accountkit_get_call.png.flat",
-        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.39.0.aar/12db8529c5142ad85b1162b8b9fd93f9/res/drawable-xxhdpi-v4/com_accountkit_get_call.png"
+        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.23.0.aar/346e5de764bf38c581d1473b6b5136e3/res/drawable-xxhdpi-v4/com_accountkit_get_call.png"
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-hdpi_add_image.png.flat",
@@ -3445,7 +3421,7 @@
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/layout_com_accountkit_fragment_confirmation_code_top.xml.flat",
-        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.39.0.aar/12db8529c5142ad85b1162b8b9fd93f9/res/layout/com_accountkit_fragment_confirmation_code_top.xml"
+        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.23.0.aar/346e5de764bf38c581d1473b6b5136e3/res/layout/com_accountkit_fragment_confirmation_code_top.xml"
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_popup_background_mtrl_mult.9.png.flat",
@@ -3457,7 +3433,7 @@
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_com_accountkit_spinner_triangle.png.flat",
-        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.39.0.aar/12db8529c5142ad85b1162b8b9fd93f9/res/drawable-mdpi-v4/com_accountkit_spinner_triangle.png"
+        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.23.0.aar/346e5de764bf38c581d1473b6b5136e3/res/drawable-mdpi-v4/com_accountkit_spinner_triangle.png"
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/layout_fragment_crop_user.xml.flat",
@@ -3481,7 +3457,7 @@
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/layout_com_accountkit_fragment_phone_login_bottom.xml.flat",
-        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.39.0.aar/12db8529c5142ad85b1162b8b9fd93f9/res/layout/com_accountkit_fragment_phone_login_bottom.xml"
+        "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.23.0.aar/346e5de764bf38c581d1473b6b5136e3/res/layout/com_accountkit_fragment_phone_login_bottom.xml"
     },
     {
         "merged": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_arrow_back_black_24dp.png.flat",

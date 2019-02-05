@@ -37,14 +37,15 @@ public  class weatherfivedayAdapter extends RecyclerView.Adapter<weatherfivedayA
 
     @Override
     public void onBindViewHolder(@NonNull holder holder, int i) {
-        Calendar calendar = Calendar.getInstance();
-        calendar.add(Calendar.DAY_OF_YEAR, i+1);
-        Date tomorrow = calendar.getTime();
-        SimpleDateFormat dayFormat = new SimpleDateFormat("EEE");
+       // Calendar calendar = Calendar.getInstance();
+       // calendar.add(Calendar.DAY_OF_YEAR, i+1);
+        //Date tomorrow = calendar.getTime();
+        //SimpleDateFormat dayFormat = new SimpleDateFormat("EEE");
         String mCurrent = aryy.get(i);
-        String in[]=mCurrent.split(",");
+        String in[]=mCurrent.split("~");
         String imagename="http://openweathermap.org/img/w/"+ in[2] +".png";
-       holder.t2.setText(dayFormat.format(tomorrow));
+       //holder.t2.setText(dayFormat.format(tomorrow));
+        holder.t2.setText(in[0]);
         Glide.with(c).load(imagename).into(holder.t1);
         holder.t3.setText(in[1]);
        // holder.t4.setText(in[2]);
