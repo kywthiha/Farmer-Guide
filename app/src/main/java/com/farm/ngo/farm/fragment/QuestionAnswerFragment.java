@@ -26,6 +26,7 @@ import android.widget.ImageButton;
 import android.widget.Toast;
 
 import com.farm.ngo.farm.adapter.MessageAdapter;
+import com.farm.ngo.farm.data.UsingPreferenceHelper;
 import com.farm.ngo.farm.data.UsingSQLiteHelper;
 import com.farm.ngo.farm.model.Image;
 import com.farm.ngo.farm.model.ImageUpload;
@@ -95,8 +96,7 @@ public class QuestionAnswerFragment extends Fragment {
 
 
         //Reading User From SQLite database
-        UsingSQLiteHelper helper = new UsingSQLiteHelper(mContext);
-        user = helper.getUser(getActivity());
+        user = UsingPreferenceHelper.getUser(getActivity());
         Log.i("user id",user.getId());
         swipeRefreshLayout=(SwipeRefreshLayout)view.findViewById(R.id.swiperefresh);
         show = (LinearLayoutCompat) view.findViewById(R.id.chooe_image_oe_camera);

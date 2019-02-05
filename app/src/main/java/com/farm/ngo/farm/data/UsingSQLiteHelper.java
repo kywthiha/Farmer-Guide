@@ -24,14 +24,9 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class UsingSQLiteHelper extends SQLiteOpenHelper {
-
     private static String DB_PATH = "";
-
     private static final String DB_NAME = "farm";
-    private static final String name="farmuser";
-
     private static final int DB_VERSION = 1;
-
     private final Context mContext;
     private SQLiteDatabase mDataBase;
 
@@ -186,24 +181,6 @@ public class UsingSQLiteHelper extends SQLiteOpenHelper {
         cursor.close();
         close();
         return data;
-    }
-    public static void setUser(User user,Context mContext){
-        SharedPreferences.Editor editor = mContext.getSharedPreferences(name, mContext.MODE_PRIVATE).edit();
-            editor.putString("username",user.getName());
-            editor.putString("userid",user.getId());
-            editor.commit();
-
-    }
-
-
-    public static User getUser(Context mContext) {
-        User user = null;
-        SharedPreferences preferences = mContext.getSharedPreferences(name, mContext.MODE_PRIVATE);
-       if( AccountKit.getCurrentAccessToken() != null && !preferences.getString("userid","").equals("")) {
-
-           user = new User(preferences.getString("userid", ""), preferences.getString("username", ""), "Pakokku", "", "hello ", "male", "Pakokku");
-       }
-        return user;
     }
 
 

@@ -25,6 +25,7 @@ import com.facebook.accountkit.ui.AccountKitConfiguration;
 import com.facebook.accountkit.ui.LoginType;
 import com.facebook.accountkit.AccountKitLoginResult;
 import com.farm.ngo.farm.R;
+import com.farm.ngo.farm.data.UsingPreferenceHelper;
 import com.farm.ngo.farm.data.UsingSQLiteHelper;
 import com.farm.ngo.farm.model.User;
 import com.google.android.gms.common.ConnectionResult;
@@ -64,7 +65,7 @@ public class FacebookAccKitActivity extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-        User user=UsingSQLiteHelper.getUser(getApplicationContext());
+        User user=UsingPreferenceHelper.getUser(getApplicationContext());
         if(user!=null) {
             Intent in = new Intent(FacebookAccKitActivity.this, QuestionAnswerActivity.class);
             in.putExtra("user", user);
@@ -93,7 +94,7 @@ public class FacebookAccKitActivity extends AppCompatActivity {
                 DatabaseReference databaseuser=FirebaseDatabase.getInstance().getReference().child("users").child(phonenumber);
                     User user=new User(phonenumber,mName.getText().toString(),"","","Pakokku");
                     databaseuser.setValue(user);
-                    UsingSQLiteHelper.setUser(user,getApplicationContext());
+                    UsingPreferenceHelper.setUser(user,getApplicationContext());
                 Log.i("facebook",user.getId());
                     Intent in=new Intent(FacebookAccKitActivity.this,QuestionAnswerActivity.class);
                     in.putExtra("user",user);

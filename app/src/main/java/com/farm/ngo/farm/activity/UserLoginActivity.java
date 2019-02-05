@@ -3,6 +3,8 @@ package com.farm.ngo.farm.activity;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.FragmentActivity;
+
+import com.farm.ngo.farm.data.UsingPreferenceHelper;
 import com.farm.ngo.farm.model.User;
 import com.farm.ngo.farm.R;
 import com.farm.ngo.farm.data.UsingSQLiteHelper;
@@ -23,7 +25,7 @@ public class UserLoginActivity extends FragmentActivity {
     @Override
     protected void onStart() {
         super.onStart();
-        User user= UsingSQLiteHelper.getUser(this);
+        User user= UsingPreferenceHelper.getUser(this);
         if(user!=null){
             Intent in=new Intent(getApplicationContext(),QuestionAnswerActivity.class);
             in.putExtra("user",user);

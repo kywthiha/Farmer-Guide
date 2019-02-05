@@ -58,15 +58,26 @@
             android:value="false" />
 
         <activity android:name="com.farm.ngo.farm.activity.FacebookAccKitActivity" />
-        <activity android:name="com.farm.ngo.farm.activity.MainActivity" />
-        <activity android:name="com.farm.ngo.farm.activity.QuestionAnswerActivity" />
-        <activity android:name="com.farm.ngo.farm.activity.ChatActivity" />
-        <activity android:name="com.farm.ngo.farm.activity.PostshowdetailActivity" />
-        <activity android:name="com.farm.ngo.farm.activity.PhoneActivity" />
+        <activity
+            android:name="com.farm.ngo.farm.activity.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.farm.ngo.farm.activity.QuestionAnswerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.farm.ngo.farm.activity.ChatActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.farm.ngo.farm.activity.PostshowdetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.farm.ngo.farm.activity.PhoneActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name="com.farm.ngo.farm.activity.PwalyoneActivity"
             android:label="ပြဲရုံမ်ား"
             android:parentActivityName="com.farm.ngo.farm.activity.MainActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light" >
             <intent-filter>
                 <action android:name="android.intent.action.SEARCH" />
@@ -76,13 +87,17 @@
             android:name="com.farm.ngo.farm.activity.WeatherFiveDatyActivity"
             android:label="ရာသီဥတု"
             android:parentActivityName="com.farm.ngo.farm.activity.MainActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light" />
         <activity
             android:name="com.farm.ngo.farm.activity.ShopActivity"
             android:label="စိုက္ပ်ိဳးေရးပစၥည္းဆိုင္မ်ား"
             android:parentActivityName="com.farm.ngo.farm.activity.MainActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light" />
-        <activity android:name="com.farm.ngo.farm.activity.WelcomeActivity" >
+        <activity
+            android:name="com.farm.ngo.farm.activity.WelcomeActivity"
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -83,7 +83,7 @@ public class HomeFragment extends Fragment {
         currentTemperatureField = (TextView) rootView.findViewById(R.id.current_temperature_field);
         weatherIcon = (TextView) rootView.findViewById(R.id.weather_icon);
         weatherFont = Typeface.createFromAsset(mContext.getAssets(), "weathericons-regular-webfont.ttf");
-       weahter=(CardView)rootView.findViewById(R.id.onedayweather);
+        weahter=(CardView)rootView.findViewById(R.id.onedayweather);
         weatherIcon.setTypeface(weatherFont);
 
 
@@ -105,12 +105,12 @@ public class HomeFragment extends Fragment {
             }
         });
         pwalyoneCardView.setOnClickListener(new View.OnClickListener() {
-                                        @Override
-                                        public void onClick(View v) {
-                                            Intent i=new Intent(getActivity(),PwalyoneActivity.class);
-                                            getActivity().startActivity(i);
-                                        }
-                                    }
+                                                @Override
+                                                public void onClick(View v) {
+                                                    Intent i=new Intent(getActivity(),PwalyoneActivity.class);
+                                                    getActivity().startActivity(i);
+                                                }
+                                            }
         );
         paddyCard.setOnClickListener(new View.OnClickListener() {
             @Override

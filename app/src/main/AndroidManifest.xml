@@ -34,13 +34,14 @@
         <meta-data android:name="com.facebook.accountkit.FacebookAppEventsEnabled"
             android:value="false"/>
         <activity android:name=".activity.FacebookAccKitActivity"/>
-        <activity android:name=".activity.MainActivity"/>
-        <activity android:name=".activity.QuestionAnswerActivity" />
-        <activity android:name=".activity.ChatActivity" />
-        <activity android:name=".activity.PostshowdetailActivity" />
-        <activity android:name=".activity.PhoneActivity" />
+        <activity android:name=".activity.MainActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.QuestionAnswerActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.ChatActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.PostshowdetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.PhoneActivity" android:screenOrientation="portrait"/>
         <activity
             android:name=".activity.PwalyoneActivity"
+            android:screenOrientation="portrait"
             android:label="ပြဲရုံမ်ား"
             android:parentActivityName=".activity.MainActivity"
             android:theme="@style/Theme.AppCompat.Light" >
@@ -50,15 +51,18 @@
         </activity>
         <activity
             android:name=".activity.WeatherFiveDatyActivity"
+            android:screenOrientation="portrait"
             android:label="ရာသီဥတု"
             android:parentActivityName=".activity.MainActivity"
             android:theme="@style/Theme.AppCompat.Light" />
         <activity
             android:name=".activity.ShopActivity"
+            android:screenOrientation="portrait"
             android:label="စိုက္ပ်ိဳးေရးပစၥည္းဆိုင္မ်ား"
             android:parentActivityName=".activity.MainActivity"
             android:theme="@style/Theme.AppCompat.Light" />
-        <activity android:name=".activity.WelcomeActivity"><intent-filter>
+        <activity android:name=".activity.WelcomeActivity"
+            android:screenOrientation="portrait"><intent-filter>
             <action android:name="android.intent.action.MAIN" />
 
             <category android:name="android.intent.category.LAUNCHER" />
