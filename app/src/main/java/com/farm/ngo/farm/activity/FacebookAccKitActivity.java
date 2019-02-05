@@ -1,15 +1,19 @@
 package com.farm.ngo.farm.activity;
-
-
+import android.Manifest;
+import android.annotation.TargetApi;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.os.Build;
+import android.support.annotation.NonNull;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Spinner;
-import android.widget.TimePicker;
+import android.widget.TextView;
 import android.widget.Toast;
 import com.facebook.accountkit.Account;
 import com.facebook.accountkit.AccountKit;
@@ -23,29 +27,32 @@ import com.facebook.accountkit.AccountKitLoginResult;
 import com.farm.ngo.farm.R;
 import com.farm.ngo.farm.data.UsingSQLiteHelper;
 import com.farm.ngo.farm.model.User;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
+import com.google.android.gms.common.ConnectionResult;
+import com.google.android.gms.common.GoogleApiAvailability;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
+import java.util.HashMap;
+import java.util.Map;
 
 public class FacebookAccKitActivity extends AppCompatActivity {
     public static int APP_REQUEST_CODE = 99;
-    private String phonenumber;
     Button mContinue;
-    Spinner mTownship;
     EditText mName;
+    private String phonenumber;
+    private int nextPermissionsRequestCode = 4000;
+    private final Map<Integer, OnCompleteListener> permissionsListeners = new HashMap<>();
 
+    private interface OnCompleteListener {
+        void onComplete();
+    }
     private void getCurrentUser(){
         AccountKit.getCurrentAccount(new AccountKitCallback<Account>() {
             @Override
             public void onSuccess(final Account account) {
-                phonenumber=account.getPhoneNumber().toString();
-                Toast.makeText(getApplicationContext(),phonenumber,Toast.LENGTH_SHORT).show();
-                Log.i("facebook 1",phonenumber);
-                //registerUser(phonenumber);
-
-
+                final TextView phoneNumber = (TextView) findViewById(R.id.phone_number);
+                final PhoneNumber number = account.getPhoneNumber();
+                phonenumber=number.toString();
+                phoneNumber.setText(number == null ? null : number.toString());
             }
 
             @Override
@@ -53,27 +60,32 @@ public class FacebookAccKitActivity extends AppCompatActivity {
             }
         });
     }
+
     @Override
     protected void onStart() {
         super.onStart();
-        startChart();
-    }
-    private void startChart(){
-        User user= UsingSQLiteHelper.getUser(this);
-        if(user!=null){
-            Intent in=new Intent(getApplicationContext(),QuestionAnswerActivity.class);
-            in.putExtra("user",user);
+        User user=UsingSQLiteHelper.getUser(getApplicationContext());
+        if(user!=null) {
+            Intent in = new Intent(FacebookAccKitActivity.this, QuestionAnswerActivity.class);
+            in.putExtra("user", user);
             startActivity(in);
-            this.finish();
+            finish();
         }
+
     }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        getCurrentUser();
+    }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.facebook_acc_kit);
         mContinue=(Button)findViewById(R.id.btnContinue);
-        mTownship=(Spinner)findViewById(R.id.usertownship);
         mName=(EditText)findViewById(R.id.username);
         mContinue.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -83,15 +95,15 @@ public class FacebookAccKitActivity extends AppCompatActivity {
                     databaseuser.setValue(user);
                     UsingSQLiteHelper.setUser(user,getApplicationContext());
                 Log.i("facebook",user.getId());
-//                    Intent in=new Intent(FacebookAccKitActivity.this,QuestionAnswerActivity.class);
-//                    in.putExtra("user",user);
-//                    startActivity(in);
-//                    finish();
+                    Intent in=new Intent(FacebookAccKitActivity.this,QuestionAnswerActivity.class);
+                    in.putExtra("user",user);
+                    startActivity(in);
+                    finish();
             }
         });
 
         if (AccountKit.getCurrentAccessToken() != null && savedInstanceState == null) {
-           startChart();
+           getCurrentUser();
         }
         else {
             phoneLogin();
@@ -100,19 +112,48 @@ public class FacebookAccKitActivity extends AppCompatActivity {
 
     public void phoneLogin() {
         final Intent intent = new Intent(this, AccountKitActivity.class);
-        AccountKitConfiguration.AccountKitConfigurationBuilder configurationBuilder =
-                new AccountKitConfiguration.AccountKitConfigurationBuilder(
-                        LoginType.PHONE,
-                        AccountKitActivity.ResponseType.CODE); // or .ResponseType.TOKEN
-        // ... perform additional configuration ...
+        final AccountKitConfiguration.AccountKitConfigurationBuilder configurationBuilder
+                = new AccountKitConfiguration.AccountKitConfigurationBuilder(
+                LoginType.PHONE,
+                AccountKitActivity.ResponseType.TOKEN);
+        final AccountKitConfiguration configuration = configurationBuilder.build();
         intent.putExtra(
                 AccountKitActivity.ACCOUNT_KIT_ACTIVITY_CONFIGURATION,
-                configurationBuilder.build());
-        startActivityForResult(intent, APP_REQUEST_CODE);
+                configuration);
+        OnCompleteListener completeListener = new OnCompleteListener() {
+            @Override
+            public void onComplete() {
+                startActivityForResult(intent, APP_REQUEST_CODE);
+            }
+        };
+        if (configuration.isReceiveSMSEnabled() && !canReadSmsWithoutPermission()) {
+            final OnCompleteListener receiveSMSCompleteListener = completeListener;
+            completeListener = new OnCompleteListener() {
+                @Override
+                public void onComplete() {
+                    requestPermissions(
+                            Manifest.permission.RECEIVE_SMS,
+                            R.string.permissions_receive_sms_title,
+                            R.string.permissions_receive_sms_message,
+                            receiveSMSCompleteListener);
+                }
+            };
+        }
+        if (configuration.isReadPhoneStateEnabled() && !isGooglePlayServicesAvailable()) {
+            final OnCompleteListener readPhoneStateCompleteListener = completeListener;
+            completeListener = new OnCompleteListener() {
+                @Override
+                public void onComplete() {
+                    requestPermissions(
+                            Manifest.permission.READ_PHONE_STATE,
+                            R.string.permissions_read_phone_state_title,
+                            R.string.permissions_read_phone_state_message,
+                            readPhoneStateCompleteListener);
+                }
+            };
+        }
+        completeListener.onComplete();
     }
-
-
-
 
     @Override
     protected void onActivityResult(
@@ -134,7 +175,6 @@ public class FacebookAccKitActivity extends AppCompatActivity {
                 if (loginResult.getAccessToken() != null) {
                     toastMessage = "Success:" + loginResult.getAccessToken().getAccountId();
                     getCurrentUser();
-
                 } else {
                     toastMessage = String.format(
                             "Success:%s...",
@@ -157,28 +197,99 @@ public class FacebookAccKitActivity extends AppCompatActivity {
                     .show();
         }
     }
-    public void registerUser(final String phonenumber) {
-        final DatabaseReference database=FirebaseDatabase.getInstance().getReference().child("users");
-        database.child(phonenumber).addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                if(dataSnapshot.exists()){
-                    User user=dataSnapshot.getValue(User.class);
-                    UsingSQLiteHelper.setUser(user,getApplicationContext());
-                    Intent in=new Intent(getApplicationContext(),QuestionAnswerActivity.class);
-                    in.putExtra("user",user);
-                    startActivity(in);
-                    finish();
-                }
-
-            }
-
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
-
-            }
-        });
+    private boolean isGooglePlayServicesAvailable() {
+        final GoogleApiAvailability apiAvailability = GoogleApiAvailability.getInstance();
+        int googlePlayServicesAvailable = apiAvailability.isGooglePlayServicesAvailable(this);
+        return googlePlayServicesAvailable == ConnectionResult.SUCCESS;
     }
+
+    private boolean canReadSmsWithoutPermission() {
+        final GoogleApiAvailability apiAvailability = GoogleApiAvailability.getInstance();
+        int googlePlayServicesAvailable = apiAvailability.isGooglePlayServicesAvailable(this);
+        if (googlePlayServicesAvailable == ConnectionResult.SUCCESS) {
+            return true;
+        }
+
+
+        return false;
+    }
+
+    private void requestPermissions(
+            final String permission,
+            final int rationaleTitleResourceId,
+            final int rationaleMessageResourceId,
+            final OnCompleteListener listener) {
+        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.M) {
+            if (listener != null) {
+                listener.onComplete();
+            }
+            return;
+        }
+
+        checkRequestPermissions(
+                permission,
+                rationaleTitleResourceId,
+                rationaleMessageResourceId,
+                listener);
+    }
+
+    @TargetApi(23)
+    private void checkRequestPermissions(
+            final String permission,
+            final int rationaleTitleResourceId,
+            final int rationaleMessageResourceId,
+            final OnCompleteListener listener) {
+        if (checkSelfPermission(permission) == PackageManager.PERMISSION_GRANTED) {
+            if (listener != null) {
+                listener.onComplete();
+            }
+            return;
+        }
+
+        final int requestCode = nextPermissionsRequestCode++;
+        permissionsListeners.put(requestCode, listener);
+
+        if (shouldShowRequestPermissionRationale(permission)) {
+            new AlertDialog.Builder(this)
+                    .setTitle(rationaleTitleResourceId)
+                    .setMessage(rationaleMessageResourceId)
+                    .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(final DialogInterface dialog, final int which) {
+                            requestPermissions(new String[] { permission }, requestCode);
+                        }
+                    })
+                    .setNegativeButton(android.R.string.no, new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(final DialogInterface dialog, final int which) {
+                            // ignore and clean up the listener
+                            permissionsListeners.remove(requestCode);
+                        }
+                    })
+                    .setIcon(android.R.drawable.ic_dialog_alert)
+                    .show();
+        } else {
+            requestPermissions(new String[]{ permission }, requestCode);
+        }
+    }
+
+    @TargetApi(23)
+    @SuppressWarnings("unused")
+    @Override
+    public void onRequestPermissionsResult(final int requestCode,
+                                           final @NonNull String permissions[],
+                                           final @NonNull int[] grantResults) {
+        final OnCompleteListener permissionsListener = permissionsListeners.remove(requestCode);
+        if (permissionsListener != null
+                && grantResults.length > 0
+                && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+            permissionsListener.onComplete();
+        }
+    }
+
+
+
+
 
 
 

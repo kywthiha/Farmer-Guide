@@ -198,8 +198,9 @@ public class UsingSQLiteHelper extends SQLiteOpenHelper {
 
     public static User getUser(Context mContext) {
         User user = null;
-       if( AccountKit.getCurrentAccessToken() != null) {
-           SharedPreferences preferences = mContext.getSharedPreferences(name, mContext.MODE_PRIVATE);
+        SharedPreferences preferences = mContext.getSharedPreferences(name, mContext.MODE_PRIVATE);
+       if( AccountKit.getCurrentAccessToken() != null && !preferences.getString("userid","").equals("")) {
+
            user = new User(preferences.getString("userid", ""), preferences.getString("username", ""), "Pakokku", "", "hello ", "male", "Pakokku");
        }
         return user;
