@@ -28,7 +28,7 @@ public class UsingPreferenceHelper {
         SharedPreferences preferences = mContext.getSharedPreferences(FARMUSER, mContext.MODE_PRIVATE);
         if( AccountKit.getCurrentAccessToken() != null && !preferences.getString("userid","").equals("")) {
 
-            user = new User(preferences.getString("userid", ""), preferences.getString("username", ""), "Pakokku", "", "hello ", "male", "Pakokku");
+            user = new User(preferences.getString("userid", ""), preferences.getString("username", ""), "pakokku", "", "hello ", "male", "Pakokku");
         }
         return user;
     }

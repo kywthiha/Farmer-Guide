@@ -14,9 +14,8 @@ import com.google.firebase.database.ValueEventListener;
 
 public class ChatHelper {
 
-    public static DatabaseReference chatRef=FirebaseDatabase.getInstance().getReference("chat");
+    public static DatabaseReference chatRef=FirebaseDatabase.getInstance().getReference("chat").child("pakokku");
     public static    boolean userExists=false;
-    private static String adminId=null;
 
     public static DatabaseReference getChatRef(String township){
         return chatRef.child(township);
@@ -27,11 +26,6 @@ public class ChatHelper {
         if(mg.getMessageType() == (MessageType.image)){
             isPhoto=true;
         }
-        if(adminId==null){
-            adminId=adminid;
-            chatRef=chatRef.child(adminId);
-        }
-
         if(admin){
             Log.i("trace","user is admin");
             chatRef.child(userid).child("id").setValue(mg.getUser_id());
