@@ -16,6 +16,8 @@ import com.farm.ngo.farm.adapter.CropUserAdapter;
 import com.farm.ngo.farm.farmstatic.RefStatic;
 import com.farm.ngo.farm.model.Crop;
 import com.farm.ngo.farm.R;
+import com.farm.ngo.farm.utility.Mdetect;
+import com.farm.ngo.farm.utility.Rabbit;
 import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -57,6 +59,11 @@ public class CropUserFragment extends Fragment {
             @Override
             public void onChildAdded(@android.support.annotation.NonNull DataSnapshot dataSnapshot, @Nullable String s) {
                 Crop crop=(Crop)dataSnapshot.getValue(Crop.class);
+                if(!Mdetect.isUnicode()){
+                    crop.setC_name(Rabbit.uni2zg(crop.getC_name()));
+                    crop.setCount(Rabbit.uni2zg(crop.getCount()));
+                    crop.setC_price(Rabbit.uni2zg(crop.getC_price()));
+                }
                 crops.add(crop);
                 cropAdapter.notifyDataSetChanged();
 
@@ -65,6 +72,11 @@ public class CropUserFragment extends Fragment {
             @Override
             public void onChildChanged(@android.support.annotation.NonNull DataSnapshot dataSnapshot, @Nullable String s) {
                 Crop crop=dataSnapshot.getValue(Crop.class);
+                if(!Mdetect.isUnicode()){
+                    crop.setC_name(Rabbit.uni2zg(crop.getC_name()));
+                    crop.setCount(Rabbit.uni2zg(crop.getCount()));
+                    crop.setC_price(Rabbit.uni2zg(crop.getC_price()));
+                }
                 for(int i=0;i<crops.size();i++){
                     if(crops.get(i).getC_Id().equals(crop.getC_Id())){
                         crops.get(i).setC_price(crop.getC_price());
@@ -76,6 +88,11 @@ public class CropUserFragment extends Fragment {
             @Override
             public void onChildRemoved(@android.support.annotation.NonNull DataSnapshot dataSnapshot) {
                 Crop crop=dataSnapshot.getValue(Crop.class);
+                if(!Mdetect.isUnicode()){
+                    crop.setC_name(Rabbit.uni2zg(crop.getC_name()));
+                    crop.setCount(Rabbit.uni2zg(crop.getCount()));
+                    crop.setC_price(Rabbit.uni2zg(crop.getC_price()));
+                }
                 for(int i=0;i<crops.size();i++){
                     if(crops.get(i).getC_Id().equals(crop.getC_Id())){
                         crops.remove(i);

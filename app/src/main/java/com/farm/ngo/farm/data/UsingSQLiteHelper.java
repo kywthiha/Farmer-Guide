@@ -10,10 +10,14 @@ import android.support.annotation.Nullable;
 import android.util.Log;
 
 import com.facebook.accountkit.AccountKit;
+import com.farm.ngo.farm.R;
 import com.farm.ngo.farm.model.CropItem;
 import com.farm.ngo.farm.model.Pwalyone;
 import com.farm.ngo.farm.model.Data;
 import com.farm.ngo.farm.model.User;
+import com.farm.ngo.farm.utility.Mdetect;
+import com.farm.ngo.farm.utility.Rabbit;
+
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -134,7 +138,11 @@ public class UsingSQLiteHelper extends SQLiteOpenHelper {
 
         if(cursor.moveToFirst()) {
             do {
-                dataList.add(new CropItem(cursor.getString(2), cursor.getString(0),tableName));
+                CropItem  cropItem=new CropItem(cursor.getString(2), cursor.getString(0),tableName);
+                if(!Mdetect.isUnicode()){
+                    cropItem.setTitle(Rabbit.uni2zg(cropItem.getTitle()));
+                }
+                dataList.add(cropItem);
             }while(cursor.moveToNext());
         }
         cursor.close();
@@ -152,7 +160,13 @@ public class UsingSQLiteHelper extends SQLiteOpenHelper {
 
         if(cursor.moveToFirst()) {
             do {
-                pwalyoneList.add(new Pwalyone(cursor.getString(0), cursor.getString(1),cursor.getString(2),cursor.getString(3)));
+               Pwalyone pwalyone=new Pwalyone(cursor.getString(0), cursor.getString(1),cursor.getString(2),cursor.getString(3));
+               if(!Mdetect.isUnicode()){
+                   pwalyone.setName(Rabbit.uni2zg(pwalyone.getName()));
+                   pwalyone.setCategory(Rabbit.uni2zg(pwalyone.getCategory()));
+                   pwalyone.setAddress(Rabbit.uni2zg(pwalyone.getAddress()));
+               }
+                pwalyoneList.add(pwalyone);
             }while(cursor.moveToNext());
         }
         cursor.close();
@@ -174,6 +188,10 @@ public class UsingSQLiteHelper extends SQLiteOpenHelper {
         if(cursor.moveToFirst()) {
 
                data=new Data(cursor.getString(0), cursor.getString(1), cursor.getString(2));
+               if(!Mdetect.isUnicode()){
+                   data.setTitle(Rabbit.uni2zg(data.getTitle()));
+                   data.setBody(Rabbit.uni2zg(data.getBody()));
+               }
                Log.i("data info",data.getTitle());
 
 

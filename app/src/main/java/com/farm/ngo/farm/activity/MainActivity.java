@@ -12,11 +12,15 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
+
 import com.farm.ngo.farm.fragment.CropUserFragment;
 import com.farm.ngo.farm.fragment.HomeFragment;
 import com.farm.ngo.farm.fragment.ProfileFragment;
 import com.farm.ngo.farm.R;
+import com.farm.ngo.farm.utility.Mdetect;
 import com.farm.ngo.farm.utility.NavigationCustomDone;
+import com.farm.ngo.farm.utility.Rabbit;
 
 
 public class MainActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener ,NavigationCustomDone {
@@ -32,6 +36,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         setContentView(R.layout.activity_main);
 
         btnNavView = (BottomNavigationView) findViewById(R.id.bottomnavigation);
+        updateMenu(btnNavView.getMenu());
         btnNavView.setOnNavigationItemSelectedListener(this);
         HomeFragment homeFragment = new HomeFragment(getApplicationContext(), R.id.view_pager);
         transaction.replace(R.id.view_pager, homeFragment);
@@ -44,12 +49,25 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
             fm.popBackStack();
         }
     }
+    private void updateMenu(Menu menu){
+        if(Mdetect.isUnicode())
+            return;
+        MenuItem item1=menu.findItem(R.id.main_home);
+        MenuItem item2=menu.findItem(R.id.nav_price);
+        MenuItem item3=menu.findItem(R.id.nav_profile);
+        item1.setTitle(Rabbit.uni2zg(getString(R.string.home_menu)));
+        item2.setTitle(Rabbit.uni2zg(getString(R.string.whole_sale_center_menu)));
+        item3.setTitle(Rabbit.uni2zg(getString(R.string.law_menu)));
+    }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
+
         MenuInflater menuInflater = getMenuInflater();
         menuInflater.inflate(R.menu.btn_nav_menu, menu);
+       updateMenu(menu);
+
         return true;
     }
 

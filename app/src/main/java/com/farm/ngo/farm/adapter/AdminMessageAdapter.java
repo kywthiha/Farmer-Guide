@@ -6,7 +6,6 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
 import com.farm.ngo.farm.viewholder.ReceiveImageViewHolder;
 import com.farm.ngo.farm.viewholder.ReceiveViewHolder;
 import com.farm.ngo.farm.viewholder.SendImageViewHolder;
@@ -15,17 +14,8 @@ import com.farm.ngo.farm.model.Message;
 import com.farm.ngo.farm.model.MessageType;
 import com.farm.ngo.farm.model.Type;
 import com.farm.ngo.farm.R;
-
 import java.util.LinkedList;
-//
-//import kyawthi547.userchat.R;
-//import kyawthi547.userchat.chat.model.Message;
-//import kyawthi547.userchat.chat.model.MessageType;
-//import kyawthi547.userchat.chat.model.Type;
-//import kyawthi547.userchat.chat.viewholder.ReceiveImageViewHolder;
-//import kyawthi547.userchat.chat.viewholder.ReceiveViewHolder;
-//import kyawthi547.userchat.chat.viewholder.SendImageViewHolder;
-//import kyawthi547.userchat.chat.viewholder.SendViewHolder;
+
 
 public class AdminMessageAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 

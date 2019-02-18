@@ -24,7 +24,9 @@ import com.farm.ngo.farm.adapter.PostAdapter;
 import com.farm.ngo.farm.farmstatic.RefStatic;
 import com.farm.ngo.farm.model.Post;
 import com.farm.ngo.farm.R;
+import com.farm.ngo.farm.utility.Mdetect;
 import com.farm.ngo.farm.utility.NavigationCustomDone;
+import com.farm.ngo.farm.utility.Rabbit;
 import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -92,9 +94,13 @@ public class NewsFragment extends Fragment  {
         ChildEventListener childEventListener = new ChildEventListener() {
             @Override
             public void onChildAdded(DataSnapshot dataSnapshot, String prevChildKey) {
-                Post user = dataSnapshot.getValue(Post.class);
-                user.setId(dataSnapshot.getKey());
-                postArray.add(0, user);
+                Post post = dataSnapshot.getValue(Post.class);
+                if(!Mdetect.isUnicode()) {
+                    post.setTitle(Rabbit.uni2zg(post.getTitle()));
+                    post.setInfo(Rabbit.uni2zg(post.getInfo()));
+                }
+                post.setId(dataSnapshot.getKey());
+                postArray.add(0, post);
                 id.add(0, dataSnapshot.getKey());
                 postAdapter.notifyItemInserted(0);
                 ladingData.setVisibility(View.GONE);

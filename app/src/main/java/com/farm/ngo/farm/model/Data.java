@@ -15,6 +15,18 @@ public class Data implements Serializable {
     public Data() {
     }
 
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public void setBody(String body) {
+        this.body = body;
+    }
+
+    public void setImage_url(String image_url) {
+        this.image_url = image_url;
+    }
+
     public String getTitle() {
         return title;
     }

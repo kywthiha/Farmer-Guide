@@ -24,7 +24,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="စိုက္ပ်ိဳးေရးဌာန ဖုန္းနံပါတ္မ်ား"
+            android:text="@string/argi_phone_title"
             android:layout_gravity="center_horizontal"
             android:textColor="@color/colorPrimary"
             android:textSize="20dp"
@@ -42,7 +42,7 @@
             android:paddingLeft="10dp"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="ပခုကၠဴ စိုက္ပ်ိဳးေရးရုံး"
+            android:text="@string/pku_argi_off"
             android:textSize="17dp"
             android:gravity="center_vertical"/>
         <ImageView
@@ -63,7 +63,7 @@
             android:paddingLeft="10dp"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="ၿမိဳင္ စိုက္ပ်ိဳးေရးရုံး"
+            android:text="@string/m_argi_off"
             android:textSize="17dp"
             android:gravity="center_vertical"/>
         <ImageView
@@ -84,7 +84,7 @@
             android:paddingLeft="10dp"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="ေရစၾကိဳ စိုက္ပ်ိဳးေရးရုံး"
+            android:text="@string/y_argi_off"
             android:textSize="17dp"
             android:gravity="center_vertical"/>
         <ImageView
@@ -105,7 +105,7 @@
             android:paddingLeft="10dp"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="ေပါက္ စိုက္ပ်ိဳးေရးရုံး"
+            android:text="@string/pa_argi_off"
             android:gravity="center_vertical"
             android:textSize="17dp"/>
         <ImageView

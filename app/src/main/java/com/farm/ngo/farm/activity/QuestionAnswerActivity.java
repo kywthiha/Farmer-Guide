@@ -38,6 +38,8 @@ import com.farm.ngo.farm.R;
 import com.farm.ngo.farm.service.ChatHelper;
 import com.farm.ngo.farm.utility.FileUtil;
 import com.farm.ngo.farm.utility.ImageUtil;
+import com.farm.ngo.farm.utility.Mdetect;
+import com.farm.ngo.farm.utility.Rabbit;
 import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -298,6 +300,8 @@ public class QuestionAnswerActivity extends AppCompatActivity {
                     }
                     else {
                         Message mg = dataSnapshot.getValue(Message.class);
+                        if(!Mdetect.isUnicode())
+                        mg.setText(Rabbit.uni2zg(mg.getText()));
                         messagesId.add(itempos,dataSnapshot.getKey());
                         messages.add(itempos++, mg);
                         moreItem=false;
@@ -356,13 +360,13 @@ public class QuestionAnswerActivity extends AppCompatActivity {
 
     //To load data
     private void loadData(){
-        //mFirebase = new Firebase("https://farm-application-7d2d2.firebaseio.com/chat-table");
-        Log.i("USer", user.getId() + "**********");
         DatabaseReference database=FirebaseDatabase.getInstance().getReference().child("messages").child(user.getId());
         ChildEventListener childEventListener=new ChildEventListener() {
             @Override
             public void onChildAdded(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
                 Message mg=dataSnapshot.getValue(Message.class);
+                if(!Mdetect.isUnicode())
+                mg.setText(Rabbit.uni2zg(mg.getText()));
                 messages.add(mg);
                 messagesId.add(dataSnapshot.getKey());
                 itempos++;
@@ -412,6 +416,10 @@ public class QuestionAnswerActivity extends AppCompatActivity {
 
         Message mg = new Message( user.getId(), Type.user, editText.getText().toString(),ServerValue.TIMESTAMP,"",MessageType.text, false);
         String key = database.push().getKey();
+        if(!Mdetect.isUnicode()){
+            mg.setText(Rabbit.zg2uni(mg.getText()));
+        }
+
         database.child(key).setValue(mg);
         ChatHelper.sendChat(user.getTownship(),user.getId(),mg,user.getName(),false);
         editText.setText("");

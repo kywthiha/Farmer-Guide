@@ -19,6 +19,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.farm.ngo.farm.activity.FacebookAccKitActivity;
+import com.farm.ngo.farm.utility.Mdetect;
 import com.farm.ngo.farm.utility.NetWorkUtail;
 import com.farm.ngo.farm.activity.PwalyoneActivity;
 import com.farm.ngo.farm.R;
@@ -26,6 +27,7 @@ import com.farm.ngo.farm.utility.NavigationCustomDone;
 import com.farm.ngo.farm.activity.WeatherFiveDatyActivity;
 import com.farm.ngo.farm.activity.ShopActivity;
 import com.farm.ngo.farm.activity.UserLoginActivity;
+import com.farm.ngo.farm.utility.Rabbit;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -85,6 +87,23 @@ public class HomeFragment extends Fragment {
         weatherFont = Typeface.createFromAsset(mContext.getAssets(), "weathericons-regular-webfont.ttf");
         weahter=(CardView)rootView.findViewById(R.id.onedayweather);
         weatherIcon.setTypeface(weatherFont);
+        if(!Mdetect.isUnicode()){
+            TextView title=(TextView)rootView.findViewById(R.id.title);
+            TextView moe_menu=(TextView)rootView.findViewById(R.id.moe_menu_txt);
+            TextView other_crop=(TextView)rootView.findViewById(R.id.othoer_crop_txt);
+            TextView qa=(TextView)rootView.findViewById(R.id.qa_txt);
+            TextView news=(TextView)rootView.findViewById(R.id.news_txt);
+            TextView argi_shop=(TextView)rootView.findViewById(R.id.argi_shop_txt);
+            TextView pwaylone=(TextView)rootView.findViewById(R.id.pwaylone_txt);
+
+            title.setText(Rabbit.uni2zg(getString(R.string.weathertitle)));
+            moe_menu.setText(Rabbit.uni2zg(getString(R.string.moe_rice)));
+            other_crop.setText(Rabbit.uni2zg(getString(R.string.otherfruit)));
+            qa.setText(Rabbit.uni2zg(getString(R.string.q_and_a)));
+            news.setText(Rabbit.uni2zg(getString(R.string.news)));
+            argi_shop.setText(Rabbit.uni2zg(getString(R.string.argi_shops)));
+            pwaylone.setText(Rabbit.uni2zg(getString(R.string.broken_center)));
+        }
 
 
         taskLoadUp(city);

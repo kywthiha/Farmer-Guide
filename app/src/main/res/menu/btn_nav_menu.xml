@@ -4,13 +4,13 @@
     <item
         android:id="@+id/main_home"
         android:icon="@drawable/ic_home_black_24dp"
-        android:title="ပင္မစာမ်က္နွာ"/>
+        android:title="@string/home_menu"/>
     <item
         android:id="@+id/nav_price"
         android:icon="@drawable/ic_store_black_24dp"
-        android:title="ကုန္စည္ဒိုင္"/>
+        android:title="@string/whole_sale_center_menu"/>
     <item
         android:id="@+id/nav_profile"
         android:icon="@drawable/book"
-        android:title="လယ္ယာေျမဥပေဒ"/>
+        android:title="@string/law_menu"/>
 </menu>

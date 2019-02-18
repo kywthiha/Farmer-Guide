@@ -7,6 +7,8 @@ import android.support.v4.app.FragmentStatePagerAdapter;
 
 import com.farm.ngo.farm.fragment.DataFragment;
 import com.farm.ngo.farm.R;
+import com.farm.ngo.farm.utility.Mdetect;
+import com.farm.ngo.farm.utility.Rabbit;
 
 public class ViewPagerAdapter extends FragmentStatePagerAdapter {
 
@@ -15,7 +17,13 @@ public class ViewPagerAdapter extends FragmentStatePagerAdapter {
     public ViewPagerAdapter(FragmentManager fm, Context context) {
         super(fm);
         mContext = context;
-        tabArray = context.getResources().getStringArray(R.array.tab_array);
+        String [] array = context.getResources().getStringArray(R.array.tab_array);
+        if(!Mdetect.isUnicode()){
+            for(int i=0,l=array.length;i<l;i++){
+                array[i]=Rabbit.uni2zg(array[i]);
+            }
+        }
+        tabArray=array;
     }
 
     @Override

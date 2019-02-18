@@ -1,2 +1,2 @@
 # Referenced at /home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:31
--keep class android.support.multidex.MultiDexApplication { <init>(...); }
+-keep class com.farm.ngo.farm.utility.FarmApp { <init>(...); }

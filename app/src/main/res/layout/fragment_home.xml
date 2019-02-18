@@ -115,10 +115,11 @@
                     android:src="@drawable/ricee"
                     android:padding="18dp"/>
                 <TextView
+                    android:id="@+id/moe_menu_txt"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="0.8"
-                    android:text="မိုးစပါး"
+                    android:text="@string/moe_rice"
                     android:gravity="center"/>
 
             </LinearLayout>
@@ -144,6 +145,7 @@
                     android:src="@drawable/other"
                     android:padding="18dp"/>
                 <TextView
+                    android:id="@+id/othoer_crop_txt"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="0.8"
@@ -187,10 +189,11 @@
                     android:padding="18dp"
                     android:src="@drawable/qa" />
                 <TextView
+                    android:id="@+id/qa_txt"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="0.8"
-                    android:text="အေမး / အေျဖ"
+                    android:text="@string/q_and_a"
                     android:gravity="center"/>
 
             </LinearLayout>
@@ -217,10 +220,11 @@
                     android:padding="18dp"
                     android:src="@drawable/news" />
                 <TextView
+                    android:id="@+id/news_txt"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="0.8"
-                    android:text="သတင္းမ်ား"
+                    android:text="@string/news"
                     android:gravity="center"/>
 
             </LinearLayout>
@@ -263,10 +267,11 @@
                     android:padding="18dp"
                     />
                 <TextView
+                    android:id="@+id/argi_shop_txt"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="0.8"
-                    android:text="စိုက္ပ်ိဳးေရးပစၥည္းဆိုင္မ်ား"
+                    android:text="@string/argi_shops"
                     android:gravity="center"/>
 
             </LinearLayout>
@@ -294,10 +299,11 @@
                     android:padding="18dp"
                     android:src="@drawable/warehouse" />
                 <TextView
+                    android:id="@+id/pwaylone_txt"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="0.8"
-                    android:text="ပြဲရုံမ်ား"
+                    android:text="@string/broken_center"
                     android:gravity="center"/>
 
             </LinearLayout>
