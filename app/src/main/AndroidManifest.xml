@@ -3,6 +3,8 @@
     package="com.farm.ngo.farm">
 
     <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
@@ -43,7 +45,7 @@
         <activity
             android:name=".activity.PwalyoneActivity"
             android:screenOrientation="portrait"
-            android:label="ပြဲရုံမ်ား"
+            android:label="@string/pwayyone_label"
             android:parentActivityName=".activity.MainActivity"
             android:theme="@style/Theme.AppCompat.Light" >
             <intent-filter>
@@ -53,19 +55,16 @@
         <activity
             android:name=".activity.WeatherFiveDatyActivity"
             android:screenOrientation="portrait"
-            android:label="ရာသီဥတု"
-            android:parentActivityName=".activity.MainActivity"
-            android:theme="@style/Theme.AppCompat.Light" />
+             />
         <activity
             android:name=".activity.ShopActivity"
             android:screenOrientation="portrait"
-            android:label="စိုက္ပ်ိဳးေရးပစၥည္းဆိုင္မ်ား"
+            android:label="@string/shop_label"
             android:parentActivityName=".activity.MainActivity"
             android:theme="@style/Theme.AppCompat.Light" />
         <activity android:name=".activity.WelcomeActivity"
             android:screenOrientation="portrait"><intent-filter>
             <action android:name="android.intent.action.MAIN" />
-
             <category android:name="android.intent.category.LAUNCHER" />
         </intent-filter></activity>
     </application>

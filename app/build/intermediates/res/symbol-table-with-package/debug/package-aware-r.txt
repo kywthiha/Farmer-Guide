@@ -615,6 +615,7 @@ color secondary_text_default_material_dark
 color secondary_text_default_material_light
 color secondary_text_disabled_material_dark
 color secondary_text_disabled_material_light
+color shpe_back
 color stock
 color stock_new_btn
 color switch_thumb_disabled_material_dark
@@ -625,6 +626,7 @@ color switch_thumb_normal_material_dark
 color switch_thumb_normal_material_light
 color tooltip_background_dark
 color tooltip_background_light
+color weather_title_color
 color white_color
 dimen abc_action_bar_content_inset_material
 dimen abc_action_bar_content_inset_with_nav
@@ -908,6 +910,7 @@ drawable abc_vector_test
 drawable add_image
 drawable ap
 drawable arrow_back
+drawable art_clear
 drawable avd_hide_password
 drawable avd_show_password
 drawable b
@@ -980,9 +983,12 @@ drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable ground_crop
 drawable h
+drawable hight_temp
 drawable home
+drawable ic_access_time
 drawable ic_arrow_back_black_24dp
 drawable ic_arrow_back_white
+drawable ic_arrow_upward
 drawable ic_assignment_black_24dp
 drawable ic_camera_alt
 drawable ic_clear
@@ -993,6 +999,7 @@ drawable ic_forum_black_24dp
 drawable ic_home_black_24dp
 drawable ic_insert_photo
 drawable ic_launcher_background
+drawable ic_location
 drawable ic_menu
 drawable ic_more_horiz_black_24dp
 drawable ic_navigate_next_black_24dp
@@ -1013,6 +1020,7 @@ drawable kyaelpat
 drawable loading
 drawable loginbackground
 drawable loginbackground1
+drawable low_temp
 drawable moesetwine
 drawable my_message
 drawable name
@@ -1134,6 +1142,7 @@ id card
 id category
 id center
 id center_horizontal
+id center_medium
 id center_vertical
 id chains
 id checkbox
@@ -1186,13 +1195,19 @@ id com_accountkit_title
 id container
 id contentPanel
 id coordinator
+id count
 id country_code
 id cp
 id cpku
 id cpuk
 id crop_image
 id crop_title
+id current_location_city
+id current_temp
 id current_temperature_field
+id current_weather_info
+id current_weather_time
+id current_weather_title
 id custom
 id customPanel
 id cyso
@@ -1237,10 +1252,15 @@ id ghost_view
 id glide_custom_view_target_tag
 id gone
 id groups
+id heat_amount_degree_celcius
 id home
 id homeAsUp
-id hum
+id htw_info
 id humidity_field
+id humidity_gp
+id humidity_label
+id humidity_txt
+id humidity_value
 id icon
 id icon_group
 id icon_only
@@ -1255,6 +1275,7 @@ id img_menu
 id info
 id invisible
 id italic
+id item
 id item_touch_helper_previous_elevation
 id label
 id largeLabel
@@ -1312,7 +1333,7 @@ id pin
 id postRecyclerview
 id postimg
 id pr
-id pres
+id price
 id progress_circular
 id progress_horizontal
 id ptitle
@@ -1326,7 +1347,6 @@ id relative_menu
 id right
 id right_icon
 id right_side
-id ryrc
 id save_image_matrix
 id save_non_transition_alpha
 id save_scale_type
@@ -1347,6 +1367,7 @@ id search_plate
 id search_src_text
 id search_voice_btn
 id select_dialog_listview
+id shape_bar
 id shortcut
 id showCustom
 id showHome
@@ -1370,7 +1391,9 @@ id submit_area
 id swiperefresh
 id tabMode
 id tag_transition_group
-id temp
+id tem_group
+id temp_max
+id temp_min
 id text
 id text2
 id textSpacerNoButtons
@@ -1385,7 +1408,6 @@ id time_show
 id title
 id titleDividerNoCustom
 id title_template
-id today
 id toolbar
 id top
 id topPanel
@@ -1398,6 +1420,7 @@ id transition_transform
 id txt_crop_count
 id txt_crop_name
 id txt_crop_price
+id type
 id uniform
 id up
 id updated_field
@@ -1407,8 +1430,16 @@ id verify_code
 id view_offset_helper
 id view_pager
 id visible
+id weather_con_group
+id weather_condition_txt
 id weather_icon
+id weather_list_view
+id weather_time_txt
+id weather_title_txt
 id wide
+id wind_hum_gp
+id wind_speed
+id wind_speed_label
 id withText
 id wrap
 id wrap_content
@@ -1485,6 +1516,7 @@ layout com_accountkit_fragment_verifying_code_center
 layout com_accountkit_phone_country_code_item_layout
 layout com_accountkit_phone_country_code_layout
 layout crop_item
+layout current_weather
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
 layout design_layout_snackbar
@@ -1509,6 +1541,7 @@ layout fragment_profile
 layout fragment_question_answer
 layout image_preview
 layout includeimage
+layout item
 layout loading_data
 layout main_activity
 layout my_image
@@ -1540,6 +1573,8 @@ layout stock_item
 layout support_simple_spinner_dropdown_item
 layout their_image_message
 layout their_message
+layout three_hours_weather_item
+layout three_hours_weather_title
 layout weather
 menu btn_nav_menu
 menu phone_nav
@@ -1693,10 +1728,12 @@ string phone_call
 string pku_argi_off
 string price
 string project_id
+string pwayyone_label
 string q_and_a
 string registeration
 string resend_verify_code
 string search_menu_title
+string shop_label
 string showmore
 string status_bar_notification_info_overflow
 string too_many_request

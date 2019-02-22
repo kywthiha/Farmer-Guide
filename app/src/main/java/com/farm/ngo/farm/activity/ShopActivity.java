@@ -13,6 +13,8 @@ import com.farm.ngo.farm.adapter.PwayloneAdapter;
 import com.farm.ngo.farm.data.UsingSQLiteHelper;
 import com.farm.ngo.farm.model.Pwalyone;
 import com.farm.ngo.farm.R;
+import com.farm.ngo.farm.utility.Mdetect;
+import com.farm.ngo.farm.utility.Rabbit;
 
 
 import java.io.IOException;
@@ -24,6 +26,8 @@ public class ShopActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pwalyone);
+        if(!Mdetect.isUnicode())
+            getSupportActionBar().setTitle(Rabbit.uni2zg(getString(R.string.shop_label)));
         RecyclerView rc=(RecyclerView)findViewById(R.id.pr);
         ArrayList<Pwalyone> pp=new ArrayList<>();
         try {

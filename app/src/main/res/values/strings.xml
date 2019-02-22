@@ -43,6 +43,8 @@
     <string name="home_menu">ပင်မစာမျက်နှာ</string>
     <string name="whole_sale_center_menu">ကုန်စည်ဒိုင်</string>
     <string name="law_menu">လယ်ယာမြေဥပဒေ</string>
+    <string name="shop_label">စိုက်ပျိုးရေးပစ္စည်းဆိုင်များ</string>
+    <string name="pwayyone_label">ပွဲရုံများ</string>
     <string-array name="tab_array">
         <item>စိုက်ပျိုးနည်းစနစ်</item>
         <item>သီးနှံရောဂါ</item>

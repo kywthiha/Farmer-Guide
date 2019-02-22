@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:background="@color/weather_title_color"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/weather_title_txt"
+            android:padding="8dp"
+            android:text="အင်္ဂါ ဖေဖစါရီလ ၁၈ ရက် နေ့"
+            android:textStyle="bold"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <View
+            android:background="@color/shpe_back"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"/>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/weather_icon"
+            android:src="@drawable/art_clear"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="fitCenter"/>
+
+        <RelativeLayout
+            android:id="@+id/weather_con_group"
+            android:layout_toRightOf="@+id/weather_icon"
+            android:padding="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/weather_icon">
+            <TextView
+                android:id="@+id/weather_time_txt"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="4dp"
+                android:paddingTop="4dp"
+                android:textStyle="bold"
+                android:text="နံနက် ၉း၃၀"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_below="@+id/weather_time_txt"
+                android:id="@+id/weather_condition_txt"
+                android:paddingTop="8dp"
+                android:maxWidth="120dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="1dp"
+                android:paddingBottom="8dp"
+                android:text="clear sky jkfsf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:padding="2dp"
+            android:id="@+id/wind_hum_gp"
+            android:layout_toLeftOf="@+id/tem_group"
+            android:layout_toStartOf="@+id/tem_group"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/humidity_txt"
+                android:paddingLeft="1dp"
+                android:paddingRight="1dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:text="hum - 68%"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_below="@+id/humidity_txt"
+                android:id="@+id/wind_speed"
+                android:paddingLeft="1dp"
+                android:paddingRight="1dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:padding="1dp"
+                android:text="wind - 10 mil/h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:id="@+id/tem_group"
+            android:padding="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:padding="1dp"
+                android:id="@+id/heat_amount_degree_celcius"
+                android:text="16 C"
+                android:textSize="28sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+    <View
+        android:background="@color/colorPrimary"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"/>
+
+</LinearLayout>

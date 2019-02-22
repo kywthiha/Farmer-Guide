@@ -51,8 +51,6 @@ public class HomeFragment extends Fragment {
                     + " must implement OnImageClickListener");
         }
     }
-
-
     //Declaration
     TextView detailsField, currentTemperatureField, weatherIcon, updatedField;
     ProgressBar loader;
@@ -62,13 +60,8 @@ public class HomeFragment extends Fragment {
     /* Please Put your API KEY here */
     String OPEN_WEATHER_MAP_API = "cccd055e7a485c62e5ed11986aaf08c1";
     /* Please Put your API KEY here */
-
     Context mContext;
-    Double x = 21.333093;
-    Double y = 94.986282;
-
     CardView paddyCard, otherCropCard, questionAndAnswerCard, newsCard, pwalyoneCardView,farmStore;
-
     public HomeFragment(Context mContext, int pagerId) {
         this.mContext = mContext;
     }
@@ -104,11 +97,6 @@ public class HomeFragment extends Fragment {
             argi_shop.setText(Rabbit.uni2zg(getString(R.string.argi_shops)));
             pwaylone.setText(Rabbit.uni2zg(getString(R.string.broken_center)));
         }
-
-
-        taskLoadUp(city);
-
-
         //For Actio of layout
         paddyCard = (CardView) rootView.findViewById(R.id.paddy_card);
         farmStore = (CardView) rootView.findViewById(R.id.farmstore);
@@ -174,6 +162,15 @@ public class HomeFragment extends Fragment {
                 mCallback.OnButtonClickListener();
             }
         });
+        weahter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i=new Intent(getActivity(),WeatherFiveDatyActivity.class);
+                startActivity(i);
+
+            }
+        });
+        taskLoadUp(city);
 
 
         return rootView;
@@ -187,25 +184,6 @@ public class HomeFragment extends Fragment {
             Toast.makeText(mContext, "No Internet Connection", Toast.LENGTH_LONG).show();
         }
     }
-
-    public void setFragmentFocus (Fragment fragmentFocus){
-        fragmentFocus.getView().setFocusableInTouchMode(true);
-        fragmentFocus.getView().requestFocus();
-        fragmentFocus.getView().setOnKeyListener(new View.OnKeyListener() {
-            @Override
-            public boolean onKey(View v, int keyCode, KeyEvent event) {
-                if (keyCode == KeyEvent.KEYCODE_BACK){
-                    FragmentTransaction transaction = getFragmentManager().beginTransaction();
-                    HomeFragment homeFragment = new HomeFragment(mContext, R.id.view_pager);
-                    transaction.replace(R.id.view_pager, homeFragment);
-                    transaction.commit();
-                }
-                return true;
-            }
-        });
-    }
-
-
 
     class DownloadWeather extends AsyncTask<String, Void, String> {
 
@@ -243,16 +221,6 @@ public class HomeFragment extends Fragment {
                     goweather.add(String.format("%.0f", main.getDouble("temp")) + "°C");
                     goweather.add("စိုထိုင္းဆ =" + main.getString("humidity") + "%");
                     goweather.add("ေလထုဖိအား =" + main.getString("pressure") + " hPa");
-                    weahter.setOnClickListener(new View.OnClickListener() {
-                        @Override
-                        public void onClick(View v) {
-                            Intent i=new Intent(getActivity(),WeatherFiveDatyActivity.class);
-                            i.putStringArrayListExtra("currentweather",goweather);
-                            startActivity(i);
-
-                        }
-                    });
-
                 }
             } catch (JSONException e) {
                 Toast.makeText(mContext, "Error, Check City", Toast.LENGTH_SHORT).show();

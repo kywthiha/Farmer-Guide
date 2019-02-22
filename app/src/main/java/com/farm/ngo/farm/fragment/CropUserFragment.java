@@ -11,6 +11,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.farm.ngo.farm.adapter.CropUserAdapter;
 import com.farm.ngo.farm.farmstatic.RefStatic;
@@ -53,6 +54,11 @@ public class CropUserFragment extends Fragment {
 
 
         recyclerView = view.findViewById(R.id.recycler_stock);
+        if(!Mdetect.isUnicode()){
+            ((TextView)view.findViewById(R.id.type)).setText(Rabbit.uni2zg(getString(R.string.type)));
+            ((TextView)view.findViewById(R.id.count)).setText(Rabbit.uni2zg(getString(R.string.count)));
+            ((TextView)view.findViewById(R.id.price)).setText(Rabbit.uni2zg(getString(R.string.price)));
+        }
         cropAdapter=new CropUserAdapter(mContext,crops);
 
         reference.orderByKey().addChildEventListener(new ChildEventListener() {

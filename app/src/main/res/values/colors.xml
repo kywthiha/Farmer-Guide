@@ -12,5 +12,7 @@
     <color name="post_show_detail">#883b860d</color>
     <color name="white_color">#ffffff</color>
     <color name="no_color">#00ffffff</color>
+    <color name="weather_title_color">#9c31ae2d</color>
+    <color name="shpe_back">#FF000000</color>
 
 </resources>

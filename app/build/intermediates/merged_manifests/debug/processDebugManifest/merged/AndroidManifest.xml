@@ -9,6 +9,8 @@
         android:targetSdkVersion="27" />
 
     <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
@@ -75,7 +77,7 @@
             android:screenOrientation="portrait" />
         <activity
             android:name="com.farm.ngo.farm.activity.PwalyoneActivity"
-            android:label="ပြဲရုံမ်ား"
+            android:label="@string/pwayyone_label"
             android:parentActivityName="com.farm.ngo.farm.activity.MainActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light" >
@@ -85,13 +87,10 @@
         </activity>
         <activity
             android:name="com.farm.ngo.farm.activity.WeatherFiveDatyActivity"
-            android:label="ရာသီဥတု"
-            android:parentActivityName="com.farm.ngo.farm.activity.MainActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat.Light" />
+            android:screenOrientation="portrait" />
         <activity
             android:name="com.farm.ngo.farm.activity.ShopActivity"
-            android:label="စိုက္ပ်ိဳးေရးပစၥည္းဆိုင္မ်ား"
+            android:label="@string/shop_label"
             android:parentActivityName="com.farm.ngo.farm.activity.MainActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light" />
