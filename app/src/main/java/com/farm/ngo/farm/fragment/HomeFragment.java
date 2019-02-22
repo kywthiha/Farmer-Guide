@@ -208,12 +208,12 @@ public class HomeFragment extends Fragment {
         }
         else{
             if (ActivityCompat.shouldShowRequestPermissionRationale(getActivity(),
-                    Manifest.permission.READ_EXTERNAL_STORAGE) && ActivityCompat.shouldShowRequestPermissionRationale(getActivity(),
-                    Manifest.permission.WRITE_EXTERNAL_STORAGE) ) {
+                    Manifest.permission.ACCESS_FINE_LOCATION)  ) {
                 Toast.makeText(getContext(),"Location permension is needed to weather status",Toast.LENGTH_SHORT).show();
+                getLocation();
 
             }
-
+            Toast.makeText(getContext(),"Location permension is needed to weather status",Toast.LENGTH_SHORT).show();
             ActivityCompat.requestPermissions(getActivity(),
                     new String[]{Manifest.permission.ACCESS_FINE_LOCATION},
                     REQUEST_LOCATION_PERMISSION);
@@ -236,19 +236,20 @@ public class HomeFragment extends Fragment {
                     REQUEST_LOCATION_PERMISSION);
         } else {
             //Log.d(TAG, "getLocation: permissions granted");
+            Toast.makeText(getContext(),"NO location",Toast.LENGTH_SHORT).show();
+
             mFusedLocationClient.getLastLocation().addOnSuccessListener(
                     new OnSuccessListener<Location>() {
                         @Override
                         public void onSuccess(Location location) {
                             if (location != null) {
                                 mLastLocation = location;
-
                                 Lat=mLastLocation.getLatitude();
                                 Lon= mLastLocation.getLongitude();
                                taskLoadUp("lat="+Lat+"&lon="+Lon);
 
                             } else {
-                                //mLocationTextView.setText(R.string.no_location);
+                                Toast.makeText(getContext(),"NO location",Toast.LENGTH_SHORT).show();
                             }
                         }
                     });
@@ -267,8 +268,11 @@ public class HomeFragment extends Fragment {
                     getLocation();
                 } else {
                     Toast.makeText(getContext(),
-                            "location_permission_denied",
+                            "Location permension is needed to weather status",
                             Toast.LENGTH_SHORT).show();
+                    ActivityCompat.requestPermissions(getActivity(),
+                            new String[]{Manifest.permission.ACCESS_FINE_LOCATION},
+                            REQUEST_LOCATION_PERMISSION);
                 }
                 break;
         }
