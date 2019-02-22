@@ -70,7 +70,7 @@ public class WeatherFiveDatyActivity extends AppCompatActivity {
 
             }
         });
-        if (checkSelfPermission(Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && checkSelfPermission(Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+        if (ActivityCompat.checkSelfPermission(this,Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this,Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             getLocation();
             //    Activity#requestPermissions
             // here to request the missing permissions, and then overriding
@@ -103,8 +103,11 @@ public class WeatherFiveDatyActivity extends AppCompatActivity {
     }
 
     public void Refresh() {
-        if(NetWorkUtility.isNetworkAvailable(getApplicationContext()) && Lat!=null && Lon!=null){
+        if(NetWorkUtility.isNetworkAvailable(getApplicationContext()) ){
+            if(Lat!=null && Lon!=null)
             new DownloadWeather(Lat,Lon,getApplication()).execute();
+            else
+                Toast.makeText(getApplicationContext(),"No Find Location",Toast.LENGTH_LONG).show();
         }
 
         else{

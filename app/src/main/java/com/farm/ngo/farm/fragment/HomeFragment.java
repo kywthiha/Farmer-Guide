@@ -1,13 +1,19 @@
 package com.farm.ngo.farm.fragment;
 
+import android.Manifest;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.graphics.Typeface;
+import android.location.Location;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.CardView;
 import android.text.Html;
 import android.view.KeyEvent;
@@ -28,6 +34,9 @@ import com.farm.ngo.farm.activity.WeatherFiveDatyActivity;
 import com.farm.ngo.farm.activity.ShopActivity;
 import com.farm.ngo.farm.activity.UserLoginActivity;
 import com.farm.ngo.farm.utility.Rabbit;
+import com.google.android.gms.location.FusedLocationProviderClient;
+import com.google.android.gms.location.LocationServices;
+import com.google.android.gms.tasks.OnSuccessListener;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -62,6 +71,10 @@ public class HomeFragment extends Fragment {
     /* Please Put your API KEY here */
     Context mContext;
     CardView paddyCard, otherCropCard, questionAndAnswerCard, newsCard, pwalyoneCardView,farmStore;
+    private FusedLocationProviderClient mFusedLocationClient;
+    private Location mLastLocation;
+    private Double Lat,Lon;
+    private final int REQUEST_LOCATION_PERMISSION = 356;
     public HomeFragment(Context mContext, int pagerId) {
         this.mContext = mContext;
     }
@@ -80,6 +93,7 @@ public class HomeFragment extends Fragment {
         weatherFont = Typeface.createFromAsset(mContext.getAssets(), "weathericons-regular-webfont.ttf");
         weahter=(CardView)rootView.findViewById(R.id.onedayweather);
         weatherIcon.setTypeface(weatherFont);
+        mFusedLocationClient = LocationServices.getFusedLocationProviderClient(getActivity());
         if(!Mdetect.isUnicode()){
             TextView title=(TextView)rootView.findViewById(R.id.title);
             TextView moe_menu=(TextView)rootView.findViewById(R.id.moe_menu_txt);
@@ -170,16 +184,103 @@ public class HomeFragment extends Fragment {
 
             }
         });
-        taskLoadUp(city);
+
+        if (ContextCompat.checkSelfPermission(getContext(),Manifest.permission.ACCESS_FINE_LOCATION)==PackageManager.PERMISSION_GRANTED &&
+                ContextCompat.checkSelfPermission(getContext(),Manifest.permission.ACCESS_COARSE_LOCATION)==PackageManager.PERMISSION_GRANTED){
+
+            // Permission is granted
+            mFusedLocationClient.getLastLocation().addOnSuccessListener(
+                    new OnSuccessListener<Location>() {
+                        @Override
+                        public void onSuccess(Location location) {
+                            if (location != null) {
+                                mLastLocation = location;
+
+                                Lat=mLastLocation.getLatitude();
+                                Lon= mLastLocation.getLongitude();
+                                taskLoadUp("lat="+Lat+"&lon="+Lon);
+
+                            } else {
+                                //mLocationTextView.setText(R.string.no_location);
+                            }
+                        }
+                    });
+        }
+        else{
+            if (ActivityCompat.shouldShowRequestPermissionRationale(getActivity(),
+                    Manifest.permission.READ_EXTERNAL_STORAGE) && ActivityCompat.shouldShowRequestPermissionRationale(getActivity(),
+                    Manifest.permission.WRITE_EXTERNAL_STORAGE) ) {
+                Toast.makeText(getContext(),"Location permension is needed to weather status",Toast.LENGTH_SHORT).show();
+
+            }
+
+            ActivityCompat.requestPermissions(getActivity(),
+                    new String[]{Manifest.permission.ACCESS_FINE_LOCATION},
+                    REQUEST_LOCATION_PERMISSION);
+
+
+
+        }
+
+
 
 
         return rootView;
     }
+    private void getLocation() {
+        if (ActivityCompat.checkSelfPermission(getContext(),
+                Manifest.permission.ACCESS_FINE_LOCATION)
+                != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(getActivity(), new String[]
+                            {Manifest.permission.ACCESS_FINE_LOCATION},
+                    REQUEST_LOCATION_PERMISSION);
+        } else {
+            //Log.d(TAG, "getLocation: permissions granted");
+            mFusedLocationClient.getLastLocation().addOnSuccessListener(
+                    new OnSuccessListener<Location>() {
+                        @Override
+                        public void onSuccess(Location location) {
+                            if (location != null) {
+                                mLastLocation = location;
 
+                                Lat=mLastLocation.getLatitude();
+                                Lon= mLastLocation.getLongitude();
+                               taskLoadUp("lat="+Lat+"&lon="+Lon);
+
+                            } else {
+                                //mLocationTextView.setText(R.string.no_location);
+                            }
+                        }
+                    });
+
+        }
+    }
+    @Override
+    public void onRequestPermissionsResult(int requestCode,
+                                           @NonNull String[] permissions, @NonNull int[] grantResults) {
+        switch (requestCode) {
+            case REQUEST_LOCATION_PERMISSION:
+                // If the permission is granted, get the location,
+                // otherwise, show a Toast
+                if (grantResults.length > 0
+                        && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                    getLocation();
+                } else {
+                    Toast.makeText(getContext(),
+                            "location_permission_denied",
+                            Toast.LENGTH_SHORT).show();
+                }
+                break;
+        }
+    }
     public void taskLoadUp(String query) {
         if (NetWorkUtail.isNetworkAvailable(mContext)) {
+            if(Lat!=null && Lon!=null){
             DownloadWeather task = new DownloadWeather();
-            task.execute(query);
+            task.execute(query);}
+            else{
+                Toast.makeText(mContext,"No find loction",Toast.LENGTH_SHORT).show();
+            }
         } else {
             Toast.makeText(mContext, "No Internet Connection", Toast.LENGTH_LONG).show();
         }
