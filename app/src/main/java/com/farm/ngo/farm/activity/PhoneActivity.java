@@ -9,8 +9,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.farm.ngo.farm.R;
+import com.farm.ngo.farm.utility.Mdetect;
+import com.farm.ngo.farm.utility.Rabbit;
 
 public class PhoneActivity extends AppCompatActivity {
     ImageView cpku, cyso, cmy, cpuk;
@@ -23,6 +26,13 @@ public class PhoneActivity extends AppCompatActivity {
         cyso = (ImageView) findViewById(R.id.cyso);
         cmy = (ImageView) findViewById(R.id.cmy);
         cpuk = (ImageView) findViewById(R.id.cpuk);
+        if(!Mdetect.isUnicode()){
+            ((TextView)findViewById(R.id.argi_phone_title)).setText(Rabbit.uni2zg(getString(R.string.argi_phone_title)));
+            ((TextView)findViewById(R.id.m_argi_off)).setText(Rabbit.uni2zg(getString(R.string.m_argi_off)));
+            ((TextView)findViewById(R.id.pa_argi_off)).setText(Rabbit.uni2zg(getString(R.string.pa_argi_off)));
+            ((TextView)findViewById(R.id.y_argi_off)).setText(Rabbit.uni2zg(getString(R.string.y_argi_off)));
+            ((TextView)findViewById(R.id.pku_argi_off)).setText(Rabbit.uni2zg(getString(R.string.pku_argi_off)));
+        }
         cpku.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

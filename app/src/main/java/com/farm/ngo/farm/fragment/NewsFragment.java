@@ -105,6 +105,7 @@ public class NewsFragment extends Fragment  {
                 postAdapter.notifyItemInserted(0);
                 ladingData.setVisibility(View.GONE);
                 postRecyclerview.setVisibility(View.VISIBLE);
+                postRecyclerview.scrollToPosition(0);
 
             }
 

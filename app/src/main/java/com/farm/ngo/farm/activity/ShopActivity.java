@@ -31,8 +31,8 @@ public class ShopActivity extends AppCompatActivity {
         RecyclerView rc=(RecyclerView)findViewById(R.id.pr);
         ArrayList<Pwalyone> pp=new ArrayList<>();
         try {
-            pp=new UsingSQLiteHelper(this).getPwalyoneList("farmshop");
-        } catch (IOException e) {
+           // pp=new UsingSQLiteHelper(this).getPwalyoneList("farmshop");
+        } catch (Exception e) {
             e.printStackTrace();
         }
         adapter=new PwayloneAdapter(this,pp);

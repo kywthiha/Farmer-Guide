@@ -48,22 +48,7 @@ public  class PwayloneAdapter extends RecyclerView.Adapter<PwayloneAdapter.holde
     public void onBindViewHolder(@NonNull holder holder, int i) {
         final Pwalyone mCurrent = filter_arr.get(i);
         holder.t1.setText(mCurrent.getName());
-        holder.t2.setText(mCurrent.getAddress());
-        holder.category.setText(mCurrent.getCategory());
-        holder.t3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(Intent.ACTION_CALL);
-                i.setData(Uri.parse("tel:"+mCurrent.getPhoneno()));
-                if(ActivityCompat.checkSelfPermission(v.getContext(),Manifest.permission.CALL_PHONE)!=PackageManager.PERMISSION_GRANTED){
-                    requestPermission();
-                }
-                else{
-                   c.startActivity(i);
-                }
 
-            }
-        });
 
 
     }
@@ -114,21 +99,13 @@ public  class PwayloneAdapter extends RecyclerView.Adapter<PwayloneAdapter.holde
 
     class holder extends RecyclerView.ViewHolder{
         public final TextView t1;
-        public final TextView t2;
-         public final TextView category;
-         public final ImageView t3;
 
 
         final PwayloneAdapter mAdapter;
         public holder(View itemView,PwayloneAdapter ad){
             super(itemView);
-            category=(TextView)itemView.findViewById(R.id.category);
             t1=(TextView)itemView.findViewById(R.id.ptitle);
-            t2=(TextView)itemView.findViewById(R.id.padd);
-            t3=(ImageView) itemView.findViewById(R.id.ph);
-
-
-               this.mAdapter=ad;
+            this.mAdapter=ad;
         }
     }
 

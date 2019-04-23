@@ -1,12 +1,28 @@
 package com.farm.ngo.farm.model;
 
+import com.google.android.gms.maps.model.LatLng;
+
 import java.io.Serializable;
+import java.util.ArrayList;
 
 public class Pwalyone implements Serializable {
     private String name;
     private String address;
-    private String phoneno;
+    private ArrayList<String> phoneno;
     private String category;
+    private LatLng location;
+
+    public Pwalyone() {
+
+    }
+
+    public Pwalyone(String name, String address, ArrayList<String> phoneno, String category, LatLng location) {
+        this.name = name;
+        this.address = address;
+        this.phoneno = phoneno;
+        this.category = category;
+        this.location = location;
+    }
 
     public String getName() {
         return name;
@@ -24,15 +40,12 @@ public class Pwalyone implements Serializable {
         this.address = address;
     }
 
-    public String getPhoneno() {
+    public ArrayList<String> getPhoneno() {
         return phoneno;
     }
 
-    public void setPhoneno(String phoneno) {
+    public void setPhoneno(ArrayList<String> phoneno) {
         this.phoneno = phoneno;
-    }
-
-    public Pwalyone() {
     }
 
     public String getCategory() {
@@ -43,10 +56,22 @@ public class Pwalyone implements Serializable {
         this.category = category;
     }
 
-    public Pwalyone(String name, String address, String phoneno, String category) {
-        this.name = name;
-        this.address = address;
-        this.phoneno = phoneno;
-        this.category = category;
+    public LatLng getLocation() {
+        return location;
+    }
+
+    public void setLocation(LatLng location) {
+        this.location = location;
+    }
+
+    @Override
+    public String toString() {
+        return "Pwalyone{" +
+                "name='" + name + '\'' +
+                ", address='" + address + '\'' +
+                ", phoneno=" + phoneno +
+                ", category='" + category + '\'' +
+                ", location=" + location +
+                '}';
     }
 }

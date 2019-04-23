@@ -149,30 +149,30 @@ public class UsingSQLiteHelper extends SQLiteOpenHelper {
         close();
         return dataList;
     }
-    public ArrayList<Pwalyone> getPwalyoneList(String tableName) throws IOException {
-        createDataBase();
-        openDataBase();
-        SQLiteDatabase db = this.getReadableDatabase();
-
-        ArrayList<Pwalyone> pwalyoneList = new ArrayList<>();
-
-        Cursor cursor = db.rawQuery("SELECT * FROM " + tableName, null);
-
-        if(cursor.moveToFirst()) {
-            do {
-               Pwalyone pwalyone=new Pwalyone(cursor.getString(0), cursor.getString(1),cursor.getString(2),cursor.getString(3));
-               if(!Mdetect.isUnicode()){
-                   pwalyone.setName(Rabbit.uni2zg(pwalyone.getName()));
-                   pwalyone.setCategory(Rabbit.uni2zg(pwalyone.getCategory()));
-                   pwalyone.setAddress(Rabbit.uni2zg(pwalyone.getAddress()));
-               }
-                pwalyoneList.add(pwalyone);
-            }while(cursor.moveToNext());
-        }
-        cursor.close();
-        close();
-        return pwalyoneList;
-    }
+//    public ArrayList<Pwalyone> getPwalyoneList(String tableName) throws IOException {
+//        createDataBase();
+//        openDataBase();
+//        SQLiteDatabase db = this.getReadableDatabase();
+//
+//        ArrayList<Pwalyone> pwalyoneList = new ArrayList<>();
+//
+//        Cursor cursor = db.rawQuery("SELECT * FROM " + tableName, null);
+//
+//        if(cursor.moveToFirst()) {
+//            do {
+//               Pwalyone pwalyone=new Pwalyone(cursor.getString(0), cursor.getString(1),cursor.getString(2),cursor.getString(3));
+//               if(!Mdetect.isUnicode()){
+//                   pwalyone.setName(Rabbit.uni2zg(pwalyone.getName()));
+//                   pwalyone.setCategory(Rabbit.uni2zg(pwalyone.getCategory()));
+//                   pwalyone.setAddress(Rabbit.uni2zg(pwalyone.getAddress()));
+//               }
+//                pwalyoneList.add(pwalyone);
+//            }while(cursor.moveToNext());
+//        }
+//        cursor.close();
+//        close();
+//        return pwalyoneList;
+//    }
 
     //To read All data by Table Name from Database
     public Data getDataDetail(String tableName,String id) throws IOException {

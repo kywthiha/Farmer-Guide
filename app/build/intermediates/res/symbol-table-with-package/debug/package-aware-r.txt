@@ -60,6 +60,7 @@ attr alertDialogTheme
 attr allowStacking
 attr alpha
 attr alphabeticModifiers
+attr ambientEnabled
 attr arrowHeadLength
 attr arrowShaftLength
 attr autoCompleteTextViewStyle
@@ -98,6 +99,13 @@ attr buttonStyle
 attr buttonStyleSmall
 attr buttonTint
 attr buttonTintMode
+attr cameraBearing
+attr cameraMaxZoomPreference
+attr cameraMinZoomPreference
+attr cameraTargetLat
+attr cameraTargetLng
+attr cameraTilt
+attr cameraZoom
 attr cardBackgroundColor
 attr cardCornerRadius
 attr cardElevation
@@ -274,6 +282,10 @@ attr itemPadding
 attr itemTextAppearance
 attr itemTextColor
 attr keylines
+attr latLngBoundsNorthEastLatitude
+attr latLngBoundsNorthEastLongitude
+attr latLngBoundsSouthWestLatitude
+attr latLngBoundsSouthWestLongitude
 attr layout
 attr layoutManager
 attr layout_anchor
@@ -347,8 +359,10 @@ attr listPreferredItemHeightLarge
 attr listPreferredItemHeightSmall
 attr listPreferredItemPaddingLeft
 attr listPreferredItemPaddingRight
+attr liteMode
 attr logo
 attr logoDescription
+attr mapType
 attr maxActionInlineWidth
 attr maxButtonHeight
 attr measureWithLargestChild
@@ -485,7 +499,15 @@ attr tooltipText
 attr track
 attr trackTint
 attr trackTintMode
+attr uiCompass
+attr uiMapToolbar
+attr uiRotateGestures
+attr uiScrollGestures
+attr uiTiltGestures
+attr uiZoomControls
+attr uiZoomGestures
 attr useCompatPadding
+attr useViewLifecycle
 attr viewInflaterClass
 attr voiceIcon
 attr windowActionBar
@@ -498,6 +520,7 @@ attr windowFixedWidthMinor
 attr windowMinWidthMajor
 attr windowMinWidthMinor
 attr windowNoTitle
+attr zOrderOnTop
 bool abc_action_bar_embed_tabs
 bool abc_allow_stacked_button_bar
 bool abc_config_actionMenuItemAllCaps
@@ -993,6 +1016,7 @@ drawable ic_assignment_black_24dp
 drawable ic_camera_alt
 drawable ic_clear
 drawable ic_close_black
+drawable ic_contacts_black_24dp
 drawable ic_dehaze_black_24dp
 drawable ic_farmer
 drawable ic_forum_black_24dp
@@ -1120,6 +1144,7 @@ id adjust_width
 id alertTitle
 id all
 id always
+id argi_phone_title
 id argi_shop_txt
 id async
 id auto
@@ -1139,7 +1164,6 @@ id buttonResend
 id buttonVerifyPhone
 id cancel_action
 id card
-id category
 id center
 id center_horizontal
 id center_medium
@@ -1261,6 +1285,7 @@ id humidity_gp
 id humidity_label
 id humidity_txt
 id humidity_value
+id hybrid
 id icon
 id icon_group
 id icon_only
@@ -1287,6 +1312,7 @@ id linear_edit
 id listMode
 id list_item
 id loading_img
+id m_argi_off
 id main_home
 id main_layout
 id masked
@@ -1315,8 +1341,8 @@ id onedayweather
 id openCamera
 id other_crop_card
 id othoer_crop_txt
+id pa_argi_off
 id packed
-id padd
 id paddyPager
 id paddyTab
 id paddy_card
@@ -1326,10 +1352,10 @@ id parentPanel
 id parent_matrix
 id pdfView
 id percent
-id ph
 id phoneCall
 id phone_number
 id pin
+id pku_argi_off
 id postRecyclerview
 id postimg
 id pr
@@ -1347,6 +1373,7 @@ id relative_menu
 id right
 id right_icon
 id right_side
+id satellite
 id save_image_matrix
 id save_non_transition_alpha
 id save_scale_type
@@ -1394,6 +1421,7 @@ id tag_transition_group
 id tem_group
 id temp_max
 id temp_min
+id terrain
 id text
 id text2
 id textSpacerNoButtons
@@ -1443,6 +1471,7 @@ id wind_speed_label
 id withText
 id wrap
 id wrap_content
+id y_argi_off
 integer abc_config_activityDefaultDur
 integer abc_config_activityShortDur
 integer app_bar_elevation_anim_duration
@@ -2200,6 +2229,7 @@ styleable LinearLayoutCompat android_gravity android_orientation android_baselin
 styleable LinearLayoutCompat_Layout android_layout_gravity android_layout_width android_layout_height android_layout_weight
 styleable ListPopupWindow android_dropDownHorizontalOffset android_dropDownVerticalOffset
 styleable LoadingImageView circleCrop imageAspectRatio imageAspectRatioAdjust
+styleable MapAttrs ambientEnabled cameraBearing cameraMaxZoomPreference cameraMinZoomPreference cameraTargetLat cameraTargetLng cameraTilt cameraZoom latLngBoundsNorthEastLatitude latLngBoundsNorthEastLongitude latLngBoundsSouthWestLatitude latLngBoundsSouthWestLongitude liteMode mapType uiCompass uiMapToolbar uiRotateGestures uiScrollGestures uiTiltGestures uiZoomControls uiZoomGestures useViewLifecycle zOrderOnTop
 styleable MenuGroup android_enabled android_id android_visible android_menuCategory android_orderInCategory android_checkableBehavior
 styleable MenuItem android_icon android_enabled android_id android_checked android_visible android_menuCategory android_orderInCategory android_title android_titleCondensed android_alphabeticShortcut android_numericShortcut android_checkable android_onClick actionLayout actionProviderClass actionViewClass alphabeticModifiers contentDescription iconTint iconTintMode numericModifiers showAsAction tooltipText
 styleable MenuView android_windowAnimationStyle android_itemTextAppearance android_horizontalDivider android_verticalDivider android_headerBackground android_itemBackground android_itemIconDisabledAlpha preserveIconSpacing subMenuArrow

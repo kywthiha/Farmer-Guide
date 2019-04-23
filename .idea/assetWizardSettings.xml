@@ -97,7 +97,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="jar:file:/opt/android-studio/plugins/android/lib/android.jar!/images/material_design_icons/navigation/ic_close_black_24dp.xml" />
+                                      <entry key="url" value="jar:file:/opt/android-studio/plugins/android/lib/android.jar!/images/material_design_icons/communication/ic_contacts_black_24dp.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -108,11 +108,9 @@
                         <option name="values">
                           <map>
                             <entry key="color" value="975407" />
-                            <entry key="height" value="50" />
-                            <entry key="outputName" value="ic_close_black" />
+                            <entry key="outputName" value="ic_contacts_black_24dp" />
                             <entry key="overrideSize" value="true" />
                             <entry key="sourceFile" value="$USER_HOME$" />
-                            <entry key="width" value="50" />
                           </map>
                         </option>
                       </PersistentState>
