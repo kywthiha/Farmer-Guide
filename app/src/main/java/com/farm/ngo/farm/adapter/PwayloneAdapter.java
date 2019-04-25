@@ -2,11 +2,12 @@ package com.farm.ngo.farm.adapter;
 
 import android.Manifest;
 import android.app.Activity;
-import android.content.Intent;
-import android.content.pm.PackageManager;
-import android.net.Uri;
+import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
+import android.support.v4.app.FragmentManager;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -17,13 +18,19 @@ import android.widget.Filterable;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.farm.ngo.farm.fragment.DialogConatct;
 import com.farm.ngo.farm.model.Pwalyone;
 import com.farm.ngo.farm.R;
 
 import java.util.ArrayList;
+import java.util.concurrent.Executor;
+
+import me.myatminsoe.mdetect.JobExecutor;
+import me.myatminsoe.mdetect.MMTextView;
 
 public  class PwayloneAdapter extends RecyclerView.Adapter<PwayloneAdapter.holder> implements Filterable {
     private LayoutInflater mInflater ;
+    Pwalyone pwalyone;
     ArrayList<Pwalyone> ary=new ArrayList<Pwalyone>();
     ArrayList<Pwalyone> filter_arr =new ArrayList<Pwalyone>();
    Activity c;
@@ -40,15 +47,14 @@ public  class PwayloneAdapter extends RecyclerView.Adapter<PwayloneAdapter.holde
 
     public holder onCreateViewHolder(ViewGroup viewGroup, int i) {
         View mItemView = mInflater.inflate(R.layout.paddressview,viewGroup, false);
-        return new holder(mItemView, this);
+        return new holder(mItemView);
 
     }
 
     @Override
     public void onBindViewHolder(@NonNull holder holder, int i) {
         final Pwalyone mCurrent = filter_arr.get(i);
-        holder.t1.setText(mCurrent.getName());
-
+       holder.bindToMessage(mCurrent);
 
 
     }
@@ -98,14 +104,31 @@ public  class PwayloneAdapter extends RecyclerView.Adapter<PwayloneAdapter.holde
     }
 
     class holder extends RecyclerView.ViewHolder{
-        public final TextView t1;
+        public final MMTextView t1;
+        private final CardView cardView1;
 
-
-        final PwayloneAdapter mAdapter;
-        public holder(View itemView,PwayloneAdapter ad){
+        public holder(final View itemView){
             super(itemView);
-            t1=(TextView)itemView.findViewById(R.id.ptitle);
-            this.mAdapter=ad;
+            t1=(MMTextView) itemView.findViewById(R.id.ptitle);
+            cardView1=(CardView)itemView.findViewById(R.id.item);
+        }
+        public void bindToMessage(final Pwalyone pwalyone){
+           t1.setMMText(pwalyone.getName(),null);
+            cardView1.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    FragmentManager ft = ((AppCompatActivity)view.getContext()).getSupportFragmentManager();
+                    DialogConatct newFragment;
+                        newFragment = DialogConatct.newInstance(pwalyone);
+                    newFragment.show(ft, "slideshow");
+                }
+            });
+
+
+
+
+
+
         }
     }
 

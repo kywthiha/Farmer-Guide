@@ -4,7 +4,7 @@
             "outputFile": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-fa/values-fa.xml",
             "map": [
                 {
-                    "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/b6c12b3c271ccfe6842834ed35071024/res/values-fa/values.xml",
+                    "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/6b9d67a77f549cc34c83cde5094e4a58/res/values-fa/values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/e45e3a57c6ee28faf359d489b0e283e8/res/values-fa/values.xml",
+                    "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/9c6c7f1fe94ddd40f0a6efcd0f293215/res/values-fa/values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -38,24 +38,7 @@
                     }
                 },
                 {
-                    "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/f171aef7b903b38255a3bf315bd90282/res/values-fa/values-fa.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "38",
-                        "startColumns": "4",
-                        "startOffsets": "4678",
-                        "endColumns": "100",
-                        "endOffsets": "4774"
-                    }
-                },
-                {
-                    "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/dd6370db221e18e814dff90c899c4720/res/values-fa/values-fa.xml",
+                    "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/ab048806c2de4de31a150d55c519e224/res/values-fa/values-fa.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -69,6 +52,23 @@
                         "startOffsets": "105,215,318,429,513,616,731,810,888,969,1081,1184,1282,1392,1496,1605,1766,4597",
                         "endColumns": "109,102,110,83,102,114,78,77,80,111,102,97,109,103,108,160,100,80",
                         "endOffsets": "210,313,424,508,611,726,805,883,964,1076,1179,1277,1387,1491,1600,1761,1862,4673"
+                    }
+                },
+                {
+                    "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/640e09b3e31ceb19b946f1d62aeceb87/res/values-fa/values-fa.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "38",
+                        "startColumns": "4",
+                        "startOffsets": "4678",
+                        "endColumns": "100",
+                        "endOffsets": "4774"
                     }
                 }
             ]

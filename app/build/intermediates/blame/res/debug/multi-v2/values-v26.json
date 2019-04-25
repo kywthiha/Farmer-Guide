@@ -4,7 +4,7 @@
             "outputFile": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v26/values-v26.xml",
             "map": [
                 {
-                    "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/dd6370db221e18e814dff90c899c4720/res/values-v26/values-v26.xml",
+                    "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/ab048806c2de4de31a150d55c519e224/res/values-v26/values-v26.xml",
                     "from": {
                         "startLines": "2,3,4,8,12,16",
                         "startColumns": "4,4,4,4,4,4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/design-27.1.0.aar/c5b01bd8a993618d5a7167007f15b2f4/res/values-v26/values-v26.xml",
+                    "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/design-27.1.0.aar/15538b0cd99d27bdb459076f807f772f/res/values-v26/values-v26.xml",
                     "from": {
                         "startLines": "2,6",
                         "startColumns": "4,4",

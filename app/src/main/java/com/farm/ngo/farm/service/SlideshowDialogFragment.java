@@ -64,7 +64,6 @@ public class SlideshowDialogFragment extends DialogFragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         url=getArguments().getString("url");
-
         setStyle(DialogFragment.STYLE_NORMAL, android.R.style.Theme_Black_NoTitleBar_Fullscreen);
     }
 

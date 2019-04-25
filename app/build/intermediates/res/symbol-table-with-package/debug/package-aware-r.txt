@@ -582,6 +582,7 @@ color common_google_signin_btn_text_light_disabled
 color common_google_signin_btn_text_light_focused
 color common_google_signin_btn_text_light_pressed
 color common_google_signin_btn_tint
+color contactme
 color design_bottom_navigation_shadow_color
 color design_error
 color design_fab_shadow_end_color
@@ -1009,6 +1010,7 @@ drawable h
 drawable hight_temp
 drawable home
 drawable ic_access_time
+drawable ic_account_circle_black_150dp
 drawable ic_arrow_back_black_24dp
 drawable ic_arrow_back_white
 drawable ic_arrow_upward
@@ -1018,6 +1020,7 @@ drawable ic_clear
 drawable ic_close_black
 drawable ic_contacts_black_24dp
 drawable ic_dehaze_black_24dp
+drawable ic_directions_black_24dp
 drawable ic_farmer
 drawable ic_forum_black_24dp
 drawable ic_home_black_24dp
@@ -1155,6 +1158,7 @@ id blocking
 id bottom
 id bottomnavigation
 id btnContinue
+id btnDircetion
 id btn_close
 id btn_crop_delete
 id btn_crop_edit
@@ -1164,6 +1168,7 @@ id buttonResend
 id buttonVerifyPhone
 id cancel_action
 id card
+id category
 id center
 id center_horizontal
 id center_medium
@@ -1325,6 +1330,7 @@ id mini
 id moe_menu_txt
 id multiply
 id my_message_body
+id name
 id nav_price
 id nav_profile
 id navigation_header_container
@@ -1353,6 +1359,8 @@ id parent_matrix
 id pdfView
 id percent
 id phoneCall
+id phone_btn
+id phone_list
 id phone_number
 id pin
 id pku_argi_off
@@ -1448,11 +1456,13 @@ id transition_transform
 id txt_crop_count
 id txt_crop_name
 id txt_crop_price
+id txtaddress
 id type
 id uniform
 id up
 id updated_field
 id useLogo
+id user_profile
 id username
 id verify_code
 id view_offset_helper
@@ -1544,6 +1554,8 @@ layout com_accountkit_fragment_verified_code_center
 layout com_accountkit_fragment_verifying_code_center
 layout com_accountkit_phone_country_code_item_layout
 layout com_accountkit_phone_country_code_layout
+layout contact_detail
+layout contact_phone_item
 layout crop_item
 layout current_weather
 layout design_bottom_navigation_item

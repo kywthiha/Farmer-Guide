@@ -14,5 +14,6 @@
     <color name="no_color">#00ffffff</color>
     <color name="weather_title_color">#9c31ae2d</color>
     <color name="shpe_back">#FF000000</color>
+    <color name="contactme">#90cbdc13</color>
 
 </resources>

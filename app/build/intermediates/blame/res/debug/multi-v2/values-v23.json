@@ -4,7 +4,18 @@
             "outputFile": "/home/kyaw/Desktop/old Desktop/Farm/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v23/values-v23.xml",
             "map": [
                 {
-                    "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.1.0.aar/43af87c8dc0e29075c596524b2e7a004/res/values-v23/values-v23.xml",
+                    "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.23.0.aar/a7ce7de9c1ba84ab9122d15409ff2049/res/values-v23/values-v23.xml",
+                    "from": {
+                        "startLines": "2,5,8,11",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,208,353,488",
+                        "endLines": "4,7,10,13",
+                        "endColumns": "12,12,12,12",
+                        "endOffsets": "203,348,483,628"
+                    }
+                },
+                {
+                    "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.1.0.aar/a7e9647d9ec30fbda4554d23de15a028/res/values-v23/values-v23.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -23,7 +34,7 @@
                     }
                 },
                 {
-                    "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/dd6370db221e18e814dff90c899c4720/res/values-v23/values-v23.xml",
+                    "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/ab048806c2de4de31a150d55c519e224/res/values-v23/values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,19,32,33,34,35,36",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
@@ -39,17 +50,6 @@
                         "endLines": "14,15,16,17,30,43,44,45,46,47,48",
                         "endColumns": "134,134,74,86,12,12,126,104,114,106,112",
                         "endOffsets": "763,898,973,1060,1850,2652,2779,2884,2999,3106,3219"
-                    }
-                },
-                {
-                    "source": "/home/kyaw/.gradle/caches/transforms-1/files-1.1/account-kit-sdk-4.23.0.aar/346e5de764bf38c581d1473b6b5136e3/res/values-v23/values-v23.xml",
-                    "from": {
-                        "startLines": "2,5,8,11",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "55,208,353,488",
-                        "endLines": "4,7,10,13",
-                        "endColumns": "12,12,12,12",
-                        "endOffsets": "203,348,483,628"
                     }
                 }
             ]
