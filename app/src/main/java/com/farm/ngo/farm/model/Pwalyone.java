@@ -4,19 +4,20 @@ import com.google.android.gms.maps.model.LatLng;
 
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Pwalyone implements Serializable {
     private String name;
     private String address;
     private ArrayList<String> phoneno;
     private String category;
-    private LatLng location;
+    private double [] location;
 
     public Pwalyone() {
 
     }
 
-    public Pwalyone(String name, String address, ArrayList<String> phoneno, String category, LatLng location) {
+    public Pwalyone(String name, String address, ArrayList<String> phoneno, String category, double[] location) {
         this.name = name;
         this.address = address;
         this.phoneno = phoneno;
@@ -56,11 +57,11 @@ public class Pwalyone implements Serializable {
         this.category = category;
     }
 
-    public LatLng getLocation() {
+    public double[] getLocation() {
         return location;
     }
 
-    public void setLocation(LatLng location) {
+    public void setLocation(double[] location) {
         this.location = location;
     }
 
@@ -71,7 +72,7 @@ public class Pwalyone implements Serializable {
                 ", address='" + address + '\'' +
                 ", phoneno=" + phoneno +
                 ", category='" + category + '\'' +
-                ", location=" + location +
+                ", location=" + Arrays.toString(location) +
                 '}';
     }
 }

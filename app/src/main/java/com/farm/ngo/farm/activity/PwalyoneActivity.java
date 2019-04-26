@@ -52,7 +52,8 @@ public class PwalyoneActivity extends AppCompatActivity {
                     pwalyone.setAddress(jo_inside.getString("address"));
                     pwalyone.setCategory(jo_inside.getString("category"));
                     JSONObject loc=jo_inside.getJSONObject("location");
-                    pwalyone.setLocation(new LatLng(loc.getDouble("lat"),loc.getDouble("lon")));
+                    double [] ary={loc.getDouble("lat"),loc.getDouble("lon")};
+                    pwalyone.setLocation(ary);
                     JSONArray phone_no=jo_inside.getJSONArray("phone_no");
                     ArrayList<String> ph_nos=new ArrayList<>();
                     for (int ii = 0; ii < phone_no.length(); ii++) {

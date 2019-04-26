@@ -1011,6 +1011,7 @@ drawable hight_temp
 drawable home
 drawable ic_access_time
 drawable ic_account_circle_black_150dp
+drawable ic_account_circle_black_24dp
 drawable ic_arrow_back_black_24dp
 drawable ic_arrow_back_white
 drawable ic_arrow_upward

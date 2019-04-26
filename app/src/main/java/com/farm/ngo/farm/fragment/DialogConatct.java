@@ -58,7 +58,7 @@ public class DialogConatct extends DialogFragment {
             @Override
             public void onClick(View view) {
 
-                Uri gmmIntentUri = Uri.parse("google.navigation:q="+pwalyone.getLocation().latitude+","+pwalyone.getLocation().longitude);
+                Uri gmmIntentUri = Uri.parse("google.navigation:q="+pwalyone.getLocation()[0]+","+pwalyone.getLocation()[1]);
                 Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
                 mapIntent.setPackage("com.google.android.apps.maps");
                 startActivity(mapIntent);
