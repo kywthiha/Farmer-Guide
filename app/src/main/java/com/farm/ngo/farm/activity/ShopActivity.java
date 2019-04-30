@@ -25,10 +25,10 @@ public class ShopActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pwalyone);
         if(!Mdetect.isUnicode())
-            getSupportActionBar().setTitle(Rabbit.uni2zg(getString(R.string.pwayyone_label)));
+            getSupportActionBar().setTitle(Rabbit.uni2zg(getString(R.string.shop_label)));
         ContactCategoryFragment homeFragment = new ContactCategoryFragment();
-        homeFragment.setCategoryfilename("PwalyoneCategory");
-        homeFragment.setJosnfilename("pkucityfarmguide");
+        homeFragment.setCategoryfilename("shopcategory");
+        homeFragment.setJosnfilename("shoplist");
         transaction.add(R.id.view_pager, homeFragment);
         transaction.commit();
 

@@ -1,6 +1,7 @@
 package com.farm.ngo.farm.data;
 
 import android.app.Activity;
+import android.content.Context;
 import android.util.Log;
 
 import org.json.JSONArray;
@@ -14,10 +15,10 @@ import java.util.HashMap;
 import java.util.List;
 
 public class JsonRead {
-    private Activity myActivity;
+    private Context myActivity;
     private String fileName;
 
-    public JsonRead(Activity myActivity, String fileName) {
+    public JsonRead(Context myActivity, String fileName) {
         this.myActivity = myActivity;
         this.fileName = fileName;
     }

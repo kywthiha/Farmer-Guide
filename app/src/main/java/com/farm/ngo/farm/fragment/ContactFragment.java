@@ -2,6 +2,8 @@ package com.farm.ngo.farm.fragment;
 
 
 import android.app.SearchManager;
+import android.arch.lifecycle.Observer;
+import android.arch.lifecycle.ViewModelProviders;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -19,23 +21,27 @@ import android.view.ViewGroup;
 import android.widget.SearchView;
 
 import com.farm.ngo.farm.R;
+import com.farm.ngo.farm.adapter.ContactAdapter;
 import com.farm.ngo.farm.adapter.PwayloneAdapter;
 import com.farm.ngo.farm.data.JsonRead;
 import com.farm.ngo.farm.model.Pwalyone;
 import com.farm.ngo.farm.utility.Mdetect;
 import com.farm.ngo.farm.utility.Rabbit;
+import com.farm.ngo.farm.viewmodel.ContactViewModel;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class ContactFragment extends Fragment {
-   private PwayloneAdapter adapter;
+   private ContactAdapter adapter;
     private ArrayList<Pwalyone> pp;
     private String category;
     private String jsonfilename;
+    private ContactViewModel contactViewModel;
 
     public void setJsonfilename(String jsonfilename) {
         this.jsonfilename = jsonfilename;
@@ -51,39 +57,18 @@ public class ContactFragment extends Fragment {
         View view = inflater.inflate(R.layout.contact_list_fragmentview, container, false);
         JsonRead jsonRead=new JsonRead(getActivity(),jsonfilename);
         RecyclerView rc=(RecyclerView)view.findViewById(R.id.pr);
-        pp=new ArrayList<>();
-        try {
-            JSONObject obj = new JSONObject(jsonRead.loadJSONFromAsset());
-            JSONArray m_jArry = obj.getJSONArray("data");
-            ArrayList<Pwalyone> pwalyones = new ArrayList<>();
-            for (int i = 0; i < m_jArry.length(); i++) {
-                JSONObject jo_inside = m_jArry.getJSONObject(i);
-                Pwalyone pwalyone=new Pwalyone();
-                pwalyone.setName(jo_inside.getString("name"));
-                pwalyone.setAddress(jo_inside.getString("address"));
-                pwalyone.setCategory(jo_inside.getString("category"));
-                JSONObject loc=jo_inside.getJSONObject("location");
-                double [] ary={loc.getDouble("lat"),loc.getDouble("lon")};
-                pwalyone.setLocation(ary);
-                JSONArray phone_no=jo_inside.getJSONArray("phone_no");
-                ArrayList<String> ph_nos=new ArrayList<>();
-                for (int ii = 0; ii < phone_no.length(); ii++) {
-                    ph_nos.add(phone_no.getString(ii));
-                }
-                pwalyone.setPhoneno(ph_nos);
-                if(pwalyone.getCategory().contains(category))
-                pwalyones.add(pwalyone);
-
-            }
-            pp=pwalyones;
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
-
-        adapter=new PwayloneAdapter(getActivity(),pp);
+        adapter=new ContactAdapter(getActivity());
         rc.setAdapter(adapter);
         LinearLayoutManager k=new LinearLayoutManager(getActivity(),LinearLayoutManager.VERTICAL, false);
         rc.setLayoutManager(k);
+        contactViewModel = ViewModelProviders.of(this).get(ContactViewModel.class);
+        contactViewModel.getmAllCropItem(jsonfilename,category).observe(this, new Observer<List<Pwalyone>>() {
+
+            @Override
+            public void onChanged(@Nullable List<Pwalyone> cropItemList) {
+                adapter.setWords(cropItemList);
+            }
+        });
         return view;
     }
 
@@ -113,6 +98,8 @@ public class ContactFragment extends Fragment {
 
                 @Override
                 public boolean onQueryTextChange(String s) {
+                    if(!Mdetect.isUnicode())
+                        s=Rabbit.zg2uni(s);
                     adapter.getFilter().filter(s);
                     return false;
                 }
