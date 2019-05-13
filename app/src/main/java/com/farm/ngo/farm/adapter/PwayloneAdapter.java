@@ -82,7 +82,7 @@ public  class PwayloneAdapter extends RecyclerView.Adapter<PwayloneAdapter.holde
                 else{
                     ArrayList<Pwalyone> filteredList=new ArrayList<>();
                     for(Pwalyone pwalyone:ary){
-                        if(pwalyone.getCategory().contains(charString) || pwalyone.getName().contains(charSequence)){
+                        if( pwalyone.getName().contains(charSequence)){
                             filteredList.add(pwalyone);
                         }
                     }

@@ -1011,6 +1011,7 @@ drawable hight_temp
 drawable home
 drawable ic_access_time
 drawable ic_account_circle_black_150dp
+drawable ic_account_circle_black_24dp
 drawable ic_arrow_back_black_24dp
 drawable ic_arrow_back_white
 drawable ic_arrow_upward
@@ -1528,6 +1529,8 @@ layout activity_pwalyone
 layout activity_weatherfiveday
 layout activity_welcome
 layout admin_question_answer
+layout category_fragment_main
+layout category_item
 layout com_accountkit_activity_layout
 layout com_accountkit_confirmation_code_input
 layout com_accountkit_fragment_confirmation_code_bottom
@@ -1555,6 +1558,7 @@ layout com_accountkit_fragment_verifying_code_center
 layout com_accountkit_phone_country_code_item_layout
 layout com_accountkit_phone_country_code_layout
 layout contact_detail
+layout contact_list_fragmentview
 layout contact_phone_item
 layout crop_item
 layout current_weather
